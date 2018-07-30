@@ -1,4 +1,4 @@
-This is the repository for the new version the App|ETS website.
+This is the repository for the new version of the App|ETS website.
 
 To preview the website, clone the repository or download and extract, then open up the index.html file in your favorite browser.
 
