@@ -54,7 +54,10 @@ body{
 }
 
 
-
+.nav-item a{
+    text-decoration: none;
+    color:inherit;
+}
 
 #nav-toggle{
     margin-right:11vw;
