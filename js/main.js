@@ -1,12 +1,18 @@
 $('#navButtons').hide()
-new Typewriter(150,document.getElementById("navTitle"), "App|ETS", false, function(){
-    setTimeout("showNavButtons()", 400)
+$('#navTitle').toggle()
 
+$('#navTitle').fadeToggle(1400, "swing",function(){
+    showNavButtons()
 })
 
+
+
 var showNavButtons = function(){
-    $('#navTitle').removeClass("typewriter")
     $('#navButtons').show("slow","swing",function(){
         
     })
 }
+
+document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
