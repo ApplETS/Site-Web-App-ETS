@@ -1,0 +1,70 @@
+.single-page{
+    height:100vh;
+}
+body{
+    background-color:black;
+}
+
+.main-nav{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:2vh;
+    
+}
+
+.nav-buttons a{
+    cursor:pointer;
+    margin-left:1.5vw;
+    display: inline-block;
+}
+
+.nav-buttons a:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.nav-buttons a:hover::after{
+    width:100%;
+}
+
+
+
+
+.nav-buttons{
+}
+
+.typewriter:after{
+    opacity: 0.5;
+    content: "_";
+    animation: blink 300ms linear infinite alternate;
+    -webkit-animation: blink 300ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink{
+    0%{opacity: 0;}
+    49%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    0%{opacity: 0;}
+    49%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    49%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
