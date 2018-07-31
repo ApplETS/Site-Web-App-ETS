@@ -49,6 +49,10 @@ body{
     width:100%;
 }
 
+.nav-buttons li.currentTab:after{
+    width:100%;
+}
+
 
 
 
