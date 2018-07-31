@@ -1,5 +1,5 @@
 $('#navButtons').hide()
-new Typewriter(200,document.getElementById("navTitle"), "App|ETS", false, function(){
+new Typewriter(150,document.getElementById("navTitle"), "App|ETS", false, function(){
     setTimeout("showNavButtons()", 400)
 
 })
