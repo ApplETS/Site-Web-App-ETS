@@ -1,16 +1,24 @@
 if(localStorage.getItem("codeHasLoadedBefore") === null){
     $('#navButtons').hide()
     $('#navTitle').toggle()
+    $('#nav-toggle').css('opacity', '0')
     
-    $('#navTitle').fadeToggle(1400, "swing",function(){
-        showNavButtons()
+    var y = Number(screen.height / 2) - Number($('#brandImage').position().top) - Number($('#brandImage').height())
+    document.getElementById("brandImage").style["transform"] = "translateY(" +  Math.round(y) + "px"+ ")"
+
+    $('#navTitle').fadeToggle(1700, "swing",function(){
+        
+        document.getElementById("brandImage").classList.add("brandImageTop")
+        
+        setTimeout("showNavButtons()",2000)
     })
     
     
     
     var showNavButtons = function(){
+        $('#nav-toggle').css('opacity', '1')
         $('#navButtons').show("slow","swing",function(){
-            
+
         })
     }
     
@@ -19,5 +27,8 @@ if(localStorage.getItem("codeHasLoadedBefore") === null){
     });
 
 }
+
+
+
 
 

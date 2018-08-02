@@ -56,7 +56,7 @@ body{
 
 .nav-item a{
     text-decoration: none;
-    color:inherit;
+    color:inherit
 }
 
 #nav-toggle{
@@ -102,6 +102,17 @@ body{
     animation: blink 300ms linear infinite alternate;
     -webkit-animation: blink 300ms linear infinite alternate;
 }
+
+.brandImage{
+    height:20vh;
+}
+
+.brandImageTop{
+    transition:all 2s;
+    height:8vh;
+    transform : none!important;
+}
+
 
 @-webkit-keyframes blink{
     0%{opacity: 0;}
