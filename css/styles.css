@@ -108,7 +108,7 @@ body{
 }
 
 .brandImageTop{
-    transition:all 2s;
+    transition:all 1s;
     height:8vh;
     transform : none!important;
 }

@@ -6,11 +6,11 @@ if(localStorage.getItem("codeHasLoadedBefore") === null){
     var y = Number(screen.height / 2) - Number($('#brandImage').position().top) - Number($('#brandImage').height())
     document.getElementById("brandImage").style["transform"] = "translateY(" +  Math.round(y) + "px"+ ")"
 
-    $('#navTitle').fadeToggle(1700, "swing",function(){
+    $('#navTitle').fadeToggle(1000, "swing",function(){
         
         document.getElementById("brandImage").classList.add("brandImageTop")
         
-        setTimeout("showNavButtons()",2000)
+        setTimeout("showNavButtons()",1000)
     })
     
     
