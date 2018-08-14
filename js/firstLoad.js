@@ -12,8 +12,6 @@ $('#navTitle').fadeToggle(1000, "swing",function(){
     setTimeout("showNavButtons()",1000)
 })
 
-
-
 var showNavButtons = function(){
     $('#nav-toggle').css('opacity', '1')
     $('#navButtons').show("slow","swing",function(){
