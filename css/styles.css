@@ -3,6 +3,8 @@
 }
 body{
     background-color:black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .main-nav{
@@ -10,7 +12,6 @@ body{
     justify-content: center;
     align-items:center;
     color:white;
-    font-family: 'Open Sans', sans-serif;
     font-size:2vh;
     flex-grow:0;
     
