@@ -1,13 +1,38 @@
+# App|ETS Website
+
 This is the repository for the new version of the App|ETS website.
 
-To preview the website, clone the repository or download and extract, then open up the index.html file in your favorite browser.
+## Getting Started
 
-To enhance development speed, you can use BrowserSync to automatically refresh the page once you make a modification.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-To start BrowserSync,
+### Prerequisites
 
-1. Install Node.js
-2. Install BrowserSync through "npm install -g browser-sync"
-3. Run BrowserSync with "browser-sync start --server --files " *.html , css/* , js/* " "
+To run the auto-refreshing plugin (BrowserSync), you will need Node.js. You can download it from the official website at : https://nodejs.org/en/download/ .
 
-4. Open up your favorite browser at the adress "localhost:3000"
+Next, you need to install the BrowserSync npm package with the follow command.
+
+```
+npm install -g browser-sync
+```
+
+### Installing
+
+To setup your working environment, follow these steps:
+
+1. Clone the repository by running the follow command.
+
+```
+git clone https://github.com/ApplETS/Site-Web-App-ETS
+```
+
+2. Next, you want to setup BrowserSync so that changes made to the files will automatically refresh the browser. 
+
+```
+browser-sync start --server --files "*.html, css/*, js/*"
+```
+
+You can modify the command by adding more files to the auto-sync. 
+
+
+
