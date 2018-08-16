@@ -20,5 +20,5 @@
     -moz-transform: translate3d(-50%, -50%, 0);  
     transform: translate3d(-50%, -50%, 0);
     width: 4vh;
-    transition:transform 150ms;
+    transition:transform 100ms;
 }

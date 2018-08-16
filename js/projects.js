@@ -5,7 +5,7 @@ $(function() {
 
     $(window).scroll(function() {
         if($(this).scrollTop() > 0){
-            var mass = Number(1 + Math.round(0.1*$(this).scrollTop() / 5 ) *5);
+            var mass = Number(1 + 0.2*$(this).scrollTop());
   
             $('#projectHeart').css({'transform': 'translate3d(-50%,-50%,0) scale(' + mass + ')'});
             console.log($('#projectHeart').css('transform'), window.innerWidth,window.innerHeight)
