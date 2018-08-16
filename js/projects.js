@@ -10,7 +10,7 @@ $(function() {
             $('#projectHeart').css({'transform': 'translate3d(-50%,-50%,0) scale(' + mass + ')'});
             console.log($('#projectHeart').css('transform'), window.innerWidth,window.innerHeight)
         }else{
-            $('#projectHeart').css({'transform': 'translate3d(-50%,-50%,0) scale(1)'});
+            $('#projectHeart').css({'transform': 'scale(1) translate3d(-50%,-50%,0)'});
         }
   
       
