@@ -1,5 +1,5 @@
 #titleContainer{
-    font-size:5vh;
+    font-size:4vh;
 
 }
 
@@ -9,16 +9,51 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     width:100vw;
+    text-align:center;
+    flex-direction:column;
 }
 
 #projectHeart{
     position: absolute;
-    margin-top:4vh;
+    margin-top:3.5vh;
     -webkit-transform: translate3d(-50%, -50%, 0); 
     -moz-transform: translate3d(-50%, -50%, 0);  
     transform: translate3d(-50%, -50%, 0);
     width: 4vh;
-    transition:transform 500ms;
+    transition:width 1100ms;
+    z-index:1000;
 }
+
+.heartbeat:hover{
+    cursor:pointer;
+    width:5vh;
+    -webkit-animation: heartbeat 800ms infinite; /* Safari 4+ */
+    -moz-animation:    heartbeat 800ms infinite; /* Fx 5+ */
+    -o-animation:      heartbeat 800ms infinite; /* Opera 12+ */
+    animation:         heartbeat 800ms infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes heartbeat {
+    0%   { width: 4vh; }
+    50% { width: 5vh;}
+    100% { width: 4vh;}
+  }
+  @-moz-keyframes heartbeat {
+    0%   { width: 4vh; }
+    50% { width: 5vh;}
+    100% { width: 4vh;}
+  }
+  @-o-keyframes heartbeat {
+    0%   { width: 4vh; }
+    50% { width: 5vh;}
+    100% { width: 4vh;}
+  }
+  @keyframes heartbeat {
+    0%   { width: 4vh; }
+    50% { width: 5vh;}
+    100% { width: 4vh;}
+  }
+
+
+

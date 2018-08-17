@@ -1,22 +1,65 @@
 $('#titleDiv').hide()
 $('#titleDiv').fadeToggle(1500,"swing")
 
-$(function() {
-
+/*$(function() {
+var iScrollPos = 0
     $(window).scroll(function() {
-        if($(this).scrollTop() > 0 ){
-            if($(this).scrollTop() % 10 === 0){
-                var mass = Number(1 + 0.2*$(this).scrollTop());
-  
-                $('#projectHeart').css({'transform': 'translate3d(-50%,-50%,0) scale(' + mass + ')'});
-                console.log($('#projectHeart').css('transform'), window.innerWidth,window.innerHeight)
+        var iCurScrollPos = $(this).scrollTop();
+            if (iCurScrollPos > iScrollPos) {
+                $('#projectHeart').css("width", "300vw")
+            } else {
+               if(iCurScrollPos === 0){
+                $('#projectHeart').css("width", "4vh")
+               }
             }
-           
-        }else{
-            $('#projectHeart').css({'transform': 'scale(1) translate3d(-50%,-50%,0)'});
-        }
+            iScrollPos = iCurScrollPos;
+        
   
       
     });
-  });
+  });*/
+
+$('#fullpage').fullpage({
+    onLeave: function(index,nextIndex,direction){
+        if(index.index==0 && nextIndex.index == 1 && direction ==="down"){
+            $('#projectHeart').toggleClass("heartbeat")
+            $('#projectHeart').css("width", "500vh")
+            
+            
+        }
+        if(index.index==1 && nextIndex.index == 0 && direction ==="up"){
+            
+            $('#projectHeart').css("display", "")
+            $('#slide2').css("background-color", "")
+            $('#projectHeart').css("width", "4vh")
+            
+        }
+    },
+    afterLoad : function(anchorLink, index){
+        if(index.index == 1){
+            $('#projectHeart').css("display", "none")
+            $('#slide2').css("background-color", "red")
+        }
+        if(index.index == 0){
+            $('#projectHeart').toggleClass("heartbeat")
+        }
+        
+        
+    }}
+
+    
+
+    
+)
+
+$('#projectHeart').on('click', function(){
+    $.fn.fullpage.moveSectionDown()
+    $('#projectHeart').css("width", "500vh")
+
+})
+
+document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+});
+
 
