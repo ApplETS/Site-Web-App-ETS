@@ -21,17 +21,20 @@
     -moz-transform: translate3d(-50%, -50%, 0);  
     transform: translate3d(-50%, -50%, 0);
     width: 4vh;
-    transition:width 1100ms;
+    transition:width 1s;
     z-index:1000;
+}
+
+.project-slide div{
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .heartbeat:hover{
     cursor:pointer;
     width:5vh;
-    -webkit-animation: heartbeat 800ms infinite; /* Safari 4+ */
-    -moz-animation:    heartbeat 800ms infinite; /* Fx 5+ */
-    -o-animation:      heartbeat 800ms infinite; /* Opera 12+ */
-    animation:         heartbeat 800ms infinite; /* IE 10+, Fx 29+ */
+
 }
 
 @-webkit-keyframes heartbeat {
