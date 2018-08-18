@@ -32,9 +32,9 @@ $('#fullpage').fullpage({
             
         }
         if(index.index==1 && nextIndex.index == 0 && direction ==="up"){
-            
-            $('#projectHeart').css("display", "")
             $('#section1').css("background-color", "")
+            $('#projectHeart').css("display", "")
+
             $('#projectHeart').css("width", "4vh")
             $('.project-slide').fadeToggle(500,"linear")
 
@@ -44,8 +44,9 @@ $('#fullpage').fullpage({
     afterLoad : function(anchorLink, index){
         console.log(index)
         if(index.index == 1){
-            $('#projectHeart').css("display", "none")
             $('#section1').css("background-color", "red")
+            $('#projectHeart').css("display", "none")
+
             $('.project-slide').fadeToggle(500,"swing")
             $('.fp-controlArrow').fadeToggle(500,"swing")
         }
