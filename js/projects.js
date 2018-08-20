@@ -44,7 +44,7 @@ $('#fullpage').fullpage({
     afterLoad : function(anchorLink, index){
         console.log(index)
         if(index.index == 1){
-            $('#section1').css("background-color", "#DA3D31")
+            $('#section1').css("background-color", "#EC2B27")
             $('#projectHeart').css("display", "none")
 
             $('.project-slide').fadeToggle(500,"swing")
