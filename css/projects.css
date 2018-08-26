@@ -38,4 +38,42 @@
 }
 
 
+.device-mockup{
+    height: 55vh;
+    transition: height 500ms ease-out;
+}
+
+.store-link{
+    width:100px;
+    margin:5px;
+    transition: all 500ms ease-out;
+    margin-bottom:20px;
+    cursor:pointer;
+}
+
+.mockup-zone{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.store-link-a{
+    transition: all 500ms;
+}
+
+.gradient-border{
+    width:100%;
+    display:block;
+    border:none;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(255,255,255, 0.1)));
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#header{
+    transition: background-color 1000ms;
+}
+
 
