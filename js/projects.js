@@ -59,7 +59,7 @@ $('#fullpage').fullpage({
             $('#androidETSMOBILE').css('height', '45vh')
             $('#play-store-link').css('width', '165px')
 
-            $('#header').css('background-color', '#3e3e3e')
+            $('#header').css('background-color', 'rgba(99, 10, 7, 0.73)')
 
         }
         if(index.index == 0){

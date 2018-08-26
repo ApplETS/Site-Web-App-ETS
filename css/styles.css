@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items:center;
     color:white;
-    font-size:2vh;
+    font-size:1.5vh;
     flex-grow:0;
     
 }
@@ -110,7 +110,7 @@ body{
 
 .brandImageTop{
     transition:all 1s;
-    height:8vh;
+    height:7vh;
     transform : none!important;
 }
 

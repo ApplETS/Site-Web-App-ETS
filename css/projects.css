@@ -39,14 +39,14 @@
 
 
 .device-mockup{
-    height: 55vh;
-    transition: height 500ms ease-out;
+    height: 35vh;
+    transition: height 400ms ease-out;
 }
 
 .store-link{
     width:100px;
     margin:5px;
-    transition: all 500ms ease-out;
+    transition: all 400ms ease-out;
     margin-bottom:20px;
     cursor:pointer;
 }
@@ -58,7 +58,7 @@
 }
 
 .store-link-a{
-    transition: all 500ms;
+    transition: all 400ms;
 }
 
 .gradient-border{
@@ -74,6 +74,28 @@
 
 #header{
     transition: background-color 1000ms;
+}
+
+.fp-controlArrow{
+    transition:border-color 250ms ease;
+}
+
+.fp-controlArrow.fp-prev:hover{
+    border-color: transparent #ffffff transparent transparent!important;
+}
+
+.fp-controlArrow.fp-next:hover{
+    border-color: transparent transparent transparent #ffffff!important;
+}
+
+.fp-controlArrow.fp-prev{
+    border-width: 20px 20px 20px 0!important;
+    border-color: transparent #ffffff80 transparent transparent!important;
+}
+
+.fp-controlArrow.fp-next{
+    border-width: 20px 0 20px 20px!important;
+    border-color: transparent  transparent transparent #ffffff80!important;
 }
 
 
