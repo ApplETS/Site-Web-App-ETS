@@ -12,6 +12,7 @@
     width:100vw;
     text-align:center;
     flex-direction:column;
+    margin-top:30vh;
 }
 
 #projectHeart{
@@ -96,6 +97,12 @@
 .fp-controlArrow.fp-next{
     border-width: 20px 0 20px 20px!important;
     border-color: transparent  transparent transparent #ffffff80!important;
+}
+
+.app-layer{
+    position: absolute;
+    transition:all 1500ms ease-out;
+    height:50vh;
 }
 
 

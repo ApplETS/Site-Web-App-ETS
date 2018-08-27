@@ -1,6 +1,7 @@
 $('#titleDiv').hide()
 $('#titleDiv').fadeToggle(1500,"swing")
 
+
 $('.project-slide').hide()
 
 /*$(function() {
@@ -61,9 +62,16 @@ $('#fullpage').fullpage({
 
             $('#header').css('background-color', 'rgba(99, 10, 7, 0.73)')
 
+            $('#app-layer-1').css('transform', '')
+            $('#app-layer-3').css('transform', '')
+
         }
         if(index.index == 0){
             $('#projectHeart').toggleClass("heartbeat")
+        
+            $('#app-layer-1').css('transform', 'translate(100px,50px)')
+            $('#app-layer-3').css('transform', 'translate(-100px,-50px)')
+
         }
         
         
