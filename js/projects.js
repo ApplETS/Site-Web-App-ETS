@@ -69,8 +69,7 @@ $('#fullpage').fullpage({
         if(index.index == 0){
             $('#projectHeart').toggleClass("heartbeat")
         
-            $('#app-layer-1').css('transform', 'translate(100px,50px)')
-            $('#app-layer-3').css('transform', 'translate(-100px,-50px)')
+            setTimeout("separateAppLayers()",750)
 
         }
         
@@ -113,6 +112,11 @@ $('#ios-etsmobile-link').on("mouseover",function(){
     $('#androidETSMOBILE').css('height', '35vh')
     $('#play-store-link').css('width', '100px')
 })
+
+function separateAppLayers(){
+    $('#app-layer-1').css('transform', 'translate(100px,50px)')
+    $('#app-layer-3').css('transform', 'translate(-100px,-50px)')
+}
 
 
 
