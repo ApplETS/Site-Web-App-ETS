@@ -59,6 +59,8 @@ $('#fullpage').fullpage({
 
             $('#androidETSMOBILE').css('height', '45vh')
             $('#play-store-link').css('width', '165px')
+            $('#iosETSMOBILE').css('height', '35vh')
+    $('#app-store-link').css('width', '100px')
 
             $('#header').css('background-color', 'rgba(99, 10, 7, 0.73)')
 
@@ -105,8 +107,22 @@ $('#android-etsmobile-link').on("mouseover",function(){
     $('#app-store-link').css('width', '100px')
 })
 
+$('#android-etsmobile-link').on("click",function(){
+    $('#androidETSMOBILE').css('height', '45vh')
+    $('#play-store-link').css('width', '165px')
+    $('#iosETSMOBILE').css('height', '35vh')
+    $('#app-store-link').css('width', '100px')
+})
+
 
 $('#ios-etsmobile-link').on("mouseover",function(){
+    $('#iosETSMOBILE').css('height', '45vh')
+    $('#app-store-link').css('width', '165px')
+    $('#androidETSMOBILE').css('height', '35vh')
+    $('#play-store-link').css('width', '100px')
+})
+
+$('#ios-etsmobile-link').on("click",function(){
     $('#iosETSMOBILE').css('height', '45vh')
     $('#app-store-link').css('width', '165px')
     $('#androidETSMOBILE').css('height', '35vh')

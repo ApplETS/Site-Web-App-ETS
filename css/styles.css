@@ -33,7 +33,10 @@ body{
 @media (max-width:992px){
     .nav-buttons li{
         margin-left:0;
-        font-size:4vh;
+        font-size:30px;
+    }
+    #header{
+        background-color:#000c;
     }
 }
 
@@ -135,6 +138,7 @@ body{
     50%{opacity: 1;}
     100%{opacity: 1;}
 }
+
 
 
 
