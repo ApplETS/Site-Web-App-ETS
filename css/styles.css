@@ -15,6 +15,7 @@ body{
     font-size:2vh;
     flex-grow:0;
     
+    
 }
 
 .nav-buttons li{
@@ -63,11 +64,11 @@ body{
     color:inherit
 }
 
-#nav-toggle{
+#nav-toggler{
     margin-right:11vw;
 }
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+#nav-toggler span, #nav-toggler span:before, #nav-toggler span:after {
     cursor: pointer;
     border-radius: 1px;
     height: 3px;
@@ -77,26 +78,26 @@ body{
     display: block;
     content: '';
   }
-  #nav-toggle span:before {
+  #nav-toggler span:before {
     top: -10px;
   }
-  #nav-toggle span:after {
+  #nav-toggler span:after {
     bottom: -10px; 
   }
 
-  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  #nav-toggler span, #nav-toggler span:before, #nav-toggler span:after {
     transition: all 500ms ease-in-out;
   }
-  #nav-toggle.active span {
+  #nav-toggler.active span {
     background-color: transparent;
   }
-  #nav-toggle.active span:before, #nav-toggle.active span:after {
+  #nav-toggler.active span:before, #nav-toggler.active span:after {
     top: 0;
   }
-  #nav-toggle.active span:before {
+  #nav-toggler.active span:before {
     transform: rotate(45deg);
   }
-  #nav-toggle.active span:after {
+  #nav-toggler.active span:after {
     transform: rotate(-45deg);
   }
 
@@ -116,6 +117,17 @@ body{
     height:7vh;
     transform : none!important;
 }
+
+#floatingToggle{
+    position: absolute;
+    right: 7vw;
+    width: 50px;
+    height: 50px;
+    top: 3vh;
+    cursor: pointer;
+    z-index:1000;
+}
+
 
 
 @-webkit-keyframes blink{

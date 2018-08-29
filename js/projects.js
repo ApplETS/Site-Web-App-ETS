@@ -98,8 +98,9 @@ $('#projectHeart').on('click', function(){
 
 })
 
-document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
-    this.classList.toggle( "active" );
+document.querySelector( "#floatingToggle" ).addEventListener( "click", function() {
+    document.querySelector("#nav-toggler").classList.toggle( "active" );
+    $('#navToggleContent').slideToggle()
 });
 
 $('#android-etsmobile-link').on("mouseover",function(){
