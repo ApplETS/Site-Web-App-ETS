@@ -22,7 +22,7 @@
     -moz-transform: translate3d(-50%, -50%, 0);  
     transform: translate3d(-50%, -50%, 0);
     width: 4vh;
-    transition:width 1s;
+    transition:all 800ms;
     z-index:1000;
 }
 

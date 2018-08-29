@@ -28,7 +28,8 @@ $('#fullpage').fullpage({
     onLeave: function(index,nextIndex,direction){
         if(index.index==0 && nextIndex.index == 1 && direction ==="down"){
             $('#projectHeart').toggleClass("heartbeat")
-            $('#projectHeart').css("width", "600vh")
+            $('#projectHeart').css("width", "400vh")
+            $('#projectHeart').css("margin-top", "100vh")
             $('.fp-controlArrow').hide()
 
             
@@ -39,6 +40,7 @@ $('#fullpage').fullpage({
             $('#projectHeart').css("display", "")
 
             $('#projectHeart').css("width", "4vh")
+            $('#projectHeart').css("margin-top", "3.5vh")
             $('.project-slide').fadeToggle(500,"linear")
 
             $('#header').css('background-color', '')
@@ -51,7 +53,7 @@ $('#fullpage').fullpage({
         if(index.index == 1){
             $.fn.fullpage.setAutoScrolling(true)
 
-            $('#section1').css("background-color", "#EC2B27")
+            $('#section1').css("background-color", "rgb(206, 32, 28)")
             $('#projectHeart').css("display", "none")
 
             $('.project-slide').fadeToggle(500,"swing")
