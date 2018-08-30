@@ -30,6 +30,10 @@ body{
     .navbar{
         justify-content: center;
     }
+
+    #nav-toggler{
+        display:none;
+    }
 }
 @media (max-width:992px){
     .nav-buttons li{
@@ -39,6 +43,8 @@ body{
     #header{
         background-color:#000c;
     }
+
+    
 }
 
 .nav-buttons li:after{

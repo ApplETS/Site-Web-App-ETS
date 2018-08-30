@@ -45,13 +45,15 @@ $('#fullpage').fullpage({
 
             $('#header').css('background-color', '')
 
+            $('.go-back-arrow').removeClass('show-flex')
             
         }
     },
-    afterLoad : function(anchorLink, index){
-        console.log(index)
+    afterLoad : function(anchorLink, index){ 
         if(index.index == 1){
+
             $.fn.fullpage.setAutoScrolling(true)
+            fullpage_api.setAllowScrolling(false)
 
             $('#section1').css("background-color", "rgb(206, 32, 28)")
             $('#projectHeart').css("display", "none")
@@ -59,18 +61,21 @@ $('#fullpage').fullpage({
             $('.project-slide').fadeToggle(500,"swing")
             $('.fp-controlArrow').fadeToggle(500,"swing")
 
-            $('#androidETSMOBILE').css('height', '45vh')
+            $('#androidETSMOBILE').css('height', '55vh')
             $('#play-store-link').css('width', '165px')
             $('#iosETSMOBILE').css('height', '35vh')
-    $('#app-store-link').css('width', '100px')
+            $('#app-store-link').css('width', '100px')
 
             $('#header').css('background-color', 'rgba(99, 10, 7, 0.73)')
 
             $('#app-layer-1').css('transform', '')
             $('#app-layer-3').css('transform', '')
 
+            $('.go-back-arrow').addClass('show-flex')
+
         }
         if(index.index == 0){
+            fullpage_api.setAllowScrolling(true)
             $('#projectHeart').toggleClass("heartbeat")
         
             setTimeout("separateAppLayers()",750)
@@ -79,8 +84,18 @@ $('#fullpage').fullpage({
         
         
     },
-    afterSlideLoad: function(section,origin,destination,direction){
-        console.log(section,origin,destination,direction)
+    onSlideLeave: function(section,origin,destination,direction){
+        switch(destination.index){
+            case 0:
+                document.getElementById("slideTitle").innerHTML = "ETS Mobile"
+                break;
+            case 1:
+                document.getElementById("slideTitle").innerHTML = "ETS Map"
+                break;
+            case 2:
+                document.getElementById("slideTitle").innerHTML = "API"
+                break;
+        }
     }}
 
     
@@ -88,9 +103,30 @@ $('#fullpage').fullpage({
     
 )
 
+document.addEventListener('touchstart', function(){
+    $('#arrow-prev').addClass("is-touch")
+    $('#arrow-next').addClass("is-touch")
+})
+
 fullpage_api.setAllowScrolling(true);
 
+$('.go-back-arrow').on('click', function(){
+    fullpage_api.moveSectionUp()
+})
 
+$('#arrow-prev').on('click', function(){
+    fullpage_api.moveSlideLeft()
+    $('#slideTitle').click()
+})
+
+$('#arrow-next').on('click', function(){
+    fullpage_api.moveSlideRight()
+})
+
+$('#desktopGithubLink').on('click',function(){
+    $('.modal-background').css("visibility", "visible")
+    $('.modal-background').css("background-color", "#0000004d")
+})
 
 $('#projectHeart').on('click', function(){
     $.fn.fullpage.moveSectionDown()
@@ -99,19 +135,25 @@ $('#projectHeart').on('click', function(){
 })
 
 document.querySelector( "#floatingToggle" ).addEventListener( "click", function() {
+    if($('.go-back-arrow').css("top") != ""){
+        $('.go-back-arrow').css("top", document.getElementsByClassName("go-back-arrow")[0].getBoundingClientRect().y)
+    }else{
+        $('.go-back-arrow').css("top", "")
+    }
+    
     document.querySelector("#nav-toggler").classList.toggle( "active" );
     $('#navToggleContent').slideToggle()
 });
 
 $('#android-etsmobile-link').on("mouseover",function(){
-    $('#androidETSMOBILE').css('height', '45vh')
+    $('#androidETSMOBILE').css('height', '55vh')
     $('#play-store-link').css('width', '165px')
     $('#iosETSMOBILE').css('height', '35vh')
     $('#app-store-link').css('width', '100px')
 })
 
 $('#android-etsmobile-link').on("click",function(){
-    $('#androidETSMOBILE').css('height', '45vh')
+    $('#androidETSMOBILE').css('height', '55vh')
     $('#play-store-link').css('width', '165px')
     $('#iosETSMOBILE').css('height', '35vh')
     $('#app-store-link').css('width', '100px')
@@ -119,14 +161,14 @@ $('#android-etsmobile-link').on("click",function(){
 
 
 $('#ios-etsmobile-link').on("mouseover",function(){
-    $('#iosETSMOBILE').css('height', '45vh')
+    $('#iosETSMOBILE').css('height', '55vh')
     $('#app-store-link').css('width', '165px')
     $('#androidETSMOBILE').css('height', '35vh')
     $('#play-store-link').css('width', '100px')
 })
 
 $('#ios-etsmobile-link').on("click",function(){
-    $('#iosETSMOBILE').css('height', '45vh')
+    $('#iosETSMOBILE').css('height', '55vh')
     $('#app-store-link').css('width', '165px')
     $('#androidETSMOBILE').css('height', '35vh')
     $('#play-store-link').css('width', '100px')
