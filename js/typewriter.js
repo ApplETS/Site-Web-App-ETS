@@ -3,7 +3,7 @@
  * @param {Int32Array} iterationSpeed The speed at which the text is typed
  * @param {Element} destinationElement The HTML element in which the inner text will be inserted
  * @param {String} inputText The text to type
- * @param {Bool} removeCursor Remove cursor at the end
+ * @param {Bool} cursorToRemove Remove cursor at the end
  * @param {function} callback (Optional) The function to execute once the typing is done
  */
 var Typewriter = function(iterationSpeed, destinationElement, inputText,cursorToRemove, callback){
