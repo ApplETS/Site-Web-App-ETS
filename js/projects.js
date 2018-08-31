@@ -1,38 +1,40 @@
+//First load actions
 $('#titleDiv').hide()
-$('#titleDiv').fadeToggle(1500,"swing")
-
-
+$('#titleDiv').fadeToggle(1500, "swing")
 $('.project-slide').hide()
 
+//Initialize fullpage with event functions
 $('#fullpage').fullpage({
-    autoScrolling:true,
-    scrollOverflow:true,
-    onLeave: function(index,nextIndex,direction){
-        if(index.index==0 && nextIndex.index == 1 && direction ==="down"){
+    setAllowScrolling:true,
+    autoScrolling: true,
+    scrollOverflow: true,
+    onLeave: function (index, nextIndex, direction) {
+        if (index.index == 0 && nextIndex.index == 1 && direction === "down") {
+            $('.scroll-down-zone').css("opacity", "0")
             $('#projectHeart').toggleClass("heartbeat")
             $('#projectHeart').css("width", "400vh")
             $('#projectHeart').css("margin-top", "100vh")
             $('.fp-controlArrow').hide()
 
-            
-            
+
+
         }
-        if(index.index==1 && nextIndex.index == 0 && direction ==="up"){
+        if (index.index == 1 && nextIndex.index == 0 && direction === "up") {
             $('#section1').css("background-color", "")
             $('#projectHeart').css("display", "")
 
             $('#projectHeart').css("width", "4vh")
             $('#projectHeart').css("margin-top", "3.5vh")
-            $('.project-slide').fadeToggle(500,"linear")
+            $('.project-slide').fadeToggle(500, "linear")
 
             $('#header').css('background-color', '')
 
             $('.go-back-arrow').removeClass('show-flex')
-            
+
         }
     },
-    afterLoad : function(anchorLink, index){ 
-        if(index.index == 1){
+    afterLoad: function (anchorLink, index) {
+        if (index.index == 1) {
 
             $.fn.fullpage.setAutoScrolling(true)
             fullpage_api.setAllowScrolling(false)
@@ -40,8 +42,8 @@ $('#fullpage').fullpage({
             $('#section1').css("background-color", "rgb(206, 32, 28)")
             $('#projectHeart').css("display", "none")
 
-            $('.project-slide').fadeToggle(500,"swing")
-            $('.fp-controlArrow').fadeToggle(500,"swing")
+            $('.project-slide').fadeToggle(500, "swing")
+            $('.fp-controlArrow').fadeToggle(500, "swing")
 
             $('#androidETSMOBILE').css('height', '55vh')
             $('#play-store-link').css('width', '165px')
@@ -56,18 +58,19 @@ $('#fullpage').fullpage({
             $('.go-back-arrow').addClass('show-flex')
 
         }
-        if(index.index == 0){
+        if (index.index == 0) {
             fullpage_api.setAllowScrolling(true)
             $('#projectHeart').toggleClass("heartbeat")
-        
-            setTimeout("separateAppLayers()",750)
+
+            setTimeout("separateAppLayers()", 750)
+            $('.scroll-down-zone').css("opacity", "1")
 
         }
-        
-        
+
+
     },
-    onSlideLeave: function(section,origin,destination,direction){
-        switch(destination.index){
+    onSlideLeave: function (section, origin, destination, direction) {
+        switch (destination.index) {
             case 0:
                 document.getElementById("slideTitle").innerHTML = "ÉTSMobile "
                 break;
@@ -78,44 +81,45 @@ $('#fullpage').fullpage({
                 document.getElementById("slideTitle").innerHTML = "API"
                 break;
         }
-    }}
+    }
+}
 
-    
 
-    
+
+
 )
 
-document.addEventListener('touchstart', function(){
+//In case the device is a touchscreen
+document.addEventListener('touchstart', function () {
     $('#arrow-prev').addClass("is-touch")
     $('#arrow-next').addClass("is-touch")
 })
 
-fullpage_api.setAllowScrolling(true);
-
-$('.go-back-arrow').on('click', function(){
+//Event listeners
+$('.go-back-arrow').on('click', function () {
     fullpage_api.moveSectionUp()
 })
 
-$('#arrow-prev').on('click', function(){
+$('#arrow-prev').on('click', function () {
     fullpage_api.moveSlideLeft()
     $('#slideTitle').click()
 })
 
-$('#arrow-next').on('click', function(){
+$('#arrow-next').on('click', function () {
     fullpage_api.moveSlideRight()
 })
 
-$('.modal-close').on('click',function(){
+$('.modal-close').on('click', function () {
     $('.modal-background').css("visibility", "hidden")
     $('.modal-background').css("background-color", "rgba(0,0,0,0)")
     $('.modal-platform').css("visibility", "hidden")
     $('.modal-platform').css("opacity", "0")
-    
-    
+
+
 })
 
 
-$('#desktopGithubLink').on('click',function(){
+$('#desktopGithubLinkETSMOBILE').on('click', function () {
     $('.modal-background').css("visibility", "visible")
     $('.modal-background').css("background-color", "#0000004d")
     $('.modal-platform').css("visibility", "visible")
@@ -123,7 +127,7 @@ $('#desktopGithubLink').on('click',function(){
 
 })
 
-$('#mobileGithubLink').on('click',function(){
+$('#mobileGithubLink').on('click', function () {
     $('.modal-background').css("visibility", "visible")
     $('.modal-background').css("background-color", "#0000004d")
     $('.modal-platform').css("visibility", "visible")
@@ -131,39 +135,39 @@ $('#mobileGithubLink').on('click',function(){
 
 })
 
-$('#projectHeart').on('click', function(){
+$('#projectHeart').on('click', function () {
     $.fn.fullpage.moveSectionDown()
     $('#projectHeart').css("width", "600vh")
 
 })
 
-document.querySelector( "#floatingToggle" ).addEventListener( "click", function() {
-    if($('.go-back-arrow').css("top") != ""){
+document.querySelector("#floatingToggle").addEventListener("click", function () {
+    if ($('.go-back-arrow').css("top") != "") {
         $('.go-back-arrow').css("top", document.getElementsByClassName("go-back-arrow")[0].getBoundingClientRect().y)
-    }else{
+    } else {
         $('.go-back-arrow').css("top", "")
     }
-    
-    document.querySelector("#nav-toggler").classList.toggle( "active" );
+
+    document.querySelector("#nav-toggler").classList.toggle("active");
     $('#navToggleContent').slideToggle()
-    if($('.fp-section.active')[0].id == "section0" ) {
+    if ($('.fp-section.active')[0].id == "section0") {
         $('#header').toggleClass("back-color")
-    }else{
+    } else {
         $('#header').toggleClass("back-color-red")
         $('#header').removeClass("back-color")
     }
 
-    
+
 });
 
-$('#android-etsmobile-link').on("mouseover",function(){
+$('#android-etsmobile-link').on("mouseover", function () {
     $('#androidETSMOBILE').css('height', '55vh')
     $('#play-store-link').css('width', '165px')
     $('#iosETSMOBILE').css('height', '35vh')
     $('#app-store-link').css('width', '100px')
 })
 
-$('#android-etsmobile-link').on("click",function(){
+$('#android-etsmobile-link').on("click", function () {
     $('#androidETSMOBILE').css('height', '55vh')
     $('#play-store-link').css('width', '165px')
     $('#iosETSMOBILE').css('height', '35vh')
@@ -171,23 +175,25 @@ $('#android-etsmobile-link').on("click",function(){
 })
 
 
-$('#ios-etsmobile-link').on("mouseover",function(){
+$('#ios-etsmobile-link').on("mouseover", function () {
     $('#iosETSMOBILE').css('height', '55vh')
     $('#app-store-link').css('width', '165px')
     $('#androidETSMOBILE').css('height', '35vh')
     $('#play-store-link').css('width', '100px')
 })
 
-$('#ios-etsmobile-link').on("click",function(){
+$('#ios-etsmobile-link').on("click", function () {
     $('#iosETSMOBILE').css('height', '55vh')
     $('#app-store-link').css('width', '165px')
     $('#androidETSMOBILE').css('height', '35vh')
     $('#play-store-link').css('width', '100px')
 })
 
-function separateAppLayers(){
-    $('#app-layer-1').css('transform', 'translate(75px,50px)')
-    $('#app-layer-3').css('transform', 'translate(-75px,-50px)')
+
+//Split the app layers
+function separateAppLayers() {
+    $('#app-layer-1').css('transform', 'translate(3vh,2vh)')
+    $('#app-layer-3').css('transform', 'translate(-3vh,-2vh)')
 }
 
 

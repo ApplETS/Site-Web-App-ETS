@@ -12,7 +12,7 @@
     width:100vw;
     text-align:center;
     flex-direction:column;
-    margin-top:30vh;
+    margin-top:25vh;
 }
 
 #projectHeart{
@@ -74,7 +74,7 @@
 }
 
 #header{
-    transition: background-color 1000ms;
+    transition: background-color 700ms;
 }
 
 .fp-controlArrow{
@@ -84,7 +84,7 @@
 .app-layer{
     position: absolute;
     transition:all 1500ms ease-out;
-    height:50vh;
+    height:40vh;
 }
 
 .bottom-menu{
@@ -151,6 +151,17 @@
     margin-bottom:60px;
 }
 
+.scroll-down-zone{
+    position: absolute;
+    bottom: 0;   
+    width: 100%;   
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition:opacity 500ms;
+}
 
 @media (max-width: 992px){
 
@@ -198,6 +209,7 @@
     .modal-image-container{
         width:100%;
     }
+    
     
 }
 
