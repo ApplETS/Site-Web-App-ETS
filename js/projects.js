@@ -4,24 +4,6 @@ $('#titleDiv').fadeToggle(1500,"swing")
 
 $('.project-slide').hide()
 
-/*$(function() {
-var iScrollPos = 0
-    $(window).scroll(function() {
-        var iCurScrollPos = $(this).scrollTop();
-            if (iCurScrollPos > iScrollPos) {
-                $('#projectHeart').css("width", "300vw")
-            } else {
-               if(iCurScrollPos === 0){
-                $('#projectHeart').css("width", "4vh")
-               }
-            }
-            iScrollPos = iCurScrollPos;
-        
-  
-      
-    });
-  });*/
-
 $('#fullpage').fullpage({
     autoScrolling:true,
     scrollOverflow:true,
@@ -66,7 +48,7 @@ $('#fullpage').fullpage({
             $('#iosETSMOBILE').css('height', '35vh')
             $('#app-store-link').css('width', '100px')
 
-            $('#header').css('background-color', 'rgba(99, 10, 7, 0.73)')
+            $('#header').css('background-color', 'rgba(60, 2, 2, 0.44)')
 
             $('#app-layer-1').css('transform', '')
             $('#app-layer-3').css('transform', '')
@@ -87,10 +69,10 @@ $('#fullpage').fullpage({
     onSlideLeave: function(section,origin,destination,direction){
         switch(destination.index){
             case 0:
-                document.getElementById("slideTitle").innerHTML = "ETS Mobile"
+                document.getElementById("slideTitle").innerHTML = "ÉTSMobile "
                 break;
             case 1:
-                document.getElementById("slideTitle").innerHTML = "ETS Map"
+                document.getElementById("slideTitle").innerHTML = "ÉTSMap "
                 break;
             case 2:
                 document.getElementById("slideTitle").innerHTML = "API"
@@ -123,9 +105,30 @@ $('#arrow-next').on('click', function(){
     fullpage_api.moveSlideRight()
 })
 
+$('.modal-close').on('click',function(){
+    $('.modal-background').css("visibility", "hidden")
+    $('.modal-background').css("background-color", "rgba(0,0,0,0)")
+    $('.modal-platform').css("visibility", "hidden")
+    $('.modal-platform').css("opacity", "0")
+    
+    
+})
+
+
 $('#desktopGithubLink').on('click',function(){
     $('.modal-background').css("visibility", "visible")
     $('.modal-background').css("background-color", "#0000004d")
+    $('.modal-platform').css("visibility", "visible")
+    $('.modal-platform').css("opacity", "1")
+
+})
+
+$('#mobileGithubLink').on('click',function(){
+    $('.modal-background').css("visibility", "visible")
+    $('.modal-background').css("background-color", "#0000004d")
+    $('.modal-platform').css("visibility", "visible")
+    $('.modal-platform').css("opacity", "1")
+
 })
 
 $('#projectHeart').on('click', function(){
@@ -143,6 +146,14 @@ document.querySelector( "#floatingToggle" ).addEventListener( "click", function(
     
     document.querySelector("#nav-toggler").classList.toggle( "active" );
     $('#navToggleContent').slideToggle()
+    if($('.fp-section.active')[0].id == "section0" ) {
+        $('#header').toggleClass("back-color")
+    }else{
+        $('#header').toggleClass("back-color-red")
+        $('#header').removeClass("back-color")
+    }
+
+    
 });
 
 $('#android-etsmobile-link').on("mouseover",function(){
@@ -175,8 +186,8 @@ $('#ios-etsmobile-link').on("click",function(){
 })
 
 function separateAppLayers(){
-    $('#app-layer-1').css('transform', 'translate(100px,50px)')
-    $('#app-layer-3').css('transform', 'translate(-100px,-50px)')
+    $('#app-layer-1').css('transform', 'translate(75px,50px)')
+    $('#app-layer-3').css('transform', 'translate(-75px,-50px)')
 }
 
 

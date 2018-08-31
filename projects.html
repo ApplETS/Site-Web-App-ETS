@@ -25,9 +25,11 @@
     <span id="navTitle" class="navbar-brand" style="font-size:5vh;cursor:default;color:white;">
       <img src="images/Logo_blanc_ApplETS.png" style="height:7vh;">
     </span>
+    
     <span class="go-back-arrow">
-        <i class="material-icons" style="font-size:50px;line-height:0.5;">keyboard_arrow_up</i>
-        <span style="font-size:2vh;">Retour</span>
+      
+      <i class="material-icons" style="font-size:50px;line-height:0.5;">keyboard_arrow_up</i>
+      <span style="font-size:2vh;">Retour</span>
     </span>
     <div id="floatingToggle"></div>
     <a id="nav-toggler">
@@ -58,13 +60,15 @@
   </nav>
   <div class="modal-background">
     <div class="modal-platform">
-      <span class="modal-close"><i class="material-icons close-modal-button">close</i></span>
+      <span class="modal-close"><i style="cursor:pointer;" class="material-icons close-modal-button">close</i></span>
       <div class="modal-items">
-          <span class="modal-image-container" style="border-right: 1px solid transparent;border-image: linear-gradient(to bottom, #fff0 0%,#fff9 50%, #fff0 100%);border-image-slice:1;"><img src="images/Apple-Apple.svg" alt="" style="height:30vh;"></span>
-          <span class="modal-image-container"><img src="images/android.svg" alt="" style="height:30vh;"></span>
+        <a href="https://github.com/ApplETS/ETSMobile-iOS" class="modal-image-container platform-logo" style="border-right: 1px solid transparent;border-image: linear-gradient(to bottom, #fff0 0%,#fff9 50%, #fff0 100%);border-image-slice:1;"><img
+            src="images/Apple-Apple.svg" alt="" style="height:30vh;cursor:pointer;"></a>
+        <a href="https://github.com/ApplETS/ETSMobile-Android2" class="modal-image-container platform-logo"><img src="images/android.svg"
+            alt="" style="cursor:pointer;height:30vh;"></a>
       </div>
-      
-      
+
+
     </div>
   </div>
   <div id="fullpage">
@@ -72,7 +76,7 @@
 
 
 
-    <div class="section">
+    <div class="section" id="section0">
       <div style="height:100%;">
         <div id="titleDiv">
           <div id="titleContainer">
@@ -100,21 +104,17 @@
 
     </div>
     <div class="section" data-anchor="section1" id="section1">
-      <div class="bottom-menu">
-        <i class="material-icons" id="arrow-prev" style="font-size:36px;cursor: pointer;width:20vw;">keyboard_arrow_left</i>
-        <span id="slideTitle">ETS Mobile</span>
-        <i class="material-icons" id="arrow-next" style="font-size:36px;cursor: pointer;display:flex;justify-content:end;width:20vw;">keyboard_arrow_right</i>
-      </div>
+
       <div class="slide project-slide">
-       
+
         <div class="container-fluid" style="flex-direction: column;">
-            
+
           <div class="row">
-              
+
             <div class="col-lg" style="display: flex;flex-direction: column;">
-              
+
               <span class="mobile-spacer-lg"></span>
-              
+
               <span style="font-size:6vh;margin-top:10px;">ÉTSMobile</span>
               <span class="gradient-border"></span>
               <span style="text-align:justify;">ÉTSMobile est l'application mobile officielle de l'École de technologie supérieure.
@@ -139,14 +139,14 @@
                 <br>
               </span>
               <span class="desktop-only">
-                  <span id="desktopGithubLink" class="github-container-desktop">
-                      <img src="images/GitHub_Logo_White.png" alt="" style="height:4vh;">
-                      <img src="images/GitHub-Mark-Light-64px.png" style="height:4vh;" alt="">
-                  </span>
-                  
-                  
+                <span id="desktopGithubLink" class="github-container-desktop">
+                  <img src="images/GitHub_Logo_White.png" alt="" style="height:4vh;">
+                  <img src="images/GitHub-Mark-Light-64px.png" style="height:4vh;" alt="">
+                </span>
+
+
               </span>
-            
+
             </div>
             <span class="mobile-spacer"></span>
             <div class="col-lg" style="height: 55vh;">
@@ -165,17 +165,17 @@
               </div>
             </div>
             <span class="mobile-spacer"></span>
-            
+
 
           </div>
           <div class="mobile-only footer">
             <img src="images/getitongoogleplay.png" alt="" style="height:5vh;margin-right:5vw;">
             <img src="images/ios-appstore-etsmobile.svg" alt="" style="height:5vh;margin-right:5vw;">
-            <span class="github-container-mobile">
-                <img src="images/GitHub_Logo_White.png" alt="" style="height:4vh;">
-                <img src="images/GitHub-Mark-Light-64px.png" style="height:4vh;" alt="">
+            <span id="mobileGithubLink" class="github-container-mobile">
+              <img src="images/GitHub_Logo_White.png" alt="" style="height:4vh;">
+              <img src="images/GitHub-Mark-Light-64px.png" style="height:4vh;" alt="">
             </span>
-            
+
           </div>
 
         </div>
@@ -190,6 +190,11 @@
       </div>
       <div class="slide project-slide">
         API
+      </div>
+      <div class="bottom-menu">
+        <i class="material-icons" id="arrow-prev" style="font-size:36px;cursor: pointer;width:20vw;">keyboard_arrow_left</i>
+        <span id="slideTitle">ÉTSMobile </span>
+        <i class="material-icons" id="arrow-next" style="font-size:36px;cursor: pointer;display:flex;justify-content:end;width:20vw;">keyboard_arrow_right</i>
       </div>
     </div>
 

@@ -40,11 +40,12 @@ body{
         margin-left:0;
         font-size:30px;
     }
-    #header{
-        background-color:#000c;
-    }
 
     
+}
+
+.back-color{
+    background-color: #00000080!important;
 }
 
 .nav-buttons li:after{

@@ -92,7 +92,7 @@
     height:60px;
     width:100vw;
     bottom:0;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(60, 2, 2, 0.44);
     z-index:1000;
     color:white;
     display:flex;
@@ -123,10 +123,10 @@
 }
 
 #arrow-prev:not(.is-touch):hover{
-    background-image:linear-gradient(to right, rgb(0,0,0), rgba(206, 32, 28,0));
+    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(206, 32, 28,0));
 }
 #arrow-next:not(.is-touch):hover{
-    background-image:linear-gradient(to left, rgb(0,0,0), rgba(206, 32, 28,0));
+    background-image:linear-gradient(to left, rgba(0,0,0,0.3), rgba(206, 32, 28,0));
 }
 
 
@@ -144,6 +144,7 @@
     transition:all 500ms;
 }
 
+
 .footer{
     width: 100%;
     height:10vh;
@@ -153,10 +154,7 @@
 
 @media (max-width: 992px){
 
-    .show-flex{
-        visibility: visible!important;
-        opacity: 1;
-    }
+    
 
     .project-slide div{
         align-items:start!important;
@@ -185,7 +183,31 @@
     .desktop-only{
         display: none!important;
     }
+
+    .modal-platform{
+        height: 80vh;
+        width: 70vw;
+    }
+
+    .modal-items{
+        flex-direction: column;
+        height:75vh!important;
+    }
+
+
+    .modal-image-container{
+        width:100%;
+    }
     
+}
+
+.back-color-red{
+    background-color:#8E1210!important;
+}
+
+.show-flex{
+    visibility: visible!important;
+    opacity: 1;
 }
 
 .modal-background{
@@ -194,7 +216,7 @@
     position: absolute;
     background-color: rgba(0,0,0,0);
     z-index: 1500;
-    transition: all 800ms;
+    transition: all 500ms;
     visibility: hidden;
     display:flex;
     justify-content: center;
@@ -203,9 +225,9 @@
 
 .modal-platform{
     background-color: #000000b3;
-    border-radius: 1vw;
-    height: 50vh;
-    width: 80vw;
+    transition:all 500ms;
+    border-radius: 2vh;
+    opacity: 0;
 
 }
 
@@ -224,11 +246,15 @@
 }
 
 .modal-image-container{
-    width: 50%;
+    
     display: flex;
     justify-content: center;
     height: 100%;
     align-items: center;
+}
+
+#slideTitle{
+    font-size:28px;
 }
 
 
@@ -243,8 +269,24 @@
     .mobile-only{
         display:none!important;
     }
+
+    .modal-platform{
+        height: 50vh;
+        width: 80vw;
+    }
+
+    .platform-logo:hover{
+        background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 40%);
+    }
+
+    .modal-image-container{
+        width: 50%;
+    }
     
 }
+
+
+
 
 .github-container-desktop{
     display: flex;
