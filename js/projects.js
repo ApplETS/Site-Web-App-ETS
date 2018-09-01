@@ -1,7 +1,17 @@
 //First load actions
+$('.back-image').css("opacity","1")
 $('#titleDiv').hide()
-$('#titleDiv').fadeToggle(1500, "swing")
 $('.project-slide').hide()
+
+setTimeout("showTitle()",1000)
+
+
+function showTitle(){
+    $('#titleDiv').fadeToggle(1000, "swing")
+    $('.scroll-down-zone').css("opacity","1")
+}
+
+
 
 //Initialize fullpage with event functions
 $('#fullpage').fullpage({
@@ -30,6 +40,8 @@ $('#fullpage').fullpage({
             $('#header').css('background-color', '')
 
             $('.go-back-arrow').removeClass('show-flex')
+            $('#titleDiv').show()
+            $('.scroll-down-zone').css("opacity","1")
 
         }
     },
@@ -57,13 +69,15 @@ $('#fullpage').fullpage({
 
             $('.go-back-arrow').addClass('show-flex')
 
+            $('#titleDiv').hide()
         }
         if (index.index == 0) {
             fullpage_api.setAllowScrolling(true)
             $('#projectHeart').toggleClass("heartbeat")
 
             setTimeout("separateAppLayers()", 750)
-            $('.scroll-down-zone').css("opacity", "1")
+
+            
 
         }
 
