@@ -306,6 +306,9 @@
         width: 50%;
     }
     
+    body{
+        font-size: 2vh;
+    }
 }
 
 
