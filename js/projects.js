@@ -15,6 +15,7 @@ function showTitle(){
 
 //Initialize fullpage with event functions
 $('#fullpage').fullpage({
+    licenseKey: "BCE59474-1B6147ED-BFCF5E52-0AE9FEC4",
     setAllowScrolling:true,
     autoScrolling: true,
     scrollOverflow: true,
