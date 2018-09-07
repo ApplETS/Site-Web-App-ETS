@@ -15,10 +15,18 @@ $('#navTitle').fadeToggle(1000, "swing",function(){
 var showNavButtons = function(){
     $('#nav-toggle').css('opacity', '1')
     $('#navButtons').show("slow","swing",function(){
-
+        $("#typewriter-container").toggleClass("typewriter")
+        new Typewriter(90,document.getElementById("typewriter-container"),"Pour ceux qui partagent la passion du développement mobile.",false, null)
     })
 }
 
-document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
-    this.classList.toggle( "active" );
+document.querySelector("#floatingToggle").addEventListener("click", function () {
+
+
+    document.querySelector("#nav-toggler").classList.toggle("active");
+    $('#navToggleContent').slideToggle()
+    $('#header').toggleClass("back-color")
+
+
 });
+
