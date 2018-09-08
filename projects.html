@@ -5,76 +5,247 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/fullpage.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <title>Projets</title>
 </head>
 
 <body>
-  <div id="fullpage">
-    <nav class = "navbar fixed-top navbar-expand-lg">
-        <span id="navTitle" class="navbar-brand" style = "font-size:5vh;cursor:default;color:white;">
-          <img src="images/Logo_blanc_ApplETS.png" style="height:8vh;">
-        </span>
-        <a id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span></span>
-        </a>
 
-      <div class="collapse navbar-collapse main-nav" id="navbarTogglerDemo03">
-          
-            <ul id="navButtons" class="nav-buttons navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a href="home.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="team.html">Équipe</a>
-                    </li>
-                    <li class="nav-item currentTab">
-                        <a href="projects.html">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="partners.html">Partenaires</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
+  <nav class="navbar fixed-top navbar-expand-lg" id="header">
+    <span id="navTitle" class="navbar-brand" style="font-size:5vh;cursor:default;color:white;">
+      <img src="images/Logo_blanc_ApplETS.png" style="height:7vh;">
+    </span>
+    <span class="go-back-arrow">
+
+      <i class="material-icons" style="font-size:50px;line-height:0.5;">keyboard_arrow_up</i>
+      <span style="font-size:2vh;">Retour</span>
+    </span>
+    <div id="floatingToggle"></div>
+    <a id="nav-toggler">
+      <span></span>
+    </a>
+    <div class="collapse navbar-collapse main-nav" id="navToggleContent">
+      <ul id="navButtons" class="nav-buttons navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a href="team.html">Équipe</a>
+        </li>
+        <li class="nav-item currentTab">
+          <a href="projects.html">Projets</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="partners.html">Partenaires</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="modal-background">
+    <div class="modal-platform">
+      <span class="modal-close"><i style="cursor:pointer;" class="material-icons close-modal-button">close</i></span>
+      <div class="modal-items">
+        <a href="https://github.com/ApplETS/Notre-Dame-iOS" class="modal-image-container platform-logo" style="border-right: 1px solid transparent;border-image: linear-gradient(to bottom, #fff0 0%,#fff9 50%, #fff0 100%);border-image-slice:1;"><img
+            src="images/Apple-Apple.svg" alt="" style="height:30vh;cursor:pointer;"></a>
+        <a href="https://github.com/ApplETS/Notre-Dame-Android" class="modal-image-container platform-logo"><img src="images/android.svg"
+            alt="" style="cursor:pointer;height:30vh;"></a>
       </div>
-
-      
-      
-
-    </nav>
-
-
-    <div class="section single-page">
-
     </div>
   </div>
+  <div class="back-image"></div>
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <div style="height:100%;">
+        <div id="titleDiv">
+          <div id="titleContainer">
+            <span style="margin-right:2vh">Des projets faits par </span>
+            <img src="images/heart.png" alt="&hearts;" id="projectHeart">
+            <span style="margin-left:3.5vh;">pour la communauté étudiante.</span>
+          </div>
+          <span style="display:flex;justify-content:center;margin-top:75px;">
+            <img class="app-layer" src="images/applayer-3.png" alt="" id="app-layer-3">
+            <img class="app-layer" src="images/applayer-2.png" alt="" id="app-layer-2">
+            <img class="app-layer" src="images/applayer-1.png" alt="" id="app-layer-1">
+          </span>
+          <div>
+          </div>
+        </div>
+        <span class="scroll-down-zone">
+          <span>Défilez vers le bas pour voir les projets</span>
+          <img id="scroll-down" class="desktop-only" src="images/scrolldown.svg" style="height:8vh;margin-top:5px;" alt="">
+          <img id="swipe-down" class="mobile-only" src="images/swipedown.svg" style="height:8vh;margin-top:5px;" alt="">
+        </span>
+      </div>
+    </div>
 
-
-
-
+    <div class="section" data-anchor="section1" id="section1">
+      <div class="slide project-slide">
+        <div class="container-fluid" style="flex-direction: column;">
+          <div class="row">
+            <div class="col-lg" style="display: flex;flex-direction: column;">
+              <span class="mobile-spacer-lg"></span>
+              <span style="font-size:6vh;margin-top:10px;display:flex;align-items:center;flex-wrap:wrap;">ÉTSMobile <span style="border-radius:1rem;font-size:40%;margin-left:15px;"
+                  class="badge badge-dark">En reconstruction</span> </span>
+              <span class="gradient-border"></span>
+              <span style="text-align:flex-start;">ÉTSMobile est l'application mobile officielle de l'École de technologie supérieure.
+                Elle a été développée par le club scientifique ApplÉTS, spécialisé en ingénierie mobile, et peut être installée
+                sur les plateformes iOS et Android. L'application permet aux étudiants de bénéficier d'un outil mobile pour
+                accéder à leurs informations académiques telles que les résultats d'examen, l'emploi du temps, les documents
+                de cours au format électronique, ou encore l'annuaire universitaire.</span>
+              <span class="gradient-border"></span>
+              <span style="width:100%;">
+                Les fonctionnalités présentement offertes:
+                <br>
+                <br> - Résultats d'évaluations
+                <br> - Horaire des cours
+                <br> - Nouvelles provenant des divers médias d'information de l'ÉTS
+                <br> - Téléchargement des documents de cours au format électronique via Moodle
+                <br> - Bande passante restante pour les résidences ÉTS
+                <br> - Bottin des employés de l'ÉTS
+                <br> - Consultation du solde courant
+                <br> - Accès au catalogue de la bibliothèque
+                <br> - Procédures d'urgence
+                <br> - Commentaires
+                <br>
+              </span>
+              <span class="desktop-only">
+                <span id="desktopGithubLinkETSMOBILE" class="github-container-desktop">
+                  <img src="images/GitHub_Logo_White.png" alt="" style="height:4vh;">
+                  <img src="images/GitHub-Mark-Light-64px.png" style="height:4vh;" alt="">
+                </span>
+              </span>
+            </div>
+            <span class="mobile-spacer"></span>
+            <div class="col-lg" style="height: 55vh;">
+              <div id="android-etsmobile-link" class="mockup-zone">
+                <img src="images/ets-mobile-android.png" alt="" id="androidETSMOBILE" class="device-mockup">
+                <a href="https://play.google.com/store/apps/details?id=ca.etsmtl.applets.etsmobile&hl=fr_CA" class="store-link-a">
+                  <img src="images/getitongoogleplay.png" alt="" class="store-link" id="play-store-link">
+                </a>
+              </div>
+              <div id="ios-etsmobile-link" class="mockup-zone">
+                <img src="images/ets-mobile-ios.png" alt="" id="iosETSMOBILE" class="device-mockup">
+                <a href="https://itunes.apple.com/ca/app/%C3%A9tsmobile/id557463461?l=fr&mt=8" class="store-link-a">
+                  <img src="images/ios-appstore-etsmobile.svg" id="app-store-link" class="store-link" alt="">
+                </a>
+              </div>
+            </div>
+            <span class="mobile-spacer"></span>
+          </div>
+          <div class="mobile-only footer">
+            <a href="https://play.google.com/store/apps/details?id=ca.etsmtl.applets.etsmobile">
+              <img src="images/getitongoogleplay.png" alt="" style="height:4.5vh;margin-right:5vw;">
+            </a>
+            <a href="https://itunes.apple.com/ca/app/%C3%A9tsmobile/id557463461?l=fr&mt=8">
+              <img src="images/ios-appstore-etsmobile.svg" alt="" style="height:4.5vh;margin-right:5vw;">
+            </a>
+            <span id="mobileGithubLink" class="github-container-mobile">
+              <img src="images/GitHub_Logo_White.png" alt="" style="height:3.5vh;">
+              <img src="images/GitHub-Mark-Light-64px.png" style="height:3.5vh;" alt="">
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="slide project-slide">
+        <div class="container-fluid" style="flex-direction: column;">
+          <div class="row">
+            <div class="col-lg" style="display: flex;flex-direction: column;">
+              <span class="mobile-spacer-lg"></span>
+              <span style="font-size:6vh;margin-top:10px;">ÉTSMap</span>
+              <span class="gradient-border"></span>
+              <span style="text-align:flex-start;">ÉTSmap permet aux visiteurs de l’École de technologie supérieure de trouver
+                aisément un local à partir de leur téléphone intelligent. Pour cela, l’application leur demande d’entrer
+                un local de départ et un local de destination à l’intérieur de l’ÉTS, puis propose un itinéraire tracé sur
+                une carte qui les mèneront vers la destination souhaitée. Il est également possible de restreindre l’itinéraire
+                uniquement aux escaliers ou aux ascenseurs.</span>
+              <span class="gradient-border"></span>
+            </div>
+            <span class="mobile-spacer"></span>
+            <div class="col-lg" style="height: 55vh;">
+              <div id="android-etsmap-link" class="mockup-zone">
+                <img src="images/etsmap.png" alt="" id="androidETSMOBILE" class="device-mockup" style="height:55vh;">
+                <a href="https://play.google.com/store/apps/details?id=ca.applets.etsmap&hl=fr_CA" class="store-link-a">
+                  <img src="images/getitongoogleplay.png" alt="" class="store-link" style="width:165px;">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-only footer">
+            <a style="margin-top:5vh;" href="https://play.google.com/store/apps/details?id=ca.applets.etsmap&hl=fr_CA">
+              <img src="images/getitongoogleplay.png" alt="" style="height:5vh;margin-right:5vw;">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="slide project-slide">
+        <div class="container-fluid" style="flex-direction: column;">
+          <div class="row">
+            <div class="col-lg" style="display: flex;flex-direction: column;">
+              <span class="mobile-spacer-lg"></span>
+              <span style="font-size:6vh;margin-top:10px;">API</span>
+              <span class="gradient-border"></span>
+              <span style="text-align:flex-start;">Il s'agit de la composante back-end que nous utilisons pour apporter de nouvelles
+                fonctionnalités à nos clients mobiles. Pour développer projet, nous avons misé sur un framework d'API Java
+                moderne et simple.</span>
+              <span class="gradient-border"></span>
+              <span class="desktop-only">
+                <a href="https://github.com/ApplETS/applets-java-api" id="desktopGithubLinkAPI" class="github-container-desktop">
+                  <img src="images/GitHub_Logo_White.png" alt="" style="height:4vh;">
+                  <img src="images/GitHub-Mark-Light-64px.png" style="height:4vh;" alt="">
+                </a>
+              </span>
+            </div>
+            <span class="mobile-spacer"></span>
+            <div class="col-lg" style="height: 55vh;">
+              <div id="api-zone" class="mockup-zone">
+                <img src="images/api.png" alt="" id="androidETSMOBILE" class="device-mockup" style="height:55vh;">
+              </div>
+            </div>
+          </div>
+          <div class="mobile-only footer">
+            <a id="mobileGithubLink" href="https://github.com/ApplETS/applets-java-api" class="github-container-mobile">
+              <img src="images/GitHub_Logo_White.png" alt="" style="height:4vh;">
+              <img src="images/GitHub-Mark-Light-64px.png" style="height:4vh;" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-menu">
+        <i class="material-icons" id="arrow-prev" style="font-size:36px;cursor: pointer;width:20vw;">keyboard_arrow_left</i>
+        <span id="slideTitle">ÉTSMobile </span>
+        <i class="material-icons" id="arrow-next" style="font-size:36px;cursor: pointer;display:flex;justify-content:flex-end;width:20vw;">keyboard_arrow_right</i>
+      </div>
+    </div>
+  </div>
+  </div>
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <script src="js/fullpage.extensions.min.js" type="text/javascript"></script>
   <script src="js/jquery.fullpage.extensions.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-  <script src="js/fullpage.js" type="text/javascript"></script>
+  <script src="js/fullpage.min.js" type="text/javascript"></script>
   <script src="js/typewriter.js"></script>
+  <script src="js/projects.js"></script>
 
-  
-  
-  
 </body>
 
 </html>
