@@ -3,10 +3,6 @@
 
 }
 
-body{
-    background-color:black;
-}
-
 
 #titleDiv{
     position:fixed;
@@ -155,7 +151,6 @@ body{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    opacity: 0;
     transition: opacity 1500ms;
 }
 

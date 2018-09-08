@@ -1,5 +1,4 @@
 //First load actions
-$('.back-image').css("opacity","1")
 $('#titleDiv').hide()
 $('.project-slide').hide()
 
