@@ -1,0 +1,10 @@
+.info-bubble{
+    max-width:1300px;
+    padding:2vh;
+    font-size:2.5vh;
+    border-radius: 20px;
+    background-color: #000000ad;
+    transition:1s opacity;
+    margin:20px;
+    opacity: 0;
+}
