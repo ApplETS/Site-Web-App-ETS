@@ -66,16 +66,7 @@ body{
     transition: all 400ms;
 }
 
-.gradient-border{
-    width:100%;
-    display:block;
-    border:none;
-    height:1px;
-    background:black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(255,255,255, 0.1)));
-    margin-top:10px;
-    margin-bottom:10px;
-}
+
 
 #header{
     transition: background-color 700ms;
