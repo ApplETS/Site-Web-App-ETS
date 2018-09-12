@@ -165,5 +165,9 @@ body{
     margin-bottom:10px;
 }
 
+.navbar{
+    transition: background-color 1s;
+}
+
 
 

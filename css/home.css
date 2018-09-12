@@ -1,10 +1,10 @@
 .info-bubble{
     max-width:1300px;
     padding:2vh;
-    font-size:2.5vh;
+    font-size:2vh;
     border-radius: 20px;
     background-color: #000000ad;
-    transition:1s opacity;
+    transition:1s opacity cubic-bezier(.22,.61,.36,1);
     margin:20px;
     opacity: 0;
 }
@@ -14,5 +14,41 @@
     justify-content: center;
     flex-direction: column;
     align-items:center;
-    height:220vh;
+    height:175vh;
+}
+
+@media (max-width: 992px){
+    .info-bubble{
+        font-size:2vh;
+    }
+    .bubble-title{
+        font-size:3vh;
+    }
+}
+
+@media (min-width: 992px){
+    .bubble-title{
+        font-size:4vh;
+    }
+}
+
+.link-button{
+    margin: 10px;
+    padding: 10px;
+    transition:200ms all;
+    cursor:pointer;
+    font-size:2vh;
+}
+
+.link-button:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.link-button:hover::after{
+    width:100%;
 }
