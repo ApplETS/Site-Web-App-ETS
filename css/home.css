@@ -2,7 +2,7 @@
     max-width:1300px;
     padding:2vh;
     font-size:2vh;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #000000ad;
     transition:1s opacity cubic-bezier(.22,.61,.36,1);
     margin:20px;
