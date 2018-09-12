@@ -2,7 +2,7 @@ $('#navButtons').hide()
 $('#navTitle').toggle()
 $('#nav-toggle').css('opacity', '0')
 $('#parallax-content').parallax({
-    imageSrc: '../images/test.jpg',
+    imageSrc: 'images/test.jpg',
     speed:0.1,
     positionY:"top"
 });
