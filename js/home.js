@@ -1,5 +1,6 @@
 $('#navButtons').hide()
 $('#navTitle').toggle()
+$('#nav-toggler').hide()
 $('#nav-toggle').css('opacity', '0')
 $('#parallax-content').parallax({
     imageSrc: 'images/test.jpg',
@@ -21,7 +22,9 @@ $('#navTitle').fadeToggle(1000, "swing", function () {
 
 var showNavButtons = function () {
     $('#nav-toggle').css('opacity', '1')
+    $('#nav-toggler').show("slow")
     $('#navButtons').show("slow", "swing", function () {
+        $('#link-buttons-container').css('opacity','1')
         $("#typewriter-container").toggleClass("typewriter")
         $('.navbar').css("background-color", "#00000080")
         new Typewriter(90, document.getElementById("typewriter-container"), "Pour ceux qui partagent la passion du développement mobile.", false, null)
