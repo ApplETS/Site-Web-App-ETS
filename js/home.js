@@ -1,6 +1,12 @@
 $('#navButtons').hide()
 $('#navTitle').toggle()
 $('#nav-toggle').css('opacity', '0')
+$('#parallax-content').parallax({
+    imageSrc: '../images/test.jpg',
+    speed:0.1,
+    positionY:"top"
+});
+
 
 
 var y = Number(screen.height / 2) - Number($('#brandImage').position().top) - Number($('#brandImage').height())
@@ -35,17 +41,17 @@ window.onscroll = function () {
 
 
 
-    if (window.scrollY < 475) {
+    if (window.scrollY < 600) {
         $('#club-description').css('opacity', '0')
         $('#motto').css('opacity', '1')
     } else {
-        if (window.scrollY < 800) {
+        if (window.scrollY < 1400) {
             $('#club-description').css('opacity', '1')
             $('#motto').css('opacity', '0')
             $('#background-image').css('opacity', '1')
             $('#club-mission').css('opacity', '0')
         } else {
-            if (window.scrollY < 1500) {
+            if (window.scrollY < 2300) {
                 $('#club-description').css('opacity', '0')
                 $('#club-mission').css('opacity', '1')
                 $('#club-objectives').css('opacity', '0')
