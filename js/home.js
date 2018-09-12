@@ -1,6 +1,6 @@
 $('#navButtons').hide()
 $('#navTitle').toggle()
-$('#nav-toggler').hide()
+$('#nav-toggler').css('opacity','0')
 $('#nav-toggle').css('opacity', '0')
 $('#parallax-content').parallax({
     imageSrc: 'images/test.jpg',
@@ -22,7 +22,7 @@ $('#navTitle').fadeToggle(1000, "swing", function () {
 
 var showNavButtons = function () {
     $('#nav-toggle').css('opacity', '1')
-    $('#nav-toggler').show("slow")
+    $('#nav-toggler').css('opacity','1')
     $('#navButtons').show("slow", "swing", function () {
         $('#link-buttons-container').css('opacity','1')
         $("#typewriter-container").toggleClass("typewriter")
@@ -42,27 +42,32 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 });
 
 window.onscroll = function () {
-    if (window.scrollY < 600) {
-        $('#club-description').css('opacity', '0')
-        $('#motto').css('opacity', '1')
-    } else {
-        if (window.scrollY < 1400) {
-            $('#club-description').css('opacity', '1')
-            $('#motto').css('opacity', '0')
-            $('#background-image').css('opacity', '1')
-            $('#club-mission').css('opacity', '0')
-        } else {
-            if (window.scrollY < 2100) {
-                $('#club-description').css('opacity', '0')
-                $('#club-mission').css('opacity', '1')
-                $('#club-objectives').css('opacity', '0')
-            } else {
-                $('#club-mission').css('opacity', '0')
-                $('#club-objectives').css('opacity', '1')
-            }
 
-        }
+    if(document.getElementById("club-description").getBoundingClientRect().y + document.getElementById("club-description").getBoundingClientRect().height/2 < 3 * window.innerHeight / 4){
+        $('#club-description').css("opacity","1")
+    }else{
+        $('#club-description').css("opacity","0")
+    }
+    if(document.getElementById("club-description").getBoundingClientRect().y + document.getElementById("club-description").getBoundingClientRect().height/2 < 1 * window.innerHeight / 4){
+        $('#club-description').css("opacity","0")
+    }
 
+    if(document.getElementById("club-mission").getBoundingClientRect().y + document.getElementById("club-mission").getBoundingClientRect().height/2 < 3 * window.innerHeight / 4){
+        $('#club-mission').css("opacity","1")
+    }else{
+        $('#club-mission').css("opacity","0")
+    }
+    if(document.getElementById("club-mission").getBoundingClientRect().y + document.getElementById("club-mission").getBoundingClientRect().height/2 < 1 * window.innerHeight / 4){
+        $('#club-mission').css("opacity","0")
+    }
+
+    if(document.getElementById("club-objectives").getBoundingClientRect().y < 3 * window.innerHeight / 4){
+        $('#club-objectives').css("opacity","1")
+    }else{
+        $('#club-objectives').css("opacity","0")
+    }
+    if(document.getElementById("club-objectives").getBoundingClientRect().y < 1 * window.innerHeight / 4){
+        $('#club-objectives').css("opacity","0")
     }
 }
 

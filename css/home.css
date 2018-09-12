@@ -19,10 +19,13 @@
 
 @media (max-width: 992px){
     .info-bubble{
-        font-size:2vh;
+        font-size:1.9vh;
     }
     .bubble-title{
         font-size:3vh;
+    }
+    .description-content{
+        height:220vh;
     }
 }
 
