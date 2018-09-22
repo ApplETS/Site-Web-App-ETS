@@ -42,7 +42,11 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 });
 
 window.onscroll = function () {
-
+    if(this.document.getElementById("blog").getBoundingClientRect().y < 0){
+        $('.navbar').css('background-color','rgba(0, 0, 0, 0.9)')
+    }else{
+        $('.navbar').css('background-color','rgba(0, 0, 0, 0.5)')
+    }
     if(document.getElementById("club-description").getBoundingClientRect().y + document.getElementById("club-description").getBoundingClientRect().height/2 < 3 * window.innerHeight / 4){
         $('#club-description').css("opacity","1")
     }else{
