@@ -76,3 +76,9 @@ $('#go-to-description-button').on('click',function(){
         scrollTop: $("#parallax-content").offset().top
     }, 1000);
 })
+
+$('#go-to-blog-button').on('click',function(){
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#blog").offset().top
+    }, 1000);
+})
