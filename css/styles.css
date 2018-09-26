@@ -111,13 +111,11 @@ body{
 
 
 .brandImage{
-    height:20vh;
+    height:7vh;
 }
 
 .brandImageTop{
     transition:all 1s;
-    height:7vh;
-    transform : none!important;
 }
 
 #floatingToggle{
