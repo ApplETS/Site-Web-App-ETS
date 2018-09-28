@@ -85,3 +85,9 @@ $('#go-to-blog-button').on('click',function(){
         scrollTop: $("#blog").offset().top
     }, 1000);
 })
+
+document.querySelector("#floatingToggle").addEventListener("click", function () {
+    $('.navbar').toggleClass("nav-dark")
+
+
+});
