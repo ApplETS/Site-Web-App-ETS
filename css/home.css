@@ -2,6 +2,10 @@ body{
     overflow-x:hidden;
 }
 
+.nav-buttons{
+    display:none;
+}
+
 .info-bubble{
     max-width:1300px;
     padding:2vh;

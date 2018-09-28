@@ -1,4 +1,4 @@
-$('#navButtons').hide()
+
 $('#navTitle').toggle()
 $('#nav-toggler').css('opacity','0')
 $('#nav-toggle').css('opacity', '0')
@@ -87,7 +87,7 @@ $('#go-to-blog-button').on('click',function(){
 })
 
 document.querySelector("#floatingToggle").addEventListener("click", function () {
-    $('.navbar').toggleClass("nav-dark")
+    $('.navbar').toggleClass()
 
 
 });
