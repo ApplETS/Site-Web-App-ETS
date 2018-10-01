@@ -14,3 +14,11 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 
 
 });
+
+window.onscroll = function(){
+    if(this.document.getElementById("main-content").getBoundingClientRect().y < 0){
+        $('#navbar').addClass("back-color")
+    }else{
+        $('#navbar').removeClass("back-color")
+    }
+}
