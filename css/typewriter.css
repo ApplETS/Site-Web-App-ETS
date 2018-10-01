@@ -1,0 +1,10 @@
+.typewriter:after{
+    opacity: 0.5;
+    content: "_";
+    animation: blink 300ms linear infinite alternate;
+    -webkit-animation: blink 300ms linear infinite alternate;
+}
+
+.typewriter:before{
+    content:"~$ "
+}

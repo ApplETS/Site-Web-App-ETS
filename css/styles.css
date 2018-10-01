@@ -108,21 +108,14 @@ body{
     transform: rotate(-45deg);
   }
 
-.typewriter:after{
-    opacity: 0.5;
-    content: "_";
-    animation: blink 300ms linear infinite alternate;
-    -webkit-animation: blink 300ms linear infinite alternate;
-}
+
 
 .brandImage{
-    height:20vh;
+    height:7vh;
 }
 
 .brandImageTop{
     transition:all 1s;
-    height:7vh;
-    transform : none!important;
 }
 
 #floatingToggle{
@@ -158,6 +151,21 @@ body{
     100%{opacity: 1;}
 }
 
+
+.gradient-border{
+    width:100%;
+    display:block;
+    border:none;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(255,255,255, 0.1)));
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.navbar{
+    transition: background-color 1s;
+}
 
 
 
