@@ -10,7 +10,7 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 
     document.querySelector("#nav-toggler").classList.toggle("active");
     $('#navToggleContent').slideToggle()
-    $('#navbar').toggleClass("back-color")
+    $('#navbar').toggleClass("back-color-black")
 
 
 });

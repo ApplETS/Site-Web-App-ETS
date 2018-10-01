@@ -45,7 +45,11 @@ body{
 }
 
 .back-color{
-    background-color: #000000d3!important;
+    background-color: #000000ec!important;
+}
+
+.back-color-black{
+    background-color:black;
 }
 
 .nav-buttons li:after{
