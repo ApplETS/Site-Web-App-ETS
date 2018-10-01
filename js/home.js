@@ -35,7 +35,7 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 
     document.querySelector("#nav-toggler").classList.toggle("active");
     $('#navToggleContent').slideToggle()
-    $('#header').toggleClass("back-color")
+    $('#navbar').toggleClass("back-color")
 
 
 });
@@ -86,8 +86,3 @@ $('#go-to-blog-button').on('click',function(){
     }, 1000);
 })
 
-document.querySelector("#floatingToggle").addEventListener("click", function () {
-    $('.navbar').toggleClass()
-
-
-});

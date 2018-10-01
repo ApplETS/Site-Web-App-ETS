@@ -2,9 +2,6 @@ body{
     overflow-x:hidden;
 }
 
-.nav-buttons{
-    display:none;
-}
 
 .info-bubble{
     max-width:1300px;
@@ -93,21 +90,6 @@ body{
     margin-bottom:80px;
 }
 
-.title{
-    text-align:center;
-}
-
-.main-title{
-    font-size:2.2rem;
-}
-
-.sub-title{
-    font-size:1.1rem;
-}
-
-.sub-sub-title{
-    font-size:0.9rem;
-}
 
 .news-content{
     display:flex;
@@ -147,25 +129,7 @@ body{
     color:#2C2E2F;
 }
 
-.logo-image{
-    margin-right:10px;
-    height:1.5rem;
-    border-radius:3px;
-}
 
-.x-spacer{
-    height:1px;
-    width:20px;
-}
 
-.footer{
-    width:100%;
-    background-color:#565656;
-    padding:15px;
-}
 
-.footer-content{
-    display:flex;
-    justify-content: space-between;
-    padding:0;
-}
+
