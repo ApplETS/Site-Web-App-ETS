@@ -167,6 +167,17 @@ body{
     margin-bottom:10px;
 }
 
+.gradient-border-dark{
+    width:100%;
+    display:block;
+    border:none;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(rgba(0,0,0, 0.05)));
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 .navbar{
     transition: background-color 1s;
 }
@@ -216,4 +227,24 @@ body{
     font-size:0.9rem;
 }
 
+.intro-title{
+    font-size:5vh;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.main-container{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    margin-top:20vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
 

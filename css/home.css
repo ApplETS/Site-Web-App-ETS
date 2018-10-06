@@ -13,6 +13,7 @@ body{
     margin:20px;
     opacity: 0;
     text-align:justify;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 
 .description-content{
@@ -89,6 +90,7 @@ body{
     border-radius: 5px;
     background-color: #0003;
     margin-bottom:80px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 
 
