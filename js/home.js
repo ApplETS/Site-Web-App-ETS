@@ -1,9 +1,10 @@
 
 $('#navTitle').toggle()
+$('#navButtons').hide()
 $('#nav-toggler').css('opacity','0')
 $('#nav-toggle').css('opacity', '0')
 $('#parallax-content').parallax({
-    imageSrc: 'images/test.jpg',
+    imageSrc: 'images/droidcon.jpg',
     speed:0.1,
     positionY:"top"
 });
@@ -35,7 +36,7 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 
     document.querySelector("#nav-toggler").classList.toggle("active");
     $('#navToggleContent').slideToggle()
-    $('#header').toggleClass("back-color")
+    $('#navbar').toggleClass("back-color")
 
 
 });
@@ -86,8 +87,3 @@ $('#go-to-blog-button').on('click',function(){
     }, 1000);
 })
 
-document.querySelector("#floatingToggle").addEventListener("click", function () {
-    $('.navbar').toggleClass()
-
-
-});

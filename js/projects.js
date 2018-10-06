@@ -2,7 +2,7 @@
 $('#titleDiv').hide()
 $('.project-slide').hide()
 
-setTimeout("showTitle()",1000)
+showTitle()
 
 
 function showTitle(){
