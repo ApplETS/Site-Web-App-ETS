@@ -10,16 +10,15 @@
     height:15rem;
     width:15rem;
     background-position: center;
-    background-size:110%;
-    transition: background-size 500ms ease-out;
-    -moz-transition: background-size 500ms ease-out;
-    -ms-transition: background-size 500ms ease-out;
-    -o-transition: background-size 500ms ease-out;
-    -webkit-transition: background-size 500ms ease-out;
+    background-size:105%;
+    transition: all 500ms;
+    
 }
+
 
 .profile-thumbnail:hover{
     background-size:125%;
+
 }
 
 .mobile-handler{

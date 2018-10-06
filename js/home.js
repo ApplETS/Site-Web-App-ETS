@@ -1,5 +1,6 @@
 
 $('#navTitle').toggle()
+$('#navButtons').hide()
 $('#nav-toggler').css('opacity','0')
 $('#nav-toggle').css('opacity', '0')
 $('#parallax-content').parallax({

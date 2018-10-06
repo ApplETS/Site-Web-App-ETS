@@ -24,3 +24,4 @@ window.onscroll = function(){
         $('#navbar').removeClass("back-color")
     }
 }
+

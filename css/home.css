@@ -12,6 +12,7 @@ body{
     transition:1s opacity cubic-bezier(.22,.61,.36,1);
     margin:20px;
     opacity: 0;
+    text-align:justify;
 }
 
 .description-content{
@@ -104,6 +105,7 @@ body{
 .news-text-container{
     display: flex;
     align-items:center;
+    text-align:justify;
 }
 
 .news-link-container{
