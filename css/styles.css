@@ -26,23 +26,7 @@ body{
     
 }
 
-@media (min-width:992px){
-    .navbar{
-        justify-content: center;
-    }
 
-    #nav-toggler{
-        display:none;
-    }
-}
-@media (max-width:992px){
-    .nav-buttons li{
-        margin-left:0;
-        font-size:30px;
-    }
-
-    
-}
 
 .back-color{
     background-color: #000000b7!important;
@@ -289,5 +273,34 @@ a:hover{
     justify-content: center;
     height: 100%;
     align-items: center;
+}
+
+@media (min-width:992px){
+    .navbar{
+        justify-content: center;
+    }
+
+    #nav-toggler{
+        display:none;
+    }
+}
+@media (max-width:992px){
+    .nav-buttons li{
+        margin-left:0;
+        font-size:30px;
+    }
+
+    .main-title{
+        font-size:1.3rem;
+    }
+    .footer{
+        font-size:0.9rem;
+    }
+    .logo-image{
+        height:1.5rem;
+    }
+
+
+    
 }
 
