@@ -28,41 +28,14 @@ body{
     background-color: rgba(0, 0, 0, 0.9)!important;
 }
 
-@media (max-width: 992px){
-    .info-bubble{
-        font-size:1.9vh;
-    }
-    .bubble-title{
-        font-size:3vh;
-    }
-    .description-content{
-        height:220vh;
-    }
-    .news-content{
-        margin-top:40px;
-        margin-bottom:40px;
-    }
-    .news-text-container{
-        margin-bottom:20px;
-    }
-}
 
-@media (min-width: 992px){
-    .bubble-title{
-        font-size:4vh;
-    }
-
-    .news-content{
-        margin:40px;
-    }
-}
 
 .link-button{
     margin: 10px;
     padding: 10px;
     transition:200ms all;
     cursor:pointer;
-    font-size:2vh;
+    font-size:3vh;
 }
 
 .link-button:after{
@@ -131,6 +104,40 @@ body{
 .news-button-container:hover{
     background-color:white;
     color:#2C2E2F;
+}
+@media (max-width: 992px){
+    .info-bubble{
+        font-size:1.9vh;
+    }
+    .bubble-title{
+        font-size:3vh;
+    }
+    .description-content{
+        height:220vh;
+    }
+    .news-content{
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+    .news-text-container{
+        margin-bottom:20px;
+    }
+    .link-button{
+        font-size:1.5rem;
+    }
+    .news-button-container{
+        font-size:0.8rem;
+    }
+}
+
+@media (min-width: 992px){
+    .bubble-title{
+        font-size:4vh;
+    }
+
+    .news-content{
+        margin:40px;
+    }
 }
 
 
