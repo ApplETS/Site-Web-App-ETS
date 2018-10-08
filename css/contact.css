@@ -73,7 +73,7 @@
 }
 
 .send-button{
-    font-size:3rem;
+    font-size:2rem;
     border-radius:5px;
     background-color:rgba(0, 0, 0, 0.089);
     border:none;
@@ -85,6 +85,26 @@
 
 .send-button:hover{
     background-color:rgba(0, 0, 0, 0.404);
+}
+
+@media (max-width: 992px){
+    .options-container{
+        flex-direction:column;
+    }
+    .member-option{
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to right, #fff0 0%,#fff9 50%, #fff0 100%);
+        border-image-slice: 1;
+    }
+    .member-option:hover{
+        background-image: radial-gradient(ellipse at bottom, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
+    }
+    
+    
+    .partner-option:hover{
+        background-image: radial-gradient(ellipse at top, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
+    }
+
 }
 
 

@@ -25,6 +25,9 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 
 $('#member-contact').on('click', function () {
     $('.member-form-content').show("blind")
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#member-form").offset().top-100
+    }, 1000);
 })
 
 
