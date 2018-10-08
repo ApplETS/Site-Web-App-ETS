@@ -24,12 +24,16 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 });
 
 $('#member-contact').on('click', function () {
-    $('.member-form-content').show("blind")
+    
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#member-form").offset().top-100
+        scrollTop: $("#form-container").offset().top-100
     }, 1000);
+    setTimeout("showMemberForm()",500)
 })
 
+function showMemberForm(){
+    $('.member-form-content').show("blind")
+}
 
 window.onscroll = function(){
     if(this.document.getElementById("main-content").getBoundingClientRect().y < 0){
