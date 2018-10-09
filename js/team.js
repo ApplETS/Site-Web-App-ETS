@@ -4,8 +4,12 @@ $('#row3').hide();
 $('#intro-title').hide();
 $('#intro-title').fadeToggle(1000,"swing");
 $('#row1').toggle("slide",1500);
-$('#row2').toggle("slide",{direction:'right'},1500);
-$('#row3').toggle("slide",1500);
+if(screen.height > 992){
+    $('#row2').show("slide",{direction:'right'},1500);
+    $('#row3').show("slide",1500);
+}
+
+
 
 document.querySelector("#floatingToggle").addEventListener("click", function () {
 
@@ -20,8 +24,22 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 window.onscroll = function(){
     if(this.document.getElementById("main-content").getBoundingClientRect().y < 0){
         $('#navbar').addClass("back-color")
+        
+        
     }else{
         $('#navbar').removeClass("back-color")
     }
+    if(screen.height < 992){
+        if(this.document.getElementById("row1").getBoundingClientRect().y < 0){
+            $('#row2').show("slide",{direction:'right'},1500);
+        }
+    
+        if(this.document.getElementById("row2").getBoundingClientRect().y < 0){
+            $('#row3').show("slide",1500);
+        }
+    }
+
 }
+
+
 
