@@ -40,4 +40,37 @@
     background-color:white;
 }
 
+.partner-title{
+    margin:40px;
+    text-align: justify;
+    font-size:2rem;
+}
+
+.partner-content{
+    margin:40px;
+    text-align: justify;
+    font-size:1.6rem;
+}
+
+@media (max-width: 992px){
+    .partner-logo-image{
+        max-height:5rem;
+        max-width:10rem;
+    }
+
+    .partner-title{
+        font-size:1.6rem;
+    }
+
+    .partner-content{
+        font-size:1.2rem;
+    }
+
+    .site-link{
+        font-size:1rem;
+    }
+}
+
+
+
 
