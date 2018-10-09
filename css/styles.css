@@ -300,6 +300,10 @@ a:hover{
         height:1.5rem;
     }
 
+    .footer-content{
+        justify-content: center;
+    }
+
 
     
 }
