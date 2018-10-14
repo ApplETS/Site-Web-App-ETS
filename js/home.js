@@ -1,8 +1,3 @@
-
-$('#navTitle').toggle()
-$('#navButtons').hide()
-$('#nav-toggler').css('opacity','0')
-$('#nav-toggle').css('opacity', '0')
 $('#parallax-content').parallax({
     imageSrc: 'images/droidcon.jpg',
     speed:0.1,
@@ -21,7 +16,6 @@ $('#navTitle').fadeToggle(1000, "swing", function () {
 })
 
 var showNavButtons = function () {
-    $('#nav-toggle').css('opacity', '1')
     $('#nav-toggler').css('opacity','1')
     $('#navButtons').show("slow", "swing", function () {
         $('#link-buttons-container').css('opacity','1')

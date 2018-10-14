@@ -1,7 +1,3 @@
-$('#member-title').hide();
-$('#partner-title').hide();
-$('.member-form-content').hide();
-$('.partner-form-content').hide();
 
 $('#member-title').toggle("fade",1500);
 $('#partner-title').toggle("fade",1500);

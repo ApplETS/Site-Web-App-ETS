@@ -1,4 +1,4 @@
-$('#main-content').hide()
+
 $('#main-content').fadeToggle(1500, "swing")
 document.querySelector("#floatingToggle").addEventListener("click", function () {
 

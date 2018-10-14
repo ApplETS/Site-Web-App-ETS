@@ -4,11 +4,9 @@ var isTouchScreen = false;
 document.addEventListener('touchstart', function () {
     isTouchScreen = true;
 })
-$('#row1').hide();
-$('#row2').hide();
+
 //$('#row3').hide();
-$('#intro-title').hide();
-$('#intro-title').fadeToggle(1000,"swing");
+$('#intro-title').fadeToggle(2000,"swing");
 $('#row1').toggle("slide",1500);
 
 

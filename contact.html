@@ -54,7 +54,7 @@
   <div id="main-content" style="display: flex;justify-content: center;align-items: center;height:100vh">
     <div class="options-container">
       <div id="member-contact" class="option member-option">
-        <span class="main-title" id="member-title">
+        <span class="main-title" id="member-title" style="display:none;">
           Pour les futurs membres
         </span>
 
@@ -63,14 +63,14 @@
       </div>
 
       <div id="partner-contact" class="option partner-option">
-        <span class="main-title" id="partner-title">
+        <span class="main-title" id="partner-title" style="display:none;">
           Pour les futurs partenaires
         </span>
       </div>
     </div>
   </div>
   <div id="form-container" class="form-content container">
-    <div id="member-form" class="member-form-content">
+    <div id="member-form" class="member-form-content" style="display:none;">
       <form name="contact" method="POST" netlify>
         <p class="input-container">
           <label for="member-name">Ton nom</label>
@@ -95,7 +95,7 @@
         </p>
       </form>
     </div>
-    <div id="partner-form" class="partner-form-content">
+    <div id="partner-form" class="partner-form-content" style="display: none;">
       <form name="contact" method="POST" netlify>
         <p class="input-container">
           <label for="member-name">Votre nom</label>
