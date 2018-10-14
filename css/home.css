@@ -105,6 +105,18 @@ body{
     background-color:white;
     color:#2C2E2F;
 }
+
+#link-buttons-container{
+    position:absolute;
+    width:500px;
+    height:10vh;
+    bottom:5vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transition:opacity 1s;opacity:0;
+    max-width:80vw;
+}
 @media (max-width: 992px){
     .info-bubble{
         font-size:1.9vh;
