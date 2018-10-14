@@ -4,11 +4,11 @@ body{
 
 
 .info-bubble{
-    max-width:1300px;
+    max-width:800px;
     padding:2vh;
     font-size:2vh;
     border-radius: 5px;
-    background-color: #000000ad;
+    background-color: #000000d3;
     transition:1s opacity cubic-bezier(.22,.61,.36,1);
     margin:20px;
     opacity: 0;
