@@ -132,7 +132,7 @@ body{
 #typewriter-container{
     font-family:'Source Code Pro', monospace;
     font-size:4.5vh;
-    width:80vw;
+    /*width:80vw;*/
     text-align: center;
 }
 @media (max-width: 992px){
