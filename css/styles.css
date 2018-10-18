@@ -248,10 +248,12 @@ a:hover{
 .modal-platform{
     background-color: #000000b3;
     transition:all 500ms;
-    border-radius: 2vh;
+    border-radius: 10px;
     opacity: 0;
 
 }
+
+
 
 .modal-items{
     display: flex;

@@ -247,8 +247,12 @@
         width: 80vw;
     }
 
-    .platform-logo:hover{
-        background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 40%);
+    .platform-left:hover{
+        background-image: radial-gradient(ellipse at right, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0) 70%);
+    }
+
+    .platform-right:hover{
+        background-image: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.548) 0%, rgba(0, 0, 0, 0) 70%);
     }
 
     .modal-image-container{
