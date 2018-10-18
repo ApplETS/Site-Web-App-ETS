@@ -5,7 +5,6 @@ document.addEventListener('touchstart', function () {
     isTouchScreen = true;
 })
 
-$('#intro-title').fadeToggle(2000,"swing");
 $('#row1').toggle("slide",1500);
 
 

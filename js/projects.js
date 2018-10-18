@@ -2,7 +2,13 @@
 $('#titleDiv').hide()
 $('.project-slide').hide()
 
-showTitle()
+
+showTitleNoFade()
+
+function showTitleNoFade(){
+    $('#titleDiv').toggle()
+    $('.scroll-down-zone').css("opacity","1")
+}
 
 
 function showTitle(){
