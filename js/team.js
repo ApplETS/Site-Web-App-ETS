@@ -38,7 +38,7 @@ window.onscroll = function(){
         }
     
         if(this.document.getElementById("row2").getBoundingClientRect().y < 0){
-           // $('#row3').show("slide",1500);
+           $('#row3').show("slide",1500);
         }
     }
 
@@ -46,7 +46,7 @@ window.onscroll = function(){
 
 if(!isTouchScreen){
     $('#row2').show("slide",{direction:'right'},1500);
-    //$('#row3').show("slide",1500);
+    $('#row3').show("slide",1500);
 }
 
 
