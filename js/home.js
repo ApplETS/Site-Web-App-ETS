@@ -21,6 +21,7 @@ $('#navTitle').fadeToggle(1000, "swing", function () {
 var showNavButtons = function () {
     $('#nav-toggler').css('opacity','1')
     $('#navButtons').show("slow", "swing", function () {
+        $('#link-buttons-container').css('opacity','1')
         $("#typewriter-container").toggleClass("typewriter")
         $('.navbar').css("background-color", "#00000080")
         new Typewriter(80, document.getElementById("typewriter-container"), "Pour ceux qui partagent la passion du développement mobile.", false, null)
