@@ -132,8 +132,10 @@ body{
 #typewriter-container{
     font-family:'Source Code Pro', monospace;
     font-size:4.5vh;
-    /*width:80vw;*/
-    text-align: center;
+    max-width: 1000px;
+    min-width: 60vw;
+    text-align: start;
+    word-wrap: break-word;
 }
 @media (max-width: 992px){
     .info-bubble{
