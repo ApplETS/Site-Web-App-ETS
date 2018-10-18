@@ -162,8 +162,8 @@ body{
         font-size:0.8rem;
     }
     #typewriter-container{
-        max-width: 100vw;
-        min-width: 80vw;
+        max-width: 95vw;
+        min-width: 300px;
     }
 }
 
