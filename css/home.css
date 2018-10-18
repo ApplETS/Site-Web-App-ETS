@@ -132,8 +132,8 @@ body{
 #typewriter-container{
     font-family:'Source Code Pro', monospace;
     font-size:4.5vh;
-    min-width: 70vw;
-    max-width: 800px;
+    max-width: 1000px;
+    min-width: 80vw;
     text-align: start;
     word-wrap: break-word;
     margin:20px;
