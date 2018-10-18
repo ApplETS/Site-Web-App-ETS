@@ -1,20 +1,23 @@
+/**
+ * Initialise parallax (for the android picture)
+ */
 $('#parallax-content').parallax({
     imageSrc: 'images/droidcon.jpg',
     speed:0.1,
     positionY:"top"
 });
 
-
-
-
-
+/**
+ * Fade-in the title and buttons
+ */
 $('#navTitle').fadeToggle(1000, "swing", function () {
-
     document.getElementById("brandImage").classList.add("brandImageTop")
-
     showNavButtons()
 })
 
+/**
+ * Fadein function
+ */
 var showNavButtons = function () {
     $('#nav-toggler').css('opacity','1')
     $('#navButtons').show("slow", "swing", function () {
@@ -25,16 +28,18 @@ var showNavButtons = function () {
     })
 }
 
+/**
+ * Open up the menu bar when selected
+ */
 document.querySelector("#floatingToggle").addEventListener("click", function () {
-
-
     document.querySelector("#nav-toggler").classList.toggle("active");
     $('#navToggleContent').slideToggle()
     $('#navbar').toggleClass("back-color")
-
-
 });
 
+/**
+ * For the android section, fade in objects when they are in the right position
+ */
 window.onscroll = function () {
     if(this.document.getElementById("blog").getBoundingClientRect().y < 0){
         $('.navbar').css('background-color','rgba(0, 0, 0, 0.9)')
@@ -69,6 +74,9 @@ window.onscroll = function () {
     }
 }
 
+/**
+ * Shortcuts links
+ */
 $('#go-to-description-button').on('click',function(){
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#parallax-content").offset().top

@@ -1,15 +1,10 @@
-
+//Fade in effects
 $('#member-title').toggle("fade",1500);
 $('#partner-title').toggle("fade",1500);
 
-$('#member-contact').on("mouseover",function(){
-    $('#member-option-content').show("fade",500)
-})
-
-$('#member-contact').on("mouseleave",function(){
-    $('#member-option-content').hide("fade",500)
-})
-
+/**
+ * Open up the menu bar when selected
+ */
 document.querySelector("#floatingToggle").addEventListener("click", function () {
 
 
@@ -20,6 +15,9 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 
 });
 
+/**
+ * Open up the right form when selected
+ */
 $('#member-contact').on('click', function () {
     
     $([document.documentElement, document.body]).animate({
@@ -45,6 +43,9 @@ function showPartnerForm(){
     $('.partner-form-content').show("blind")
 }
 
+/**
+ * Change menu bar color when scrolling
+ */
 window.onscroll = function(){
     if(this.document.getElementById("main-content").getBoundingClientRect().y < 0){
         $('#navbar').addClass("back-color")

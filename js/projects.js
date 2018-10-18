@@ -2,7 +2,7 @@
 $('#titleDiv').hide()
 $('.project-slide').hide()
 
-
+//Show the first content without animations (reduce lag)
 showTitleNoFade()
 
 function showTitleNoFade(){
@@ -24,6 +24,7 @@ $('#fullpage').fullpage({
     setAllowScrolling:true,
     autoScrolling: true,
     scrollOverflow: true,
+    //Leaving the current section
     onLeave: function (index, nextIndex, direction) {
         if (index.index == 0 && nextIndex.index == 1 && direction === "down") {
             $('.scroll-down-zone').css("opacity", "0")
@@ -51,6 +52,7 @@ $('#fullpage').fullpage({
 
         }
     },
+    //Just landed on the current section 
     afterLoad: function (anchorLink, index) {
         if (index.index == 1) {
 
@@ -82,13 +84,9 @@ $('#fullpage').fullpage({
             $('#projectHeart').toggleClass("heartbeat")
 
             setTimeout("separateAppLayers()", 750)
-
-            
-
         }
-
-
     },
+    //Leaving the current slide
     onSlideLeave: function (section, origin, destination, direction) {
         switch (destination.index) {
             case 0:
@@ -129,13 +127,15 @@ $('#arrow-next').on('click', function () {
     fullpage_api.moveSlideRight()
 })
 
+
+/**
+ * Modal handlers (open and close)
+ */
 $('.modal-close').on('click', function () {
     $('.modal-background').css("visibility", "hidden")
     $('.modal-background').css("background-color", "rgba(0,0,0,0)")
     $('.modal-platform').css("visibility", "hidden")
     $('.modal-platform').css("opacity", "0")
-
-
 })
 
 
@@ -155,12 +155,18 @@ $('#mobileGithubLink').on('click', function () {
 
 })
 
+/**
+ * Help the user who's smart (or dumb) enough to try to click on the heart
+ */
 $('#projectHeart').on('click', function () {
     $.fn.fullpage.moveSectionDown()
     $('#projectHeart').css("width", "600vh")
 
 })
 
+/**
+ * Open up the menu bar when selected
+ */
 document.querySelector("#floatingToggle").addEventListener("click", function () {
     if ($('.go-back-arrow').css("top") != "") {
         $('.go-back-arrow').css("top", document.getElementsByClassName("go-back-arrow")[0].getBoundingClientRect().y)
@@ -180,6 +186,9 @@ document.querySelector("#floatingToggle").addEventListener("click", function () 
 
 });
 
+/**
+ * When hovering over a phone, make it become bigger and the other smaller (and when clicking when using a mobile device)
+ */
 $('#android-etsmobile-link').on("mouseover", function () {
     $('#androidETSMOBILE').css('height', '55vh')
     $('#play-store-link').css('width', '165px')
