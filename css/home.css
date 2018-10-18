@@ -114,7 +114,6 @@ body{
     display:flex;
     justify-content: center;
     align-items:center;
-    transition:opacity 1s;opacity:0;
     max-width:80vw;
 }
 
