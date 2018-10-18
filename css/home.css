@@ -136,6 +136,7 @@ body{
     min-width: 60vw;
     text-align: start;
     word-wrap: break-word;
+    margin:20px;
 }
 @media (max-width: 992px){
     .info-bubble{
