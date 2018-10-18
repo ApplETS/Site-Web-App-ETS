@@ -164,6 +164,12 @@
     transition:opacity 1000ms;
 }
 
+.image-container{
+    display:flex;
+    justify-content:center;
+    margin-top:75px;
+}
+
 @media (max-width: 992px){
 
     
@@ -211,7 +217,9 @@
         width:100%;
     }
     
-    
+    .image-container{
+        margin-top:5vh;
+    }
 }
 
 .back-color-red{
