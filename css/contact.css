@@ -65,6 +65,11 @@
     border-radius:5px;
     border:none;
     padding:8px;
+    transition:200ms all;
+}
+
+.contact-input:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
 
 .input-container{
