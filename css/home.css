@@ -173,8 +173,7 @@ body{
         margin:40px;
     }
     #typewriter-container{
-        max-width: 1000px;
-        min-width: 50vw;
+        width:60vw;
     }
 }
 
