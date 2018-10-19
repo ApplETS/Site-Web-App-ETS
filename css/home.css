@@ -132,11 +132,9 @@ body{
 #typewriter-container{
     font-family:'Source Code Pro', monospace;
     font-size:4.5vh;
-    max-width: 1000px;
-    min-width: 80vw;
     text-align: start;
     word-wrap: break-word;
-    margin:20px;
+    margin:40px;
 }
 @media (max-width: 992px){
     .info-bubble{
@@ -162,8 +160,7 @@ body{
         font-size:0.8rem;
     }
     #typewriter-container{
-        max-width: 95vw;
-        min-width: 300px;
+        min-width: 100%;
     }
 }
 
@@ -174,6 +171,10 @@ body{
 
     .news-content{
         margin:40px;
+    }
+    #typewriter-container{
+        max-width: 1000px;
+        min-width: 80vw;
     }
 }
 
