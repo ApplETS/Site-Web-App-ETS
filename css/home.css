@@ -154,7 +154,8 @@ body{
         margin-bottom:20px;
     }
     .link-button{
-        font-size:1.5rem;
+        font-size:1rem;
+        margin-top:0.7rem;
     }
     .news-button-container{
         font-size:0.8rem;
