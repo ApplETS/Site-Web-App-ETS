@@ -25,6 +25,10 @@
     border-image-slice: 1;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 .form-link{
     text-decoration: none;
     color:white;

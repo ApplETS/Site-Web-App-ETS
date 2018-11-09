@@ -76,6 +76,9 @@
     <!--Member form-->
     <div id="member-form" class="member-form-content" style="display:none;">
       <form name="member-contact" method="POST" netlify>
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
         <p class="input-container">
           <label for="member-name">Ton nom</label>
           <input required="required" id="member-name" class="contact-input" type="text" name="name" />
@@ -94,6 +97,7 @@
           <label for="member-github">Ton identifiant GitHub</label>
           <input required="required" id="member-github" class="contact-input" type="text" name="github" />
         </p>
+        <div data-netlify-recaptcha></div>
         <p style="display:flex;justify-content: center;">
           <button class="send-button" type="submit">Envoyer</button>
         </p>
@@ -102,6 +106,9 @@
     <!--Partner form-->
     <div id="partner-form" class="partner-form-content" style="display: none;">
       <form name="partner-contact" method="POST" netlify>
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
         <p class="input-container">
           <label for="partner-name">Votre nom</label>
           <input required="required" id="partner-name" class="contact-input" type="text" name="name" />
@@ -120,7 +127,7 @@
             description de votre intérêt de partnenariat avec nous ci-dessous.</label>
           <textarea id="partner-description" class="contact-input" name="message"></textarea>
         </p>
-       
+        <div data-netlify-recaptcha></div>
         <p style="display:flex;justify-content: center;">
           <button class="send-button" type="submit">Envoyer</button>
         </p>
