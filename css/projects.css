@@ -220,6 +220,10 @@
     .image-container{
         margin-top:5vh;
     }
+
+    .app-layer{
+        height:30vh;
+    }
 }
 
 .back-color-red{
