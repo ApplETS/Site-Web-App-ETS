@@ -1,0 +1,9 @@
+* {
+  background-color: black;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+app-header {
+  width: 100%;
+}
