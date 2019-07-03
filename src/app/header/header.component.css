@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-.nav-buttons li.currentTab:after {
+.nav-buttons li.active:after {
   width: 100%;
 }
 
