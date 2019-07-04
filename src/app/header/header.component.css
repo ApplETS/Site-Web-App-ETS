@@ -58,3 +58,9 @@
 .brandImage {
   height: 7vh;
 }
+
+@media (min-width:992px){
+  .navbar{
+    justify-content: center;
+  }
+}
