@@ -11,15 +11,17 @@ describe('FooterComponent', () => {
       declarations: [ FooterComponent ]
     })
     .compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(FooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }));
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(fixture).toBeTruthy();
+  });
+
+  it('should match snapshot', () => {
+    expect(fixture).toMatchSnapshot();
   });
 });
