@@ -9,7 +9,7 @@
     "allowJs": true
   },
   "include": [
-    "**/*.spec.ts",
-    "**/*.d.ts"
+    "**/__tests__/*.spec.ts",
+    "**/__tests__/*.d.ts"
   ]
 }

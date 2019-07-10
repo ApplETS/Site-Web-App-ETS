@@ -15,14 +15,6 @@ module.exports = {
     '@app/core': '<rootDir>/src/app/',
     '@environment': '<rootDir>/src/environments/environment.ts',
   },
-  reporters: [
-    'default',
-    ['./node_modules/jest-html-reporter', {
-      pageTitle: 'Test Report',
-      outputPath: './testing/test-report.html',
-      theme: 'lightTheme'
-    }]
-  ],
   coverageDirectory: '<rootDir>/testing/coverage',
   collectCoverageFrom: [
     '**/plugin/**/*.ts',
