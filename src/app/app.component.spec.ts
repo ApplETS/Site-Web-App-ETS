@@ -1,5 +1,12 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { APP_BASE_HREF } from '@angular/common';
 
 describe('AppComponent', () => {
   // let component: AppComponent;
@@ -7,16 +14,15 @@ describe('AppComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
       declarations: [
-        AppComponent
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        HomeComponent
       ],
+      providers: [{provide: APP_BASE_HREF, useValue: '/'}]
     }).compileComponents();
-    /*.then(() => {
-      fixture = TestBed.createComponent(AppComponent);
-      component = fixture.componentInstance;
-
-      fixture.detectChanges();
-    });*/
   }));
 
   it('should create the app', () => {
@@ -25,16 +31,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'newWebsite'`, () => {
+  it(`should have as title 'App|ETS'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('newWebsite');
-  });
-
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to newWebsite!');
+    expect(app.title).toEqual('App|ETS');
   });
 });

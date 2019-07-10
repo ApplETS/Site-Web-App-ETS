@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderComponent should matched the snapshot 1`] = `
+<app-header>
+  <header
+    class="navbar ng-trigger ng-trigger-fade"
+    style=""
+  >
+    <span
+      class="navbar-brand"
+      id="navTitle"
+      style="font-size:5vh;cursor:default;color:white;"
+    >
+      <img
+        alt="Logo du club App|ETS"
+        class="brandImage"
+        id="brandImage"
+        src="assets/images/Logo_blanc_ApplETS.png"
+      />
+    </span>
+    <div
+      class="ng-tns-c1-0"
+      id="floatingToggle"
+    />
+    <div
+      class="main-nav"
+      id="navToggleContent"
+    >
+      <ul
+        class="nav-buttons navbar-nav"
+        id="navButtons"
+      >
+        <li
+          class="nav-item"
+          routerlinkactive="active"
+        >
+          <a
+            class="ng-tns-c1-0"
+            routerlink="/home"
+          >
+            Accueil
+          </a>
+        </li>
+        <li
+          class="nav-item"
+          routerlinkactive="active"
+        >
+          <a
+            class="ng-tns-c1-0"
+            href="equipe.html"
+          >
+            Équipe
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="ng-tns-c1-0"
+            href="projets.html"
+          >
+            Projets
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="ng-tns-c1-0"
+            href="partenaires.html"
+          >
+            Partenaires
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="ng-tns-c1-0"
+            href="contact.html"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+</app-header>
+`;
