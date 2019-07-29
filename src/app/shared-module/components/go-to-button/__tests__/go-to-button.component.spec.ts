@@ -6,11 +6,12 @@ describe('GoToButtonComponent', () => {
   let component: GoToButtonComponent;
   let fixture: ComponentFixture<GoToButtonComponent>;
 
+  const config = {preserveWhitespaces: false} as any;
+
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
+    TestBed.configureCompiler(config).configureTestingModule({
       declarations: [GoToButtonComponent]
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(GoToButtonComponent);
     component = fixture.componentInstance;
