@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoToButtonComponent should match snapshot 1`] = `
+<app-go-to-button
+  iconAlt=""
+>
+  <a
+    class="container"
+    href=""
+  >
+    <img
+      alt=""
+      class="logo-image"
+      src=""
+    />
+    <span
+      style="text-decoration-line:none"
+    >
+      
+    </span>
+  </a>
+</app-go-to-button>
+`;

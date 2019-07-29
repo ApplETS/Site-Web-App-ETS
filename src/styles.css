@@ -4,3 +4,8 @@ body {
   line-height: 1.5;
   background-color: #3f4142;
 }
+
+.spacer {
+  height:20px;
+  width:1px;
+}
