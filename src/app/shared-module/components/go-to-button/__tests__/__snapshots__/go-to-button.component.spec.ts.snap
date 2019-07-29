@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`GoToButtonComponent should match snapshot 1`] = `
-<app-go-to-button
-  iconAlt=""
->
+<app-go-to-button>
   <a
     class="container"
     href=""
@@ -16,7 +14,7 @@ exports[`GoToButtonComponent should match snapshot 1`] = `
     <span
       style="text-decoration-line:none"
     >
-      
+
     </span>
   </a>
 </app-go-to-button>
