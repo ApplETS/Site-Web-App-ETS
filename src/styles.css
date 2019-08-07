@@ -9,3 +9,8 @@ body {
   height:20px;
   width:1px;
 }
+
+.spacer-horizontal {
+  height: 1px;
+  width: 20px;
+}

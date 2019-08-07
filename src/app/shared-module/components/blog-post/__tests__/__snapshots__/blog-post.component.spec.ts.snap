@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPostComponent should contains a iFrame 1`] = `
+<app-blog-post
+  post={[Function BlogPost]}
+  sanitizer={[Function DomSanitizerImpl]}
+>
+  <div
+    class="container"
+  >
+    <span
+      class="title main-title"
+    >
+      testTitle
+    </span>
+    <span
+      class="title sub-title"
+    >
+      testSubtitle
+    </span>
+    <span
+      class="title sub-sub-title"
+    >
+      Saturday, March 23, 2019
+    </span>
+    <div
+      class="content-container"
+    >
+      
+      
+      <iframe
+        allow="encrypted-media"
+        allowtransparency="true"
+        frameborder="0"
+        height="481"
+        scrolling="no"
+        src="https://github.com"
+        style="border:none;overflow:hidden"
+        width="500"
+      />
+    </div>
+    
+  </div>
+</app-blog-post>
+`;
+
+exports[`BlogPostComponent should contains a link button 1`] = `
+<app-blog-post
+  post={[Function BlogPost]}
+  sanitizer={[Function DomSanitizerImpl]}
+>
+  <div
+    class="container"
+  >
+    <span
+      class="title main-title"
+    >
+      testTitle
+    </span>
+    <span
+      class="title sub-title"
+    >
+      testSubtitle
+    </span>
+    <span
+      class="title sub-sub-title"
+    >
+      Saturday, March 23, 2019
+    </span>
+    <div
+      class="content-container"
+    >
+      
+      
+    </div>
+    
+    <div
+      class="news-link-container"
+    >
+      
+      <app-go-to-button
+        ng-reflect-icon=""
+        ng-reflect-icon-alt=""
+        ng-reflect-link=""
+        ng-reflect-text="Voir test"
+      >
+        <div>
+          <a
+            class="container"
+            href=""
+          >
+            <img
+              alt=""
+              class="logo-image"
+              src=""
+            />
+            <span
+              style="text-decoration-line:none"
+            >
+              Voir test
+            </span>
+          </a>
+          <div
+            class="spacer-horizontal"
+          />
+        </div>
+      </app-go-to-button>
+    </div>
+  </div>
+</app-blog-post>
+`;
+
+exports[`BlogPostComponent should contains a location 1`] = `
+<app-blog-post
+  post={[Function BlogPost]}
+  sanitizer={[Function DomSanitizerImpl]}
+>
+  <div
+    class="container"
+  >
+    <span
+      class="title main-title"
+    >
+      testTitle
+    </span>
+    <span
+      class="title sub-title"
+    >
+      testSubtitle
+    </span>
+    <span
+      class="title sub-sub-title"
+    >
+      Saturday, March 23, 2019
+    </span>
+    <div
+      class="content-container"
+    >
+      
+      <div>
+        Test
+      </div>
+      
+    </div>
+    
+  </div>
+</app-blog-post>
+`;
+
+exports[`BlogPostComponent should match snapshot 1`] = `
+<app-blog-post
+  post={[Function BlogPost]}
+  sanitizer={[Function DomSanitizerImpl]}
+>
+  <div
+    class="container"
+  >
+    <span
+      class="title main-title"
+    >
+      testTitle
+    </span>
+    <span
+      class="title sub-title"
+    >
+      testSubtitle
+    </span>
+    <span
+      class="title sub-sub-title"
+    >
+      Saturday, March 23, 2019
+    </span>
+    <div
+      class="content-container"
+    >
+      
+      <div>
+        Test
+      </div>
+      
+    </div>
+    
+  </div>
+</app-blog-post>
+`;
