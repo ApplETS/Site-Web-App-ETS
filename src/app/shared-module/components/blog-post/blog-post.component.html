@@ -1,0 +1,29 @@
+<div class="container">
+    <span class="title main-title">{{post.title}}</span>
+    <span class="title sub-title">{{post.subtitle}}</span>
+    <span class="title sub-sub-title">{{post.date | date:'fullDate'}}</span>
+
+    <div class="content-container">
+        <div *ngIf="post.text">{{post.text}}</div>
+        <iframe
+                *ngIf="post.iFrameUrl"
+                [src]="sanitizer.bypassSecurityTrustResourceUrl(post.iFrameUrl)"
+                width="500"
+                height="481"
+                style="border:none;overflow:hidden"
+                scrolling="no"
+                frameborder="0"
+                allowTransparency="true"
+                allow="encrypted-media">
+        </iframe>
+    </div>
+
+    <div class="news-link-container" *ngIf="post.bottomButtons">
+        <app-go-to-button *ngFor="let button of post.bottomButtons"
+                          link="{{button.link}}"
+                          text="{{button.text}}"
+                          icon="{{button.icon}}"
+                          iconAlt="{{button.iconAlt}}"
+        ></app-go-to-button>
+    </div>
+</div>
