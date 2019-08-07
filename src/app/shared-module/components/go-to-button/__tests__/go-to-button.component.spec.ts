@@ -8,8 +8,6 @@ describe('GoToButtonComponent', () => {
   let component: GoToButtonComponent;
   let fixture: ComponentFixture<GoToButtonComponent>;
 
-  const config = {preserveWhitespaces: false} as any;
-
   beforeEach(async(() => {
     const configure: ConfigureFn = testBed => {
       testBed.configureTestingModule({

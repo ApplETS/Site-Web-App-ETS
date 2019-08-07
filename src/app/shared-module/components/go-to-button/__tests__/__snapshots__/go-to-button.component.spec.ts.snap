@@ -29,20 +29,25 @@ exports[`GoToButtonComponent Auto icon and icon alt 1`] = `
 
 exports[`GoToButtonComponent should match snapshot 1`] = `
 <app-go-to-button>
-  <a
-    class="container"
-    href=""
-  >
-    <img
-      alt=""
-      class="logo-image"
-      src=""
-    />
-    <span
-      style="text-decoration-line:none"
+  <div>
+    <a
+      class="container"
+      href=""
     >
-      
-    </span>
-  </a>
+      <img
+        alt=""
+        class="logo-image"
+        src=""
+      />
+      <span
+        style="text-decoration-line:none"
+      >
+        
+      </span>
+    </a>
+    <div
+      class="spacer-horizontal"
+    />
+  </div>
 </app-go-to-button>
 `;
