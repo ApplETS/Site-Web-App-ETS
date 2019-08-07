@@ -1,3 +1,7 @@
+div:first-child {
+    display: inline-flex;
+}
+
 .container{
     display: flex;
     align-items: center;
