@@ -1,0 +1,10 @@
+.sectionTitle {
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 5vh;
+}
