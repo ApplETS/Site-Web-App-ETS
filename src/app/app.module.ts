@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { SharedModule } from './shared-module/shared.module';
@@ -12,7 +11,7 @@ import { FeatureModule } from './feature/feature.module';
 
 @NgModule({
   imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, SharedModule, FeatureModule],
-  declarations: [AppComponent, HeaderComponent, HomeComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
