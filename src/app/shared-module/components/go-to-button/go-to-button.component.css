@@ -3,7 +3,7 @@ div:first-child {
 }
 
 .container{
-    border-color: rgba(255, 255, 255, 0.534);
+    border: 1px solid rgba(255, 255, 255, 0.534);
     color:white;
 }
 

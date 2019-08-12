@@ -4,7 +4,7 @@ exports[`FooterComponent should match snapshot 1`] = `
 <app-footer>
   <footer>
     <div
-      class="footer-content container"
+      class="footer-content footer-container"
     >
       <div
         class="footer-box"
@@ -16,15 +16,15 @@ exports[`FooterComponent should match snapshot 1`] = `
         </span>
         <span>
           <br />
-           1100 rue Notre-Dame Ouest 
+           1100 rue Notre-Dame Ouest
           <br />
-           Montréal, QC 
+           Montréal, QC
           <br />
-           H3C 1K3 
+           H3C 1K3
           <br />
-           Local : D-2020 
+           Local : D-2020
           <br />
-           Courriel : 
+           Courriel :
           <a
             href="mailto:info@clubapplets.ca"
           >
@@ -42,7 +42,7 @@ exports[`FooterComponent should match snapshot 1`] = `
         </span>
         <span>
           <br />
-           Restez en contact avec nous: 
+           Restez en contact avec nous:
         </span>
         <span
           style="margin-top:5px;"

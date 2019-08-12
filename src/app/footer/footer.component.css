@@ -37,25 +37,25 @@ a {
 }
 
 @media (min-width: 576px) {
-    .container {
+    .footer-container {
         max-width: 540px;
     }
 }
 
 @media (min-width: 768px) {
-    .container {
+    .footer-container {
         max-width: 720px;
     }
 }
 
 @media (min-width: 992px) {
-    .container {
+    .footer-container {
         max-width: 960px;
     }
 }
 
 @media (min-width: 1200px) {
-    .container {
+    .footer-container {
         max-width: 1140px;
     }
 }
