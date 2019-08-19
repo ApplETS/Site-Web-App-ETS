@@ -1,0 +1,27 @@
+.title {
+    font-size: 4vh;
+}
+
+.card {
+    max-width: 800px;
+    padding: 2vh;
+    font-size: 2vh;
+    border-radius: 5px;
+    background-color: #000000d3;
+    transition: 1s opacity cubic-bezier(.22, .61, .36, 1);
+    margin: 20px;
+    opacity: 1;
+    text-align: justify;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .card {
+        font-size: 1.9vh;
+    }
+
+    .title{
+        font-size: 3vh;
+    }
+}

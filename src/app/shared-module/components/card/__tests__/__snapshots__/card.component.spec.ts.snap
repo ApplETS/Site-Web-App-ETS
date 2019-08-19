@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardComponent should match snapshot 1`] = `
+<app-card
+  text={[Function String]}
+  title={[Function String]}
+>
+  <div
+    class="container card"
+    id="club-description"
+  >
+    <div>
+      <span
+        class="title"
+      >
+        Test title
+      </span>
+      <div
+        class="gradient-border"
+      />
+      <span>
+        Test text 
+      </span>
+    </div>
+  </div>
+</app-card>
+`;
