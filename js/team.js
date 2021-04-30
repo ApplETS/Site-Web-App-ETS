@@ -49,13 +49,6 @@ window.onscroll = function(){
            $('#row4').show("slide",1500);
         }
 		
-		if(this.document.getElementById("row4").getBoundingClientRect().y < 0){
-           $('#row5').show("slide",1500);
-        }
-		
-		if(this.document.getElementById("row5").getBoundingClientRect().y < 0){
-           $('#row6').show("slide",1500);
-        }
     }
 
 }
@@ -67,8 +60,6 @@ if(!isTouchScreen){
     $('#row2').show("slide",{direction:'right'},1500);
     $('#row3').show("slide",1500);
 	$('#row4').show("slide",1500);
-	$('#row5').show("slide",1500);
-	$('#row6').show("slide",1500);
 }
 
 
