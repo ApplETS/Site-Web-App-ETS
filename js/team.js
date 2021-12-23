@@ -10,10 +10,6 @@ document.addEventListener('touchstart', function () {
  */
 $('#row1').toggle("slide",1500);
 
-
-
-
-
 /**
  * Open up the menu bar when selected
  */
@@ -48,6 +44,10 @@ window.onscroll = function(){
 		if(this.document.getElementById("row3").getBoundingClientRect().y < 0){
            $('#row4').show("slide",1500);
         }
+
+        if(this.document.getElementById("row4").getBoundingClientRect().y < 0){
+            $('#row5').show("slide",1500);
+         }
 		
     }
 
@@ -60,6 +60,7 @@ if(!isTouchScreen){
     $('#row2').show("slide",{direction:'right'},1500);
     $('#row3').show("slide",1500);
 	$('#row4').show("slide",1500);
+	$('#row5').show("slide",1500);
 }
 
 
