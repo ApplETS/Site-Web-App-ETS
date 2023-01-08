@@ -5,6 +5,7 @@ $('.project-slide').hide()
 //Show the first content without animations (reduce lag)
 showTitleNoFade()
 
+
 function showTitleNoFade(){
     $('#titleDiv').toggle()
     $('.scroll-down-zone').css("opacity","1")
