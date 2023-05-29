@@ -64,7 +64,7 @@
     <script>
       var id = 0;
       
-      function generateMemberContainer(members, sectionId, sectionTitle) {
+      async function generateMemberContainer(members, sectionId, sectionTitle) {
         var idLine = 0;
         var count = 0;
 
@@ -160,7 +160,7 @@
       }
 
       async function addSection(jsonPath, sectionId, sectionTitle) {
-        fetch(jsonPath).then(response => response.json()).then(members => {
+        await fetch(jsonPath).then(response => response.json()).then(members => {
           generateMemberContainer(members, sectionId, sectionTitle)
         })
         .catch(error => {
