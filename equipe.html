@@ -52,8 +52,6 @@
 
     <!--Main content: team pictures-->
     <div class="container-fluid main-container" id="main-content">
-      <div id="member-container" style="width:100%;min-height:100vh;">
-      </div>
     </div>
     
     <!--Footer content-->
@@ -64,7 +62,6 @@
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="js/team.js"></script>
-    <script src="js/footer.html"></script>
     <script>
       function generateMemberContainer(members, sectionId, sectionTitle) {
         var id = 0;
@@ -95,10 +92,10 @@
       }      
       
       function generateSection(sectionId, sectionTitle) {
-        var mainContainer = document.getElementById("member-container")
+        var mainContainer = document.getElementById("main-content")
         mainContainer.innerHTML += `
+        <span class="intro-title">${sectionTitle}</span>
         <div id="${sectionId}">
-          <span class="intro-title">${sectionTitle}</span>
         </div>
         `
       }
@@ -164,7 +161,7 @@
       }
       
       // Add sections here
-      addSection("js/data/members.json", "members-container", "Rencontrez notre équipe")
+      addSection("js/data/members.json", "members-container", "Rencontrez notre équipe.")
       addSection("js/data/legendary-members.json", "legendary-members-container", "Membres légendaires")
       addSection("js/data/old-members.json", "old-members-container", "Anciens membres")
 
