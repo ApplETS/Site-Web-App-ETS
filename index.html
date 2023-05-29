@@ -240,55 +240,7 @@
   </div>
 
   <!--Footer content-->
-  <div class="footer">
-    <div class="footer-content container">
-      <div style="display:flex;flex-direction:column;text-align: center;">
-        <span class="main-title">Coordonnées</span>
-        <span>
-          <br>
-          1100 rue Notre-Dame Ouest
-          <br>
-          Montréal, QC
-          <br>
-          H3C 1K3
-          <br>
-          Local : D-2020
-          <br>
-          Téléphone : +1 514 396-8800 poste 7314
-          <br>
-          Courriel : <a href="mailto:info@clubapplets.ca">info@clubapplets.ca</a>
-
-        </span>
-
-      </div>
-      <div style="display:flex;flex-direction:column;text-align:center;">
-        <span class="main-title">Médias sociaux</span>
-        <span>
-          <br>
-          Restez en contact avec nous:
-        </span>
-        <span style="margin-top:5px;">
-          <a href="https://github.com/ApplETS">
-            <img src="images/GitHub-Mark-Light-64px.png" class="logo-image" alt="">
-          </a>
-          <a href="https://www.facebook.com/ClubApplETS/">
-            <img src="images/facebook-logo.png" class="logo-image" alt="">
-          </a>
-          <a href="https://twitter.com/ClubApplETS">
-            <img src="images/Twitter_Logo_WhiteOnBlue.png" alt="" class="logo-image">
-          </a>
-          <a href="https://www.linkedin.com/company/applets/">
-            <img src="images/linkedin-logo.png" style="margin-left:-10px;" alt="" class="logo-image">
-          </a>
-          <a href="https://discord.gg/adMkWptn6Y">
-            <img src="images/discord-logo-white.png" style="margin-left:-10px;" alt="" class="logo-image">
-          </a>
-        </span>
-        <span style="height:20px;width:1px;"></span>
-        <span>© 2023 App|ETS</span>
-      </div>
-    </div>
-  </div>
+  <div id="footer"></div>
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
@@ -297,5 +249,9 @@
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
   <script src="js/typewriter.js"></script>
   <script src="js/home.js"></script>
+  <script src="js/footer.html"></script>
+  <script>
+    $("#footer").load("footer.html"); 
+  </script>
 </body>
 </html>

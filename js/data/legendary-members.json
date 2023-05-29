@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Isaac Pateau",
+    "imageUrl": "images/membres/IsaacPateau.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/isaac-pateau/",
+    "githubUrl": "https://github.com/zaclimon",
+    "alias": "ZacLimon",
+    "roles": ["Ancien Capitaine", "Développeur"]
+  },
+  {
+    "name": "Thanh-Son-Philippe Lam",
+    "imageUrl": "images/membres/TranhSonPhilippeLam.jpeg",
+    "linkedinUrl": "https://www.linkedin.com/in/thanh-son-philippe-lam",
+    "githubUrl": "https://github.com/Sonphil",
+    "alias": "Sonphil",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Xavier Chrétien",
+    "imageUrl": "images/membres/XavierChretien.jpeg",
+    "linkedinUrl": "https://www.linkedin.com/in/xavierchretien/",
+    "githubUrl": "https://github.com/apomalyn",
+    "alias": "Apomalyn",
+    "roles": ["Ancien Capitaine", "Développeur", "DevOps"]
+  }
+]

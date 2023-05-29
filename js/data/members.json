@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Antoine Lemelin",
+    "imageUrl": "images/membres/AntoineLemelin.png",
+    "linkedinUrl": "https://www.linkedin.com/in/antoine-lemelin-6b9929238",
+    "githubUrl": "https://github.com/AntoineLemelin",
+    "alias": "AntoineLemelin",
+    "roles": ["Capitaine", "Développeur"]
+  },
+  {
+      "name": "Camille Brulotte",
+      "imageUrl": "images/membres/CamilleBrulotte.jpg",
+      "linkedinUrl": "https://www.linkedin.com/in/camillebrulotte",
+      "githubUrl": "https://github.com/camillebrulotte",
+      "alias": "CamilleBrulotte",
+      "roles": ["Co-capitaine", "Développeuse"]
+  },
+  {
+      "name": "Antoine Martineau",
+      "imageUrl": "images/membres/AntoineMartineau.jpg",
+      "linkedinUrl": "https://www.linkedin.com/in/antoine-martineau-5874a520a/",
+      "githubUrl": "https://github.com/Udito3",
+      "alias": "Udito3",
+      "roles": ["Trésorier", "Développeur"]
+  },
+  {
+      "name": "Emma Neiss",
+      "imageUrl": "images/membres/EmmaNeiss.png",
+      "linkedinUrl": "https://fr.linkedin.com/in/emma-neiss",
+      "githubUrl": "https://github.com/eneiss",
+      "alias": "Eneiss",
+      "roles": ["Chef de projet pour ÉTSMobile", "Développeuse"]
+  },
+  {
+    "name": "Samuel Montambault",
+    "imageUrl": "images/membres/SamuelMontambault.png",
+    "linkedinUrl": "https://www.linkedin.com/in/samuel-montambault-62b543114/",
+    "githubUrl": "https://github.com/MysticFragilist",
+    "alias": "MysticFragilist",
+    "roles": ["Ancien Capitaine", "Développeur"]
+  },
+  {
+    "name": "Emon Dhar",
+    "imageUrl": "images/membres/EmonDhar.jpeg",
+    "linkedinUrl": "https://ca.linkedin.com/in/emon-dhar/fr-fr",
+    "githubUrl": "https://github.com/emondhar",
+    "alias": "EmonDhar",
+    "roles": ["Ancien Trésorier", "Développeur"]
+  },
+  {
+    "name": "Jonathan Duval-Venne",
+    "imageUrl": "images/membres/JonathanDuvalVenne.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/jonathan-duval-venne-5581371a2/",
+    "githubUrl": "https://github.com/JonathanDuvalV",
+    "alias": "JonathanDuvalV",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Hugo Migner",
+    "imageUrl": "images/membres/HugoMigner.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/hugo-migner-3b8540230/",
+    "githubUrl": "https://github.com/HugoMigner",
+    "alias": "HugoMigner",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Pascal Parent",
+    "imageUrl": "images/membres/PascalParent.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/pascal-parent-b790b31a8",
+    "githubUrl": "https://github.com/Pascal1132",
+    "alias": "Pascal1132",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Xavier Paquet-Rapold",
+    "imageUrl": "images/membres/XavierPaquetRapold.png",
+    "linkedinUrl": "https://www.linkedin.com/in/xavier-paquet-rapold/",
+    "githubUrl": "https://github.com/XavierPaquet-Rapold",
+    "alias": "XavierPaquet-Rapold",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "David Martel",
+    "imageUrl": "images/membres/DavidMartel.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/david-martel12/",
+    "githubUrl": "https://github.com/DavidMartel12",
+    "alias": "DavidMartel12",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Jonathan Lachance",
+    "imageUrl": "images/membres/JonathanLachance.png",
+    "linkedinUrl": "https://www.linkedin.com/in/jonathan-lachance-a8a871219/",
+    "githubUrl": "https://github.com/J01716",
+    "alias": "JoLach",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Charles Perreault",
+    "imageUrl": "images/membres/CharlesPerreault.png",
+    "linkedinUrl": "https://www.linkedin.com/in/charles-perreault-28978a144",
+    "githubUrl": "https://github.com/SnakeBash",
+    "alias": "SnakeBash",
+    "roles": ["Développeur"]
+  }
+]
