@@ -61,10 +61,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <script src="js/team.js"></script>
     <script>
+      var id = 0;
+      
       function generateMemberContainer(members, sectionId, sectionTitle) {
-        var id = 0;
         var idLine = 0;
         var count = 0;
 
@@ -89,13 +89,13 @@
 
           count++;
         });
-      }      
-      
+      }
+
       function generateSection(sectionId, sectionTitle) {
         var mainContainer = document.getElementById("main-content")
         mainContainer.innerHTML += `
         <span class="intro-title">${sectionTitle}</span>
-        <div id="${sectionId}">
+        <div id="${sectionId}" style="width:100%;${(id == 0) ? "min-height:100vh;" : ""}">
         </div>
         `
       }
@@ -109,13 +109,13 @@
         var membersContainer = document.getElementById(sectionId)
         membersContainer.innerHTML +=
           `
-          <span id="row-${sectionId}-${id}" class="team-row">
+          <span id="row${id}" class="team-row" style="display: none;">
           </span>
           `
       }
 
       function generateMemberLine(id, idLine, sectionId) {
-        var membersRow = document.getElementById(`row-${sectionId}-${id}`)
+        var membersRow = document.getElementById(`row${id}`)
         membersRow.innerHTML +=
           `
           <span id="member-line-${sectionId}-${idLine}" class="mobile-handler">
@@ -150,8 +150,16 @@
       function generateRoleSpans(roles) {
         return roles.map(role => `<span class="role">${role}</span>`).join('');
       }
+      
+      function loadScript() {
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'js/team.js';
 
-      function addSection(jsonPath, sectionId, sectionTitle) {
+        // Append the new script element to the document's head
+        document.head.appendChild(scriptElement);
+      }
+
+      async function addSection(jsonPath, sectionId, sectionTitle) {
         fetch(jsonPath).then(response => response.json()).then(members => {
           generateMemberContainer(members, sectionId, sectionTitle)
         })
@@ -161,11 +169,17 @@
       }
       
       // Add sections here
-      addSection("js/data/members.json", "members-container", "Rencontrez notre équipe.")
-      addSection("js/data/legendary-members.json", "legendary-members-container", "Membres légendaires")
-      addSection("js/data/old-members.json", "old-members-container", "Anciens membres")
+      addSection("js/data/members.json", "members-container", "Rencontrez notre équipe.").then(() => {
+      })
+      addSection("js/data/legendary-members.json", "legendary-members-container", "Membres légendaires").then(() => {
+      })
+      addSection("js/data/old-members.json", "old-members-container", "Anciens membres").then(() => {
+        loadScript();
+      })
 
       $("#footer").load("footer.html"); 
+
+
     </script>
   </body>
 </html>
