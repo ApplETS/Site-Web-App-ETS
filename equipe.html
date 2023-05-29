@@ -170,11 +170,11 @@
       
       // Add sections here
       addSection("js/data/members.json", "members-container", "Rencontrez notre équipe.").then(() => {
-      })
-      addSection("js/data/legendary-members.json", "legendary-members-container", "Membres légendaires").then(() => {
-      })
-      addSection("js/data/old-members.json", "old-members-container", "Anciens membres").then(() => {
-        loadScript();
+        addSection("js/data/legendary-members.json", "legendary-members-container", "Membres légendaires").then(() => {
+          addSection("js/data/old-members.json", "old-members-container", "Anciens membres").then(() => {
+            loadScript();
+          })
+        })
       })
 
       $("#footer").load("footer.html"); 
