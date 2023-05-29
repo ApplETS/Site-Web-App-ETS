@@ -51,6 +51,27 @@ window.onscroll = function(){
         if(this.document.getElementById("row6").getBoundingClientRect().y < 0){
             $('#row7').show("slide",1500);
         }
+        if(this.document.getElementById("row7").getBoundingClientRect().y < 0){
+            $('#row8').show("slide",1500);
+        }
+        if(this.document.getElementById("row8").getBoundingClientRect().y < 0){
+            $('#row9').show("slide",1500);
+        }
+        if(this.document.getElementById("row9").getBoundingClientRect().y < 0){
+            $('#row10').show("slide",1500);
+        }
+        if(this.document.getElementById("row10").getBoundingClientRect().y < 0){
+            $('#row11').show("slide",1500);
+        }
+        if(this.document.getElementById("row11").getBoundingClientRect().y < 0){
+            $('#row12').show("slide",1500);
+        }
+        if(this.document.getElementById("row12").getBoundingClientRect().y < 0){
+            $('#row13').show("slide",1500);
+        }
+        if(this.document.getElementById("row13").getBoundingClientRect().y < 0){
+            $('#row14').show("slide",1500);
+        }
     }
 }
 
@@ -64,6 +85,13 @@ if(!isTouchScreen){
 	$('#row5').show("slide",1500);
 	$('#row6').show("slide",{direction:'right'},1500);
     $('#row7').show("slide",1500);
+    $('#row8').show("slide",{direction:'right'},1500);
+    $('#row9').show("slide",1500);
+    $('#row10').show("slide",{direction:'right'},1500);
+    $('#row11').show("slide",1500);
+    $('#row12').show("slide",{direction:'right'},1500);
+    $('#row13').show("slide",1500);
+    $('#row14').show("slide",{direction:'right'},1500);
 }
 
 
