@@ -150,6 +150,14 @@
       function generateRoleSpans(roles) {
         return roles.map(role => `<span class="role">${role}</span>`).join('');
       }
+      
+      function loadScript() {
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'js/team.js';
+
+        // Append the new script element to the document's head
+        document.head.appendChild(scriptElement);
+      }
 
       async function addSection(jsonPath, sectionId, sectionTitle) {
         await fetch(jsonPath).then(response => response.json()).then(members => {
@@ -161,9 +169,13 @@
       }
       
       // Add sections here
-      addSection("js/data/members.json", "members-container", "Rencontrez notre équipe.")
-      addSection("js/data/legendary-members.json", "legendary-members-container", "Membres légendaires")
-      addSection("js/data/old-members.json", "old-members-container", "Anciens membres")
+      addSection("js/data/members.json", "members-container", "Rencontrez notre équipe.").then(() => {
+        addSection("js/data/legendary-members.json", "legendary-members-container", "Membres légendaires").then(() => {
+          addSection("js/data/old-members.json", "old-members-container", "Anciens membres").then(() => {
+            loadScript();
+          })
+        })
+      })
 
       $("#footer").load("footer.html"); 
     </script>
