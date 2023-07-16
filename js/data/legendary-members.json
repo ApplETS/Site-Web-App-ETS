@@ -1,7 +1,7 @@
 [
   {
     "name": "Isaac Pateau",
-    "imageUrl": "images/membres/IsaacPateau.jpg",
+    "imageUrl": "images/membres/IsaacPateau.webp",
     "linkedinUrl": "https://www.linkedin.com/in/isaac-pateau/",
     "githubUrl": "https://github.com/zaclimon",
     "alias": "ZacLimon",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Thanh-Son-Philippe Lam",
-    "imageUrl": "images/membres/TranhSonPhilippeLam.jpeg",
+    "imageUrl": "images/membres/TranhSonPhilippeLam.webp",
     "linkedinUrl": "https://www.linkedin.com/in/thanh-son-philippe-lam",
     "githubUrl": "https://github.com/Sonphil",
     "alias": "Sonphil",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Xavier Chrétien",
-    "imageUrl": "images/membres/XavierChretien.jpeg",
+    "imageUrl": "images/membres/XavierChretien.webp",
     "linkedinUrl": "https://www.linkedin.com/in/xavierchretien/",
     "githubUrl": "https://github.com/apomalyn",
     "alias": "Apomalyn",
