@@ -32,14 +32,6 @@
       "roles": ["Trésorier", "Développeur"]
   },
   {
-      "name": "Emma Neiss",
-      "imageUrl": "images/membres/EmmaNeiss.png",
-      "linkedinUrl": "https://fr.linkedin.com/in/emma-neiss",
-      "githubUrl": "https://github.com/eneiss",
-      "alias": "Eneiss",
-      "roles": ["Chef de projet pour ÉTSMobile", "Développeuse"]
-  },
-  {
     "name": "Samuel Montambault",
     "imageUrl": "images/membres/SamuelMontambault.png",
     "linkedinUrl": "https://www.linkedin.com/in/samuel-montambault-62b543114/",

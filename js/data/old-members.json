@@ -1,5 +1,13 @@
 [
   {
+    "name": "Emma Neiss",
+    "imageUrl": "images/membres/EmmaNeiss.png",
+    "linkedinUrl": "https://fr.linkedin.com/in/emma-neiss",
+    "githubUrl": "https://github.com/eneiss",
+    "alias": "Eneiss",
+    "roles": ["Ancienne chef de projet pour ÉTSMobile", "Développeuse"]
+  },
+  {
     "name": "Constant",
     "imageUrl": "images/membres/AlexandreConstant.png",
     "linkedinUrl": "",
