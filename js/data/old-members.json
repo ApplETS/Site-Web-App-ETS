@@ -1,7 +1,7 @@
 [
   {
     "name": "Constant",
-    "imageUrl": "images/membres/AlexandreConstant.png",
+    "imageUrl": "images/membres/AlexandreConstant.webp",
     "linkedinUrl": "",
     "githubUrl": "https://github.com/ConstantCONTENT",
     "alias": "ConstantCONTENT",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Davy Castanet",
-    "imageUrl": "images/membres/DavyCastanet.jpeg",
+    "imageUrl": "images/membres/DavyCastanet.webp",
     "linkedinUrl": "https://www.linkedin.com/in/davy-castanet-qa-dev/",
     "githubUrl": "https://github.com/Zangdart",
     "alias": "Zangdart",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Jean-Félix St-hilaire",
-    "imageUrl": "images/membres/JeanFelixStHilaire.jpg",
+    "imageUrl": "images/membres/JeanFelixStHilaire.webp",
     "linkedinUrl": "",
     "githubUrl": "https://github.com/jfl3x",
     "alias": "Jfl3x",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Vincent Audette",
-    "imageUrl": "images/membres/VincentAudette.png",
+    "imageUrl": "images/membres/VincentAudette.webp",
     "linkedinUrl": "https://www.linkedin.com/in/vincent-audette-618ba9140",
     "githubUrl": "https://github.com/VincentAudette",
     "alias": "VincentAudette",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Thomas Lefloch",
-    "imageUrl": "images/membres/ThomasLefloch.jpg",
+    "imageUrl": "images/membres/ThomasLefloch.webp",
     "linkedinUrl": "https://www.linkedin.com/in/thomas-lefloch/",
     "githubUrl": "https://github.com/Bretzoule",
     "alias": "Bretzoule",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Émeric Loriot",
-    "imageUrl": "images/membres/EmericLoriot.png",
+    "imageUrl": "images/membres/EmericLoriot.webp",
     "linkedinUrl": "https://www.linkedin.com/in/emeric-loriot-155427229",
     "githubUrl": "https://github.com/EmericLoriot",
     "alias": "EmericLoriot",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Alexandre Markus",
-    "imageUrl": "images/membres/AlexandreMarkus.jpeg",
+    "imageUrl": "images/membres/AlexandreMarkus.webp",
     "linkedinUrl": "https://www.linkedin.com/in/alexandre-markus",
     "githubUrl": "https://github.com/AlexandreMarkus",
     "alias": "AlexandreMarkus",
@@ -57,7 +57,7 @@
   },
   {
     "name": "Kevin Doremy Laferrière",
-    "imageUrl": "images/membres/KevinDoremyLaferriere.jpeg",
+    "imageUrl": "images/membres/KevinDoremyLaferriere.webp",
     "linkedinUrl": "https://ca.linkedin.com/in/kevin-doremy-laferriere",
     "githubUrl": "https://github.com/KevinDoremy",
     "alias": "KevinDoremy",
@@ -65,7 +65,7 @@
   },
   {
     "name": "Emmanuel Proulx",
-    "imageUrl": "images/membres/EmmanuelProulx.jpg",
+    "imageUrl": "images/membres/EmmanuelProulx.webp",
     "linkedinUrl": "https://www.linkedin.com/in/emmanuel-proulx-546853155/",
     "githubUrl": "https://github.com/kovy42",
     "alias": "Kovy42",
@@ -73,7 +73,7 @@
   },
   {
     "name": "May Madany",
-    "imageUrl": "images/membres/MayMadany.jpg",
+    "imageUrl": "images/membres/MayMadany.webp",
     "linkedinUrl": "https://www.linkedin.com/in/may-madany-83699248",
     "githubUrl": "https://github.com/mayMadany",
     "alias": "MayMadany",
@@ -81,7 +81,7 @@
   },
   {
     "name": "Pascal Anhe",
-    "imageUrl": "images/membres/Applets.jpg",
+    "imageUrl": "images/membres/Applets.webp",
     "linkedinUrl": "https://www.linkedin.com/in/pascalanhe",
     "githubUrl": "https://github.com/vaudranpascal",
     "alias": "Vaudranpascal",
@@ -89,7 +89,7 @@
   },
   {
     "name": "Ricardo Gomez-Cuadrado",
-    "imageUrl": "images/membres/RicardoGomezCuadrado.jpeg",
+    "imageUrl": "images/membres/RicardoGomezCuadrado.webp",
     "linkedinUrl": "https://ca.linkedin.com/in/ricardo-gomez-cuadrado-9b9a24184",
     "githubUrl": "https://github.com/MachoBandido08",
     "alias": "MachoBandido08",
@@ -97,7 +97,7 @@
   },
   {
     "name": "Gracia Dufort Jeanty",
-    "imageUrl": "images/membres/GraciaDufortJeanty.jpeg",
+    "imageUrl": "images/membres/GraciaDufortJeanty.webp",
     "linkedinUrl": "",
     "githubUrl": "https://github.com/GraciaDufort",
     "alias": "Gracia",
@@ -105,7 +105,7 @@
   },
   {
     "name": "Christelle Delalleau",
-    "imageUrl": "images/membres/ChristelleDelalleau.png",
+    "imageUrl": "images/membres/ChristelleDelalleau.webp",
     "linkedinUrl": "https://www.linkedin.com/in/chdelalleau/",
     "githubUrl": "https://github.com/Hamtara",
     "alias": "Hamtara",
@@ -113,7 +113,7 @@
   },
   {
     "name": "Fanelle Mekamto",
-    "imageUrl": "images/membres/FanelleMekamto.jpg",
+    "imageUrl": "images/membres/FanelleMekamto.webp",
     "linkedinUrl": "https://www.linkedin.com/in/fanelle-mekamto-dassi-b602628a",
     "githubUrl": "https://github.com/FanelleMekamto",
     "alias": "Fanelle",
@@ -121,7 +121,7 @@
   },
   {
     "name": "Félix Léveillé",
-    "imageUrl": "images/membres/FelixLeveille.jpg",
+    "imageUrl": "images/membres/FelixLeveille.webp",
     "linkedinUrl": "https://www.linkedin.com/in/f%C3%A9lix-l%C3%A9veill%C3%A9-9b6711170/",
     "githubUrl": "https://github.com/flix477",
     "alias": "Felixleveille",
@@ -129,7 +129,7 @@
   },
   {
     "name": "Jason Narraien",
-    "imageUrl": "images/membres/JasonNarraien.jpg",
+    "imageUrl": "images/membres/JasonNarraien.webp",
     "linkedinUrl": "",
     "githubUrl": "https://github.com/JasonNarrainen",
     "alias": "Jason",
@@ -137,7 +137,7 @@
   },
   {
     "name": "Filipe Arker",
-    "imageUrl": "images/membres/FilipeArker.jpg",
+    "imageUrl": "images/membres/FilipeArker.webp",
     "linkedinUrl": "http://www.linkedin.com/in/filipe-arker-398a13126",
     "githubUrl": "",
     "alias": "Filipe",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Howard Phi",
-    "imageUrl": "images/membres/HowardPhi.jpg",
+    "imageUrl": "images/membres/HowardPhi.webp",
     "linkedinUrl": "https://www.linkedin.com/in/howardphi/",
     "githubUrl": "https://github.com/howardphi",
     "alias": "Howard",
@@ -153,7 +153,7 @@
   },
   {
     "name": "Mykaël Lemieux-Lafontaine",
-    "imageUrl": "images/membres/MykaelLemieuxLafontaine.png",
+    "imageUrl": "images/membres/MykaelLemieuxLafontaine.webp",
     "linkedinUrl": "https://www.linkedin.com/in/myka%C3%ABl-lemieux-lafontaine-909093169/",
     "githubUrl": "https://github.com/mykaelll87",
     "alias": "Mykael",

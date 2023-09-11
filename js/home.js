@@ -2,7 +2,7 @@
  * Initialise parallax (for the android picture)
  */
 $('#parallax-content').parallax({
-    imageSrc: 'images/droidcon.jpg',
+    imageSrc: 'images/droidcon.webp',
     speed:0.1,
     positionY:"top"
 });
