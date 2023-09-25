@@ -32,7 +32,4 @@ git clone https://github.com/ApplETS/Site-Web-App-ETS
 browser-sync start --server --files "*.html, css/*, js/*"
 ```
 
-You can modify the command by adding more files to the auto-sync. 
-
-
-
+You can modify the command by adding more files to the auto-sync.
