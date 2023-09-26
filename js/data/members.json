@@ -94,5 +94,13 @@
     "githubUrl": "https://github.com/SnakeBash",
     "alias": "SnakeBash",
     "roles": ["Développeur"]
+  },
+  {
+    "name": "Francis Bureau",
+    "imageUrl": "images/membres/FrancisBureau.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/francis-bureau-b9abb4162/",
+    "githubUrl": "https://github.com/Effbureau",
+    "alias": "Effbureau",
+    "roles": ["Développeur"]
   }
 ]
