@@ -1,5 +1,13 @@
 [
   {
+    "name": "Emon Dhar",
+    "imageUrl": "images/membres/EmonDhar.webp",
+    "linkedinUrl": "https://ca.linkedin.com/in/emon-dhar/fr-fr",
+    "githubUrl": "https://github.com/emondhar",
+    "alias": "EmonDhar",
+    "roles": ["Ancien Trésorier", "Développeur"]
+  },
+  {
     "name": "Emma Neiss",
     "imageUrl": "images/membres/EmmaNeiss.webp",
     "linkedinUrl": "https://fr.linkedin.com/in/emma-neiss",

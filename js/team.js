@@ -41,9 +41,7 @@ window.onscroll = () => {
   } else {
     $('#navbar').removeClass('back-color');
   }
-  if (!isTouchScreen) {
     fadeInRows();
-  }
 };
 
 if (isTouchScreen) {

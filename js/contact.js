@@ -29,8 +29,7 @@ $('#partner-contact').on('click', function () {
 })
 
 function showMemberForm(){
-    $('.partner-form-content').hide()
-    $('.member-form-content').show("blind")
+    window.open("https://formulaires.etsmtl.ca/ClubEtudiantAdhesion");
 }
 function showPartnerForm(){
     $('.member-form-content').hide()
