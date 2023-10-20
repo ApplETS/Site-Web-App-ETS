@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Camille Brulotte",
+    "imageUrl": "images/membres/CamilleBrulotte.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/camillebrulotte",
+    "githubUrl": "https://github.com/camillebrulotte",
+    "alias": "CamilleBrulotte",
+    "roles": ["Capitaine", "Développeuse"]
+  },
+  {
+    "name": "David Martel",
+    "imageUrl": "images/membres/DavidMartel.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/david-martel12/",
+    "githubUrl": "https://github.com/DavidMartel12",
+    "alias": "DavidMartel12",
+    "roles": ["Co-capitaine", "Développeur"]
+  },
+  {
+    "name": "Xavier Paquet-Rapold",
+    "imageUrl": "images/membres/XavierPaquetRapold.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/xavier-paquet-rapold/",
+    "githubUrl": "https://github.com/XavierPaquet-Rapold",
+    "alias": "XavierPaquet-Rapold",
+    "roles": ["Co-capitaine", "Développeur"]
+  },
+  {
+      "name": "Antoine Martineau",
+      "imageUrl": "images/membres/AntoineMartineau.webp",
+      "linkedinUrl": "https://www.linkedin.com/in/antoine-martineau-5874a520a/",
+      "githubUrl": "https://github.com/Udito3",
+      "alias": "Udito3",
+      "roles": ["Trésorier", "Développeur"]
+  },
+  {
+    "name": "Samuel Montambault",
+    "imageUrl": "images/membres/SamuelMontambault.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/samuel-montambault-62b543114/",
+    "githubUrl": "https://github.com/MysticFragilist",
+    "alias": "MysticFragilist",
+    "roles": ["Ancien Capitaine", "Développeur"]
+  },
+  {
+    "name": "Antoine Lemelin",
+    "imageUrl": "images/membres/AntoineLemelin.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/antoine-lemelin-6b9929238",
+    "githubUrl": "https://github.com/AntoineLemelin",
+    "alias": "AntoineLemelin",
+    "roles": ["Ancien Capitaine", "Développeur"]
+  },
+  {
+    "name": "Jonathan Duval-Venne",
+    "imageUrl": "images/membres/JonathanDuvalVenne.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/jonathan-duval-venne-5581371a2/",
+    "githubUrl": "https://github.com/JonathanDuvalV",
+    "alias": "JonathanDuvalV",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Hugo Migner",
+    "imageUrl": "images/membres/HugoMigner.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/hugo-migner-3b8540230/",
+    "githubUrl": "https://github.com/HugoMigner",
+    "alias": "HugoMigner",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Pascal Parent",
+    "imageUrl": "images/membres/PascalParent.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/pascal-parent-b790b31a8",
+    "githubUrl": "https://github.com/Pascal1132",
+    "alias": "Pascal1132",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Charles Perreault",
+    "imageUrl": "images/membres/CharlesPerreault.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/charles-perreault-28978a144",
+    "githubUrl": "https://github.com/SnakeBash",
+    "alias": "SnakeBash",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Francis Bureau",
+    "imageUrl": "images/membres/FrancisBureau.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/francis-bureau-b9abb4162/",
+    "githubUrl": "https://github.com/Effbureau",
+    "alias": "Effbureau",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Matei Martin",
+    "imageUrl": "images/membres/Applets.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/matei-martin/",
+    "githubUrl": "https://github.com/mataai",
+    "alias": "mataai",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Louis-Philippe Héon",
+    "imageUrl": "images/membres/Applets.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/louis-philippe-h%C3%A9on-023568250/",
+    "githubUrl": "https://github.com/LouisPhilippeHeon",
+    "alias": "LouisPhilippeHeon",
+    "roles": ["Développeur"]
+  }
+]

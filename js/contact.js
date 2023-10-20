@@ -6,20 +6,15 @@ $('#partner-title').toggle("fade",1500);
  * Open up the menu bar when selected
  */
 document.querySelector("#floatingToggle").addEventListener("click", function () {
-
-
     document.querySelector("#nav-toggler").classList.toggle("active");
     $('#navToggleContent').slideToggle()
     $('#navbar').toggleClass("back-color-black")
-
-
 });
 
 /**
  * Open up the right form when selected
  */
 $('#member-contact').on('click', function () {
-    
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#form-container").offset().top-100
     }, 1000);
@@ -27,7 +22,6 @@ $('#member-contact').on('click', function () {
 })
 
 $('#partner-contact').on('click', function () {
-    
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#form-container").offset().top-100
     }, 1000);
@@ -35,8 +29,7 @@ $('#partner-contact').on('click', function () {
 })
 
 function showMemberForm(){
-    $('.partner-form-content').hide()
-    $('.member-form-content').show("blind")
+    window.open("https://formulaires.etsmtl.ca/ClubEtudiantAdhesion");
 }
 function showPartnerForm(){
     $('.member-form-content').hide()

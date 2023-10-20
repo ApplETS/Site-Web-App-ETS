@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/webp" href="images/favicon.webp">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -17,11 +17,11 @@
   <title>Partenaires</title>
 </head>
 
-<body style="background-image:url('images/backgrounds/background4.png'); background-size:cover;background-repeat: round;">
+<body style="background-image:url('images/backgrounds/background4.webp'); background-size:cover;background-repeat: round;">
   <!--Navigation bar-->
   <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
     <span id="navTitle" class="navbar-brand" style="font-size:5vh;cursor:default;color:white;">
-      <img id="brandImage" class="brandImage" src="images/Logo_blanc_ApplETS.png">
+      <img id="brandImage" class="brandImage" src="images/Logo_blanc_ApplETS.webp">
     </span>
     <div id="floatingToggle"></div>
     <a id="nav-toggler">
@@ -54,31 +54,25 @@
   <!--Main content-->
   <div id="main-content" class="container main-container" style="display:none;">
     <span class="intro-title">Merci à tous nos partenaires.</span>
-      <span style="display:flex;flex-direction: column;align-items:center;">
-        <div class="d-flex justify-content-between">
-          <div class="partner-container">
-            <img class="img-fluid partner-logo-image" src="images/partenaires/bnc.png" alt="">
-            <span class="gradient-border-dark"></span>
-            <span class="main-title">Banque Nationale du Canada</span>
-            <a href="https://www.bnc.ca" class="site-link"><img style="margin:5px;" src="images/link.svg" alt="">Site web</a>
-          </div>
-
-          <span class="x-spacer-xl"></span>
-
-          <div class="partner-container">
-            <img class="img-fluid partner-logo-image" src="images/partenaires/intactlab.png" alt="">
-            <span class="gradient-border-dark"></span>
-            <span class="main-title">Intact Lab</span>
-            <a href="https://www.intact.ca/qc/fr/assurance-particuliers.html" class="site-link"><img style="margin:5px;" src="images/link.svg" alt="">Site web</a>
-          </div>
-        </div>
-      </span>
-
       <span class="partner-container">
         <img class="img-fluid partner-logo-image" src="images/ets.png" alt="">
         <span class="gradient-border-dark"></span>
         <span class="main-title">École de Technologie Supérieure</span>
         <a href="https://www.etsmtl.ca" class="site-link"><img style="margin:5px;" src="images/link.svg" alt="">Site web</a>
+      </span>
+      
+      <span class="partner-container">
+        <img class="img-fluid partner-logo-image" src="images/partenaires/intact.png" alt="">
+        <span class="gradient-border-dark"></span>
+        <span class="main-title">Intact #IntactLab team</span>
+        <a href="https://www.intact.ca/qc/fr/assurance-particuliers.html" class="site-link"><img style="margin:5px;" src="images/link.svg" alt="">Site web</a>
+      </span>
+
+      <span class="partner-container">
+        <img class="img-fluid partner-logo-image" src="images/partenaires/bnc.webp" alt="">
+        <span class="gradient-border-dark"></span>
+        <span class="main-title">Banque Nationale du Canada</span>
+        <a href="https://www.bnc.ca" class="site-link"><img style="margin:5px;" src="images/link.svg" alt="">Site web</a>
       </span>
 
       <span class="partner-container">
@@ -108,55 +102,7 @@
   </div>
 
   <!--Footer content-->
-  <div class="footer" style="background-color:#0006!important;">
-    <div class="footer-content container">
-      <div style="display:flex;flex-direction:column;text-align: center;">
-        <span class="main-title">Coordonnées</span>
-        <span>
-          <br>
-          1100 rue Notre-Dame Ouest
-          <br>
-          Montréal, QC
-          <br>
-          H3C 1K3
-          <br>
-          Local : D-2020
-          <br>
-          Téléphone : +1 514 396-8800 poste 7314
-          <br>
-          Courriel : <a href="mailto:info@clubapplets.ca">info@clubapplets.ca</a>
-
-        </span>
-
-      </div>
-      <div style="display:flex;flex-direction:column;text-align:center;">
-        <span class="main-title">Médias sociaux</span>
-        <span>
-          <br>
-          Restez en contact avec nous:
-        </span>
-        <span style="margin-top:5px;">
-          <a href="https://github.com/ApplETS">
-            <img src="images/GitHub-Mark-Light-64px.png" class="logo-image" alt="">
-          </a>
-          <a href="https://www.facebook.com/ClubApplETS/">
-            <img src="images/facebook-logo.png" class="logo-image" alt="">
-          </a>
-          <a href="https://twitter.com/ClubApplETS">
-            <img src="images/Twitter_Logo_WhiteOnBlue.png" alt="" class="logo-image">
-          </a>
-          <a href="https://www.linkedin.com/company/applets/">
-            <img src="images/linkedin-logo.png" style="margin-left:-10px;" alt="" class="logo-image">
-          </a>
-          <a href="https://discord.gg/adMkWptn6Y">
-            <img src="images/discord-logo-white.png" style="margin-left:-10px;" alt="" class="logo-image">
-          </a>
-        </span>
-        <span style="height:20px;width:1px;"></span>
-        <span>© 2023 App|ETS</span>
-      </div>
-    </div>
-  </div>
+  <div id="footer"></div>
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
@@ -166,5 +112,8 @@
   crossorigin="anonymous"></script>
   <script src="js/partners.js"></script>
   <script src="js/contact.js"></script>
+  <script>
+    $("#footer").load("footer.html"); 
+  </script>
 </body>
 </html>

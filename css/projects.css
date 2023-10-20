@@ -136,7 +136,7 @@
 }
 
 .back-image{
-    background-image: url(../images/backgrounds/background.png);
+    background-image: url(../images/backgrounds/background.webp);
     background-repeat: round;
     background-size: cover;
     position: absolute;
