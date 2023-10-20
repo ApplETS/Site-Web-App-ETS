@@ -1,11 +1,11 @@
 [
   {
-    "name": "Antoine Lemelin",
-    "imageUrl": "images/membres/AntoineLemelin.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/antoine-lemelin-6b9929238",
-    "githubUrl": "https://github.com/AntoineLemelin",
-    "alias": "AntoineLemelin",
-    "roles": ["Capitaine", "Développeur"]
+    "name": "Camille Brulotte",
+    "imageUrl": "images/membres/CamilleBrulotte.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/camillebrulotte",
+    "githubUrl": "https://github.com/camillebrulotte",
+    "alias": "CamilleBrulotte",
+    "roles": ["Capitaine", "Développeuse"]
   },
   {
     "name": "David Martel",
@@ -40,12 +40,12 @@
     "roles": ["Ancien Capitaine", "Développeur"]
   },
   {
-      "name": "Camille Brulotte",
-      "imageUrl": "images/membres/CamilleBrulotte.webp",
-      "linkedinUrl": "https://www.linkedin.com/in/camillebrulotte",
-      "githubUrl": "https://github.com/camillebrulotte",
-      "alias": "CamilleBrulotte",
-      "roles": ["Ancienne Co-capitaine", "Développeuse"]
+    "name": "Antoine Lemelin",
+    "imageUrl": "images/membres/AntoineLemelin.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/antoine-lemelin-6b9929238",
+    "githubUrl": "https://github.com/AntoineLemelin",
+    "alias": "AntoineLemelin",
+    "roles": ["Ancien Capitaine", "Développeur"]
   },
   {
     "name": "Jonathan Duval-Venne",
@@ -72,14 +72,6 @@
     "roles": ["Développeur"]
   },
   {
-    "name": "Jonathan Lachance",
-    "imageUrl": "images/membres/JonathanLachance.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/jonathan-lachance-a8a871219/",
-    "githubUrl": "https://github.com/J01716",
-    "alias": "JoLach",
-    "roles": ["Développeur"]
-  },
-  {
     "name": "Charles Perreault",
     "imageUrl": "images/membres/CharlesPerreault.webp",
     "linkedinUrl": "https://www.linkedin.com/in/charles-perreault-28978a144",
@@ -93,6 +85,22 @@
     "linkedinUrl": "https://www.linkedin.com/in/francis-bureau-b9abb4162/",
     "githubUrl": "https://github.com/Effbureau",
     "alias": "Effbureau",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Matei Martin",
+    "imageUrl": "images/membres/Applets.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/matei-martin/",
+    "githubUrl": "https://github.com/mataai",
+    "alias": "mataai",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Louis-Philippe Héon",
+    "imageUrl": "images/membres/Applets.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/louis-philippe-h%C3%A9on-023568250/",
+    "githubUrl": "https://github.com/LouisPhilippeHeon",
+    "alias": "LouisPhilippeHeon",
     "roles": ["Développeur"]
   }
 ]

@@ -1,5 +1,13 @@
 [
   {
+    "name": "Jonathan Lachance",
+    "imageUrl": "images/membres/JonathanLachance.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/jonathan-lachance-a8a871219/",
+    "githubUrl": "https://github.com/J01716",
+    "alias": "JoLach",
+    "roles": ["Développeur"]
+  },
+  {
     "name": "Emon Dhar",
     "imageUrl": "images/membres/EmonDhar.webp",
     "linkedinUrl": "https://ca.linkedin.com/in/emon-dhar/fr-fr",
