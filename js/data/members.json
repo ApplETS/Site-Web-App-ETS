@@ -24,12 +24,12 @@
     "roles": ["Co-capitaine", "Développeur"]
   },
   {
-      "name": "Antoine Martineau",
-      "imageUrl": "images/membres/AntoineMartineau.webp",
-      "linkedinUrl": "https://www.linkedin.com/in/antoine-martineau-5874a520a/",
-      "githubUrl": "https://github.com/Udito3",
-      "alias": "Udito3",
-      "roles": ["Trésorier", "Développeur"]
+    "name": "Antoine Martineau",
+    "imageUrl": "images/membres/AntoineMartineau.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/antoine-martineau-5874a520a/",
+    "githubUrl": "https://github.com/Udito3",
+    "alias": "Udito3",
+    "roles": ["Trésorier", "Développeur"]
   },
   {
     "name": "Samuel Montambault",
@@ -89,7 +89,7 @@
   },
   {
     "name": "Matei Martin",
-    "imageUrl": "images/membres/MateiMartin.jpg",
+    "imageUrl": "images/membres/MateiMartin.webp",
     "linkedinUrl": "https://www.linkedin.com/in/matei-martin/",
     "githubUrl": "https://github.com/mataai",
     "alias": "mataai",
