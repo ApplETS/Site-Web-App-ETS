@@ -80,7 +80,7 @@
 
 .bottom-menu{
     position: absolute;
-    height:60px;
+    height:100px;
     width:100vw;
     bottom:0;
     background-color:rgba(60, 2, 2, 0.44);
@@ -304,4 +304,19 @@
     padding: 10px;
 }
 
+.project-text-container{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    border: 1px solid white;
+    border-radius: 0.5vh;
+    padding: 10px;
+    transition: background-color 500ms;
+    cursor:pointer;
+    color: white;
+}
 
+.project-text-container:hover, .project-text-container:active {
+    color: black;
+    border-color: black;
+}
