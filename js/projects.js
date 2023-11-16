@@ -94,11 +94,14 @@ $('#fullpage').fullpage({
                 document.getElementById("slideTitle").innerHTML = "ÉTSMobile "
                 break;
             case 1:
-                document.getElementById("slideTitle").innerHTML = "ÉTSMap "
+                document.getElementById("slideTitle").innerHTML = "AMC "
                 break;
             case 2:
-                document.getElementById("slideTitle").innerHTML = "API"
+                document.getElementById("slideTitle").innerHTML = "ÉTSMap"
                 break;
+            case 3:
+                    document.getElementById("slideTitle").innerHTML = "API"
+                    break;
         }
     }
 }
