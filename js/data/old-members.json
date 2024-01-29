@@ -1,4 +1,12 @@
-[
+[ 
+  {
+    "name": "Antoine Lemelin",
+    "imageUrl": "images/membres/AntoineLemelin.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/antoine-lemelin-6b9929238",
+    "githubUrl": "https://github.com/AntoineLemelin",
+    "alias": "AntoineLemelin",
+    "roles": ["Ancien Capitaine", "Développeur"]
+  },
   {
     "name": "Jonathan Lachance",
     "imageUrl": "images/membres/JonathanLachance.webp",
