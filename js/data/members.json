@@ -8,14 +8,6 @@
     "roles": ["Capitaine", "Développeuse"]
   },
   {
-    "name": "David Martel",
-    "imageUrl": "images/membres/DavidMartel.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/david-martel12/",
-    "githubUrl": "https://github.com/DavidMartel12",
-    "alias": "DavidMartel12",
-    "roles": ["Co-capitaine", "Développeur"]
-  },
-  {
     "name": "Xavier Paquet-Rapold",
     "imageUrl": "images/membres/XavierPaquetRapold.webp",
     "linkedinUrl": "https://www.linkedin.com/in/xavier-paquet-rapold/",
@@ -40,12 +32,12 @@
     "roles": ["Ancien Capitaine", "Développeur"]
   },
   {
-    "name": "Antoine Lemelin",
-    "imageUrl": "images/membres/AntoineLemelin.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/antoine-lemelin-6b9929238",
-    "githubUrl": "https://github.com/AntoineLemelin",
-    "alias": "AntoineLemelin",
-    "roles": ["Ancien Capitaine", "Développeur"]
+    "name": "David Martel",
+    "imageUrl": "images/membres/DavidMartel.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/david-martel12/",
+    "githubUrl": "https://github.com/DavidMartel12",
+    "alias": "DavidMartel12",
+    "roles": ["Développeur"]
   },
   {
     "name": "Jonathan Duval-Venne",
@@ -101,6 +93,14 @@
     "linkedinUrl": "https://www.linkedin.com/in/louis-philippe-h%C3%A9on-023568250/",
     "githubUrl": "https://github.com/LouisPhilippeHeon",
     "alias": "LouisPhilippeHeon",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Mohamed Idrissi",
+    "imageUrl": "images/membres/MohamedIdrissi.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/mohamed-h-idrissi/",
+    "githubUrl": "https://github.com/mhd-hi",
+    "alias": "mhd-hi",
     "roles": ["Développeur"]
   }
 ]
