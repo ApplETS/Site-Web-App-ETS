@@ -29,7 +29,15 @@
     "linkedinUrl": "https://www.linkedin.com/in/samuel-montambault-62b543114/",
     "githubUrl": "https://github.com/MysticFragilist",
     "alias": "MysticFragilist",
-    "roles": ["Ancien Capitaine", "Développeur"]
+    "roles": ["Chef de projet d'ÉTSMobile", "Ancien Capitaine", "Développeur"]
+  },
+  {
+    "name": "Mohamed Idrissi",
+    "imageUrl": "images/membres/MohamedIdrissi.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/mohamed-h-idrissi/",
+    "githubUrl": "https://github.com/mhd-hi",
+    "alias": "mhd-hi",
+    "roles": ["Chef de projet de PlanifÉTS", "Développeur"]
   },
   {
     "name": "David Martel",
@@ -93,14 +101,6 @@
     "linkedinUrl": "https://www.linkedin.com/in/louis-philippe-h%C3%A9on-023568250/",
     "githubUrl": "https://github.com/LouisPhilippeHeon",
     "alias": "LouisPhilippeHeon",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Mohamed Idrissi",
-    "imageUrl": "images/membres/MohamedIdrissi.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/mohamed-h-idrissi/",
-    "githubUrl": "https://github.com/mhd-hi",
-    "alias": "mhd-hi",
     "roles": ["Développeur"]
   }
 ]
