@@ -34,7 +34,6 @@
   {
     "name": "Constant",
     "imageUrl": "images/membres/AlexandreConstant.webp",
-    "linkedinUrl": "",
     "githubUrl": "https://github.com/ConstantCONTENT",
     "alias": "ConstantCONTENT",
     "roles": ["Ancien Capitaine", "Ancien chef de projet pour ÉTSMap"]
@@ -50,7 +49,6 @@
   {
     "name": "Jean-Félix St-hilaire",
     "imageUrl": "images/membres/JeanFelixStHilaire.webp",
-    "linkedinUrl": "",
     "githubUrl": "https://github.com/jfl3x",
     "alias": "Jfl3x",
     "roles": ["Développeur"]
@@ -130,7 +128,6 @@
   {
     "name": "Gracia Dufort Jeanty",
     "imageUrl": "images/membres/GraciaDufortJeanty.webp",
-    "linkedinUrl": "",
     "githubUrl": "https://github.com/GraciaDufort",
     "alias": "Gracia",
     "roles": ["Développeur"]
@@ -162,7 +159,6 @@
   {
     "name": "Jason Narraien",
     "imageUrl": "images/membres/JasonNarraien.webp",
-    "linkedinUrl": "",
     "githubUrl": "https://github.com/JasonNarrainen",
     "alias": "Jason",
     "roles": ["Développeur"]
@@ -171,7 +167,6 @@
     "name": "Filipe Arker",
     "imageUrl": "images/membres/FilipeArker.webp",
     "linkedinUrl": "http://www.linkedin.com/in/filipe-arker-398a13126",
-    "githubUrl": "",
     "alias": "Filipe",
     "roles": ["Développeur"]
   },
