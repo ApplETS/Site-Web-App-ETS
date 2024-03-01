@@ -72,6 +72,13 @@
     "roles": ["Développeur"]
   },
   {
+    "name": "Dylan Apardian",
+    "imageUrl": "images/membres/DylanApardian.webp",
+    "githubUrl": "https://github.com/DylanApardian",
+    "alias": "DylanApardian",
+    "roles": ["Développeur"]
+  },
+  {
     "name": "Hugo Migner",
     "imageUrl": "images/membres/HugoMigner.webp",
     "linkedinUrl": "https://www.linkedin.com/in/hugo-migner-3b8540230/",
