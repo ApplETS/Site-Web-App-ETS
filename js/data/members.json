@@ -5,7 +5,10 @@
     "linkedinUrl": "https://www.linkedin.com/in/xavier-paquet-rapold/",
     "githubUrl": "https://github.com/XavierPaquet-Rapold",
     "alias": "XavierPaquet-Rapold",
-    "roles": ["Capitaine", "Développeur"]
+    "roles": [
+      "Capitaine",
+      "Développeur"
+    ]
   },
   {
     "name": "Louis-Philippe Héon",
@@ -13,7 +16,10 @@
     "linkedinUrl": "https://www.linkedin.com/in/louis-philippe-h%C3%A9on-023568250/",
     "githubUrl": "https://github.com/LouisPhilippeHeon",
     "alias": "LouisPhilippeHeon",
-    "roles": ["Co-capitaine", "Développeur"]
+    "roles": [
+      "Co-capitaine",
+      "Développeur"
+    ]
   },
   {
     "name": "Francis Bureau",
@@ -21,7 +27,10 @@
     "linkedinUrl": "https://www.linkedin.com/in/francis-bureau-b9abb4162/",
     "githubUrl": "https://github.com/Effbureau",
     "alias": "Effbureau",
-    "roles": ["Trésorier", "Développeur"]
+    "roles": [
+      "Trésorier",
+      "Développeur"
+    ]
   },
   {
     "name": "Samuel Montambault",
@@ -29,7 +38,11 @@
     "linkedinUrl": "https://www.linkedin.com/in/samuel-montambault-62b543114/",
     "githubUrl": "https://github.com/MysticFragilist",
     "alias": "MysticFragilist",
-    "roles": ["Chef de projet d'ÉTSMobile", "Ancien Capitaine", "Développeur"]
+    "roles": [
+      "Chef de projet d'ÉTSMobile",
+      "Ancien Capitaine",
+      "Développeur"
+    ]
   },
   {
     "name": "Mohamed Idrissi",
@@ -37,31 +50,10 @@
     "linkedinUrl": "https://www.linkedin.com/in/mohamed-h-idrissi/",
     "githubUrl": "https://github.com/mhd-hi",
     "alias": "mhd-hi",
-    "roles": ["Chef de projet de PlanifÉTS", "Développeur"]
-  },
-  {
-    "name": "Antoine Martineau",
-    "imageUrl": "images/membres/AntoineMartineau.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/antoine-martineau-5874a520a/",
-    "githubUrl": "https://github.com/Udito3",
-    "alias": "Udito3",
-    "roles": ["Ancien Trésorier", "Développeur"]
-  },
-  {
-    "name": "Camille Brulotte",
-    "imageUrl": "images/membres/CamilleBrulotte.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/camillebrulotte",
-    "githubUrl": "https://github.com/camillebrulotte",
-    "alias": "CamilleBrulotte",
-    "roles": ["Ancienne Capitaine", "Développeuse"]
-  },
-  {
-    "name": "Charles Perreault",
-    "imageUrl": "images/membres/CharlesPerreault.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/charles-perreault-28978a144",
-    "githubUrl": "https://github.com/SnakeBash",
-    "alias": "SnakeBash",
-    "roles": ["Développeur"]
+    "roles": [
+      "Chef de projet de PlanifÉTS",
+      "Développeur"
+    ]
   },
   {
     "name": "David Martel",
@@ -69,30 +61,18 @@
     "linkedinUrl": "https://www.linkedin.com/in/david-martel12/",
     "githubUrl": "https://github.com/DavidMartel12",
     "alias": "DavidMartel12",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Dylan Apardian",
     "imageUrl": "images/membres/DylanApardian.webp",
     "githubUrl": "https://github.com/DylanApardian",
     "alias": "DylanApardian",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Hugo Migner",
-    "imageUrl": "images/membres/HugoMigner.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/hugo-migner-3b8540230/",
-    "githubUrl": "https://github.com/HugoMigner",
-    "alias": "HugoMigner",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Jonathan Duval-Venne",
-    "imageUrl": "images/membres/JonathanDuvalVenne.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/jonathan-duval-venne-5581371a2/",
-    "githubUrl": "https://github.com/JonathanDuvalV",
-    "alias": "JonathanDuvalV",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Matei Martin",
@@ -100,7 +80,19 @@
     "linkedinUrl": "https://www.linkedin.com/in/matei-martin/",
     "githubUrl": "https://github.com/mataai",
     "alias": "mataai",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
+  },
+  {
+    "name": "Mourad Rhanem",
+    "imageUrl": "images/membres/MouradRhanem.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/mrhanem/",
+    "githubUrl": "https://github.com/MouradRUQAM",
+    "alias": "MouradRUQAM",
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Pascal Parent",
@@ -108,6 +100,8 @@
     "linkedinUrl": "https://www.linkedin.com/in/pascal-parent-b790b31a8",
     "githubUrl": "https://github.com/Pascal1132",
     "alias": "Pascal1132",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   }
 ]
