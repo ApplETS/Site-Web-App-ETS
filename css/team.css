@@ -1,24 +1,24 @@
 @keyframes slideInFromLeft {
-  0% {
+  from {
     transform: translateX(-100vw);
   }
 
-  100% {
+  to {
     transform: translateX(0);
   }
 }
 
 @keyframes slideInFromRight {
-  0% {
+  from {
     transform: translateX(100vw);
   }
 
-  100% {
+  to {
     transform: translateX(0);
   }
 }
 
-.resize-animation-stopper * {
+#active-members.resize-animation-stopper * {
   animation: none !important;
 }
 
@@ -51,14 +51,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  transition: ease-out;
 }
 
 .profile-thumbnail {
   height: 15rem;
   width: 15rem;
   background-position: center;
-  background-size: 100%;
+  background-size: 105%;
   transition: all 500ms;
 }
 

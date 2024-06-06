@@ -5,5 +5,5 @@ document.querySelector('#floatingToggle').addEventListener('click', () => {
 });
 
 window.addEventListener("resize", () => {
-  document.body.classList.add("resize-animation-stopper");
+  document.getElementById('active-members').classList.add('resize-animation-stopper');
 });
