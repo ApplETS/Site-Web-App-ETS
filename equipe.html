@@ -1,191 +1,137 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/webp" href="images/favicon.webp">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/team.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/webp" href="images/favicon.webp">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/team.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <title>Équipe App|ETS</title>
-  </head>
+  <title>Équipe App|ETS</title>
+</head>
 
-  <body style="background-image:url('images/backgrounds/background3.webp');background-repeat:round;background-size: cover;height:100vh;width:100vw;overflow-x:hidden;">
-    <!--Navigation bar-->
-    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-      <span id="navTitle" class="navbar-brand" style="font-size:5vh;cursor:default;color:white;">
-        <img id="brandImage" class="brandImage" src="images/Logo_blanc_ApplETS.webp">
-      </span>
-      <div id="floatingToggle"></div>
-      <a id="nav-toggler">
-        <span></span>
-      </a>
+<body style="background-image:url('images/backgrounds/background3.webp');background-repeat:round;background-size: cover;height:100vh;width:100vw;overflow-x:hidden;">
+  <!--Navigation bar-->
+  <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+    <span id="navTitle" class="navbar-brand" style="font-size:5vh;cursor:default;color:white;">
+      <img id="brandImage" class="brandImage" src="images/Logo_blanc_ApplETS.webp">
+    </span>
+    <div id="floatingToggle"></div>
+    <a id="nav-toggler">
+      <span></span>
+    </a>
 
-      <div class="collapse navbar-collapse main-nav" id="navToggleContent">
-        <ul id="navButtons" class="nav-buttons navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a href="index.html">Accueil</a>
-          </li>
-          <li class="nav-item currentTab">
-            <a href="equipe.html">Équipe</a>
-          </li>
-          <li class="nav-item">
-            <a href="projets.html">Projets</a>
-          </li>
+    <div class="collapse navbar-collapse main-nav" id="navToggleContent">
+      <ul id="navButtons" class="nav-buttons navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item currentTab">
+          <a href="equipe.html">Équipe</a>
+        </li>
+        <li class="nav-item">
+          <a href="projets.html">Projets</a>
+        </li>
 
-          <li class="nav-item">
-            <a href="partenaires.html">Partenaires</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!--Main content: team pictures-->
-    <div class="container-fluid main-container" id="main-content">
+        <li class="nav-item">
+          <a href="partenaires.html">Partenaires</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
-    
-    <!--Footer content-->
-    <div id="footer"></div>
+  </nav>
 
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <script>
-      let id = 0;
-      
-      async function generateMemberContainer(members, sectionId, sectionTitle) {
-        let idLine = 0;
-        let count = 0;
+  <!--Main content: team pictures-->
+  <div class="container-fluid main-container" id="main-content">
+    <h1 class="intro-title">Rencontrez notre équipe.</h1>
+    <div class="members-container" id="active-members"></div>
+    <h2>Membres légendaires</h2>
+    <div class="members-container" id="legendary-members"></div>
+    <h2>Anciens membres</h2>
+    <div class="members-container" id="previous-members"></div>
+  </div>
 
-        generateSection(sectionId, sectionTitle)
+  <!--Footer content-->
+  <div id="footer"></div>
 
-        members.forEach(member => {
-          if (count % 4 === 0) {
-            id++
-            generateMemberRow(id, sectionId)
-          }
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script>
+    loadScript();
 
-          if (count % 2 === 0) {
-            idLine++
-            generateMemberLine(id, idLine, sectionId)
-          }
-          
-          generateMemberProfile(member, idLine, sectionId)
+    async function generateMemberContainer(members, sectionId, sectionTitle) {
+      (await fetchMembers("js/data/members.json")).forEach(member => {
+        generateMemberProfile(member, "active-members")
+      });
 
-          if (count % 4 >= 0 && count % 4 < 3) {
-            generateSeparator(idLine, sectionId)
-          }
+      (await fetchMembers("js/data/legendary-members.json")).forEach(member => {
+        generateMemberProfile(member, "legendary-members")
+      });
 
-          count++;
-        });
-      }
+      (await fetchMembers("js/data/old-members.json")).forEach(member => {
+        generateMemberProfile(member, "previous-members")
+      });
+    }
 
-      function generateSection(sectionId, sectionTitle) {
-        var mainContainer = document.getElementById("main-content")
-        mainContainer.innerHTML += `
-        <span class="intro-title">${sectionTitle}</span>
-        <div id="${sectionId}" style="width:100%;${(id === 0) ? "min-height:100vh;" : ""}">
-        </div>
-        `
-      }
-
-      function generateSeparator(id, sectionId) {
-        let membersLine = document.getElementById(`member-line-${sectionId}-${id}`)
-        membersLine.innerHTML += `<span class="x-spacer-xl"></span>`
-      }
-
-      function generateMemberRow(id, sectionId) {
-        let membersContainer = document.getElementById(sectionId)
-        membersContainer.innerHTML +=
-          `
-          <span id="row${id}" class="team-row" style="display: none;">
-          </span>
-          `
-      }
-
-      function generateMemberLine(id, idLine, sectionId) {
-        let membersRow = document.getElementById(`row${id}`)
-        membersRow.innerHTML +=
-          `
-          <span id="member-line-${sectionId}-${idLine}" class="mobile-handler">
-          </span>
-          `
-      }
-
-      function generateMemberProfile(member, id, sectionId) {
-        let membersLine = document.getElementById(`member-line-${sectionId}-${id}`)
-        membersLine.innerHTML +=
-          `
-          <div style="display:flex;align-items:center;flex-direction:column;">
-            <div class="rounded-circle profile-thumbnail" style="background-image:url('${member.imageUrl}');">
-              <div class="thumbnail-content rounded-circle">
-                ${displayLinkedinOfMember(member)}
-                ${displayGithubOfMember(member)}
-              </div>
-            </div>
-            <div class="bottom-content">
-              <span class="name">${member.name}</span>
-              <span class="sub-sub-title alias">@${member.alias}</span>
-              ${generateRoleSpans(member.roles)}
+    function generateMemberProfile(member, section) {
+      document.getElementById(section).innerHTML += `
+        <div class="profile">
+          <div class="rounded-circle profile-thumbnail" style="background-image:url('${member.imageUrl}'); loading="lazy" alt="">
+            <div class="thumbnail-content rounded-circle">
+              ${displayLinkedinOfMember(member)}
+              ${displayGithubOfMember(member)}
             </div>
           </div>
-          `
-      }
+          <div class="bottom-content">
+            <span class="name">${member.name}</span>
+            <span class="sub-sub-title alias">@${member.alias}</span>
+            ${generateRoleSpans(member.roles)}
+          </div>
+        </div>
+      `
+    }
 
-      function displayLinkedinOfMember(member) {
-        if (member.linkedinUrl)
-          return `<a href="${member.linkedinUrl}"><img class="thumbnail-link" src="images/linkedin-logo.webp" alt=""></a>`;
-        return '';
-      }
+    function displayLinkedinOfMember(member) {
+      if (member.linkedinUrl)
+        return `<a href="${member.linkedinUrl}"><img class="thumbnail-link" src="images/linkedin-logo.webp" alt=""></a>`;
+      return '';
+    }
 
-      function displayGithubOfMember(member) {
-        if (member.githubUrl)
-          return `<a href="${member.githubUrl}"><img class="thumbnail-link" src="images/github-mark-light-64px.webp" alt=""></a>`;
-        return '';
-      }
+    function displayGithubOfMember(member) {
+      if (member.githubUrl)
+        return `<a href="${member.githubUrl}"><img class="thumbnail-link" src="images/github-mark-light-64px.webp" alt=""></a>`;
+      return '';
+    }
 
-      function generateRoleSpans(roles) {
-        return roles.map(role => `<span class="role">${role}</span>`).join('');
-      }
-      
-      function loadScript() {
-        let scriptElement = document.createElement('script');
-        scriptElement.src = 'js/team.js';
+    function generateRoleSpans(roles) {
+      return roles.map(role => `<span class="role">${role}</span>`).join('');
+    }
 
-        // Append the new script element to the document's head
-        document.head.appendChild(scriptElement);
-      }
+    function loadScript() {
+      let scriptElement = document.createElement('script');
+      scriptElement.src = 'js/team.js';
 
-      async function addSection(jsonPath, sectionId, sectionTitle) {
-        await fetch(jsonPath).then(response => response.json()).then(members => {
-          generateMemberContainer(members, sectionId, sectionTitle)
-        })
-        .catch(error => {
-          console.log(error)
-        });
-      }
-      
-      // Add sections here
-      addSection("js/data/members.json", "members-container", "Rencontrez notre équipe.").then(() => {
-        addSection("js/data/legendary-members.json", "legendary-members-container", "Membres légendaires").then(() => {
-          addSection("js/data/old-members.json", "old-members-container", "Anciens membres").then(() => {
-            loadScript();
-          })
-        })
-      })
+      // Append the new script element to the document's head
+      document.head.appendChild(scriptElement);
+    }
 
-      $("#footer").load("footer.html"); 
-    </script>
-  </body>
+    async function fetchMembers(jsonPath) {
+      let data = await fetch(jsonPath)
+      return await data.json();
+    }
+    generateMemberContainer("sectionTitle");
+
+    $("#footer").load("footer.html"); 
+  </script>
+</body>
+
 </html>

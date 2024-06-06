@@ -40,30 +40,6 @@
     "roles": ["Chef de projet de PlanifÉTS", "Développeur"]
   },
   {
-    "name": "Antoine Martineau",
-    "imageUrl": "images/membres/AntoineMartineau.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/antoine-martineau-5874a520a/",
-    "githubUrl": "https://github.com/Udito3",
-    "alias": "Udito3",
-    "roles": ["Ancien Trésorier", "Développeur"]
-  },
-  {
-    "name": "Camille Brulotte",
-    "imageUrl": "images/membres/CamilleBrulotte.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/camillebrulotte",
-    "githubUrl": "https://github.com/camillebrulotte",
-    "alias": "CamilleBrulotte",
-    "roles": ["Ancienne Capitaine", "Développeuse"]
-  },
-  {
-    "name": "Charles Perreault",
-    "imageUrl": "images/membres/CharlesPerreault.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/charles-perreault-28978a144",
-    "githubUrl": "https://github.com/SnakeBash",
-    "alias": "SnakeBash",
-    "roles": ["Développeur"]
-  },
-  {
     "name": "David Martel",
     "imageUrl": "images/membres/DavidMartel.webp",
     "linkedinUrl": "https://www.linkedin.com/in/david-martel12/",
@@ -79,27 +55,19 @@
     "roles": ["Développeur"]
   },
   {
-    "name": "Hugo Migner",
-    "imageUrl": "images/membres/HugoMigner.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/hugo-migner-3b8540230/",
-    "githubUrl": "https://github.com/HugoMigner",
-    "alias": "HugoMigner",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Jonathan Duval-Venne",
-    "imageUrl": "images/membres/JonathanDuvalVenne.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/jonathan-duval-venne-5581371a2/",
-    "githubUrl": "https://github.com/JonathanDuvalV",
-    "alias": "JonathanDuvalV",
-    "roles": ["Développeur"]
-  },
-  {
     "name": "Matei Martin",
     "imageUrl": "images/membres/MateiMartin.webp",
     "linkedinUrl": "https://www.linkedin.com/in/matei-martin/",
     "githubUrl": "https://github.com/mataai",
     "alias": "mataai",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Mourad Rhanem",
+    "imageUrl": "images/membres/MouradRhanem.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/mrhanem/",
+    "githubUrl": "https://github.com/MouradRUQAM",
+    "alias": "MouradRUQAM",
     "roles": ["Développeur"]
   },
   {
