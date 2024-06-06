@@ -3,3 +3,7 @@ document.querySelector('#floatingToggle').addEventListener('click', () => {
   $('#navToggleContent').slideToggle();
   $('#navbar').toggleClass('back-color-black');
 });
+
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+});

@@ -50,6 +50,12 @@
 
   <!--Main content: team pictures-->
   <div class="container-fluid main-container" id="main-content">
+    <h1 class="intro-title">Rencontrez notre équipe.</h1>
+    <div class="members-container" id="active-members"></div>
+    <h2>Membres légendaires</h2>
+    <div class="members-container" id="legendary-members"></div>
+    <h2>Anciens membres</h2>
+    <div class="members-container" id="previous-members"></div>
   </div>
 
   <!--Footer content-->
@@ -60,87 +66,38 @@
   <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script>
-    window.addEventListener("resize", () => {
-      document.body.classList.add("resize-animation-stopper");
-    });
-
-
-    let id = 0;
+    loadScript();
 
     async function generateMemberContainer(members, sectionId, sectionTitle) {
-      let idLine = 0;
-      let count = 0;
+      (await fetchMembers("js/data/members.json")).forEach(member => {
+        generateMemberProfile(member, "active-members")
+      });
 
-      generateSection(sectionId, sectionTitle)
+      (await fetchMembers("js/data/legendary-members.json")).forEach(member => {
+        generateMemberProfile(member, "legendary-members")
+      });
 
-      members.forEach(member => {
-        generateMemberProfile(member, idLine, sectionId)
-
-        if (count % 4 === 0) {
-          id++
-          // generateMemberRow(id, sectionId)
-        }
-
-        if (count % 2 === 0) {
-          idLine++
-          // generateMemberLine(id, idLine, sectionId)
-        }
-
-
-        if (count % 4 >= 0 && count % 4 < 3) {
-          // generateSeparator(idLine, sectionId)
-        }
-
-        count++;
+      (await fetchMembers("js/data/old-members.json")).forEach(member => {
+        generateMemberProfile(member, "previous-members")
       });
     }
 
-    function generateSection(sectionId, sectionTitle) {
-      var mainContainer = document.getElementById("main-content")
-      mainContainer.innerHTML += `
-        <span class="intro-title">${sectionTitle}</span>
-        <div id="${sectionId}">
-        </div>
-        `
-    }
-
-
-    function generateMemberRow(id, sectionId) {
-      let membersContainer = document.getElementById(sectionId)
-      membersContainer.innerHTML +=
-        `
-          <span id="row${id}" class="team-row" style="display: none;">
-          </span>
-          `
-    }
-
-    function generateMemberLine(id, idLine, sectionId) {
-      let membersRow = document.getElementById(`row${id}`)
-      membersRow.innerHTML +=
-        `
-          <span id="member-line-${sectionId}-${idLine}" class="mobile-handler">
-          </span>
-          `
-    }
-
-    function generateMemberProfile(member, id, sectionId) {
-      let membersLine = document.getElementById(`members-container`)
-      membersLine.innerHTML +=
-        `
-          <div class="profile">
-            <div class="rounded-circle profile-thumbnail" style="background-image:url('${member.imageUrl}');">
-              <div class="thumbnail-content rounded-circle">
-                ${displayLinkedinOfMember(member)}
-                ${displayGithubOfMember(member)}
-              </div>
-            </div>
-            <div class="bottom-content">
-              <span class="name">${member.name}</span>
-              <span class="sub-sub-title alias">@${member.alias}</span>
-              ${generateRoleSpans(member.roles)}
+    function generateMemberProfile(member, section) {
+      document.getElementById(section).innerHTML += `
+        <div class="profile">
+          <div class="rounded-circle profile-thumbnail" style="background-image:url('${member.imageUrl}'); loading="lazy" alt="">
+            <div class="thumbnail-content rounded-circle">
+              ${displayLinkedinOfMember(member)}
+              ${displayGithubOfMember(member)}
             </div>
           </div>
-          `
+          <div class="bottom-content">
+            <span class="name">${member.name}</span>
+            <span class="sub-sub-title alias">@${member.alias}</span>
+            ${generateRoleSpans(member.roles)}
+          </div>
+        </div>
+      `
     }
 
     function displayLinkedinOfMember(member) {
@@ -167,23 +124,11 @@
       document.head.appendChild(scriptElement);
     }
 
-    async function addSection(jsonPath, sectionId, sectionTitle) {
-      await fetch(jsonPath).then(response => response.json()).then(members => {
-        generateMemberContainer(members, sectionId, sectionTitle)
-      })
-        .catch(error => {
-          console.log(error)
-        });
+    async function fetchMembers(jsonPath) {
+      let data = await fetch(jsonPath)
+      return await data.json();
     }
-
-    // Add sections here
-    addSection("js/data/members.json", "members-container", "Rencontrez notre équipe.").then(() => {
-      addSection("js/data/legendary-members.json", "legendary-members-container", "Membres légendaires").then(() => {
-        addSection("js/data/old-members.json", "old-members-container", "Anciens membres").then(() => {
-          loadScript();
-        })
-      })
-    })
+    generateMemberContainer("sectionTitle");
 
     $("#footer").load("footer.html"); 
   </script>
