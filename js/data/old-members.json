@@ -5,9 +5,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/alexandre-markus",
     "githubUrl": "https://github.com/AlexandreMarkus",
     "alias": "AlexandreMarkus",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Antoine Lemelin",
@@ -15,10 +13,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/antoine-lemelin-6b9929238",
     "githubUrl": "https://github.com/AntoineLemelin",
     "alias": "AntoineLemelin",
-    "roles": [
-      "Ancien Capitaine",
-      "Développeur"
-    ]
+    "roles": ["Ancien Capitaine", "Développeur"]
   },
   {
     "name": "Antoine Martineau",
@@ -26,10 +21,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/antoine-martineau-5874a520a/",
     "githubUrl": "https://github.com/Udito3",
     "alias": "Udito3",
-    "roles": [
-      "Ancien Trésorier",
-      "Développeur"
-    ]
+    "roles": ["Ancien Trésorier", "Développeur"]
   },
   {
     "name": "Camille Brulotte",
@@ -37,10 +29,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/camillebrulotte",
     "githubUrl": "https://github.com/camillebrulotte",
     "alias": "CamilleBrulotte",
-    "roles": [
-      "Ancienne Capitaine",
-      "Développeuse"
-    ]
+    "roles": ["Ancienne Capitaine", "Développeuse"]
   },
   {
     "name": "Charles Perreault",
@@ -48,9 +37,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/charles-perreault-28978a144",
     "githubUrl": "https://github.com/SnakeBash",
     "alias": "SnakeBash",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Christelle Delalleau",
@@ -58,19 +45,14 @@
     "linkedinUrl": "https://www.linkedin.com/in/chdelalleau/",
     "githubUrl": "https://github.com/Hamtara",
     "alias": "Hamtara",
-    "roles": [
-      "Expérience utilisateur"
-    ]
+    "roles": ["Expérience utilisateur"]
   },
   {
     "name": "Constant",
     "imageUrl": "images/membres/AlexandreConstant.webp",
     "githubUrl": "https://github.com/ConstantCONTENT",
     "alias": "ConstantCONTENT",
-    "roles": [
-      "Ancien Capitaine",
-      "Ancien chef de projet pour ÉTSMap"
-    ]
+    "roles": ["Ancien Capitaine", "Ancien chef de projet pour ÉTSMap"]
   },
   {
     "name": "Davy Castanet",
@@ -78,9 +60,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/davy-castanet-qa-dev/",
     "githubUrl": "https://github.com/Zangdart",
     "alias": "Zangdart",
-    "roles": [
-      "Développeur mobile"
-    ]
+    "roles": ["Développeur mobile"]
   },
   {
     "name": "Émeric Loriot",
@@ -88,9 +68,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/emeric-loriot-155427229",
     "githubUrl": "https://github.com/EmericLoriot",
     "alias": "EmericLoriot",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Emma Neiss",
@@ -98,10 +76,7 @@
     "linkedinUrl": "https://fr.linkedin.com/in/emma-neiss",
     "githubUrl": "https://github.com/eneiss",
     "alias": "Eneiss",
-    "roles": [
-      "Ancienne chef de projet pour ÉTSMobile",
-      "Développeuse"
-    ]
+    "roles": ["Ancienne chef de projet pour ÉTSMobile", "Développeuse"]
   },
   {
     "name": "Emmanuel Proulx",
@@ -109,10 +84,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/emmanuel-proulx-546853155/",
     "githubUrl": "https://github.com/kovy42",
     "alias": "Kovy42",
-    "roles": [
-      "Ancien Trésorier",
-      "Développeur"
-    ]
+    "roles": ["Ancien Trésorier", "Développeur"]
   },
   {
     "name": "Emon Dhar",
@@ -120,10 +92,7 @@
     "linkedinUrl": "https://ca.linkedin.com/in/emon-dhar/fr-fr",
     "githubUrl": "https://github.com/emondhar",
     "alias": "EmonDhar",
-    "roles": [
-      "Ancien Trésorier",
-      "Développeur"
-    ]
+    "roles": ["Ancien Trésorier", "Développeur"]
   },
   {
     "name": "Fanelle Mekamto",
@@ -131,10 +100,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/fanelle-mekamto-dassi-b602628a",
     "githubUrl": "https://github.com/FanelleMekamto",
     "alias": "Fanelle",
-    "roles": [
-      "Événementiel",
-      "Développeuse"
-    ]
+    "roles": ["Événementiel", "Développeuse"]
   },
   {
     "name": "Félix Léveillé",
@@ -142,27 +108,21 @@
     "linkedinUrl": "https://www.linkedin.com/in/f%C3%A9lix-l%C3%A9veill%C3%A9-9b6711170/",
     "githubUrl": "https://github.com/flix477",
     "alias": "Felixleveille",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Filipe Arker",
     "imageUrl": "images/membres/FilipeArker.webp",
     "linkedinUrl": "http://www.linkedin.com/in/filipe-arker-398a13126",
     "alias": "Filipe",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Gracia Dufort Jeanty",
     "imageUrl": "images/membres/GraciaDufortJeanty.webp",
     "githubUrl": "https://github.com/GraciaDufort",
     "alias": "Gracia",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Howard Phi",
@@ -170,9 +130,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/howardphi/",
     "githubUrl": "https://github.com/howardphi",
     "alias": "Howard",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Hugo Migner",
@@ -180,27 +138,21 @@
     "linkedinUrl": "https://www.linkedin.com/in/hugo-migner-3b8540230/",
     "githubUrl": "https://github.com/HugoMigner",
     "alias": "HugoMigner",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Jason Narraien",
     "imageUrl": "images/membres/JasonNarraien.webp",
     "githubUrl": "https://github.com/JasonNarrainen",
     "alias": "Jason",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Jean-Félix St-hilaire",
     "imageUrl": "images/membres/JeanFelixStHilaire.webp",
     "githubUrl": "https://github.com/jfl3x",
     "alias": "Jfl3x",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Jonathan Duval-Venne",
@@ -208,9 +160,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/jonathan-duval-venne-5581371a2/",
     "githubUrl": "https://github.com/JonathanDuvalV",
     "alias": "JonathanDuvalV",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Jonathan Lachance",
@@ -218,9 +168,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/jonathan-lachance-a8a871219/",
     "githubUrl": "https://github.com/J01716",
     "alias": "JoLach",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Kevin Doremy Laferrière",
@@ -228,9 +176,7 @@
     "linkedinUrl": "https://ca.linkedin.com/in/kevin-doremy-laferriere",
     "githubUrl": "https://github.com/KevinDoremy",
     "alias": "KevinDoremy",
-    "roles": [
-      "Ancien Co-capitaine"
-    ]
+    "roles": ["Ancien Co-capitaine"]
   },
   {
     "name": "May Madany",
@@ -238,9 +184,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/may-madany-83699248",
     "githubUrl": "https://github.com/mayMadany",
     "alias": "MayMadany",
-    "roles": [
-      "Développeuse"
-    ]
+    "roles": ["Développeuse"]
   },
   {
     "name": "Mykaël Lemieux-Lafontaine",
@@ -248,9 +192,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/myka%C3%ABl-lemieux-lafontaine-909093169/",
     "githubUrl": "https://github.com/mykaelll87",
     "alias": "Mykael",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Pascal Anhe",
@@ -258,9 +200,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/pascalanhe",
     "githubUrl": "https://github.com/vaudranpascal",
     "alias": "Vaudranpascal",
-    "roles": [
-      "Responsable des nouveaux membres"
-    ]
+    "roles": ["Responsable des nouveaux membres"]
   },
   {
     "name": "Ricardo Gomez-Cuadrado",
@@ -268,9 +208,7 @@
     "linkedinUrl": "https://ca.linkedin.com/in/ricardo-gomez-cuadrado-9b9a24184",
     "githubUrl": "https://github.com/MachoBandido08",
     "alias": "MachoBandido08",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Thomas Lefloch",
@@ -278,9 +216,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/thomas-lefloch/",
     "githubUrl": "https://github.com/Bretzoule",
     "alias": "Bretzoule",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   },
   {
     "name": "Vincent Audette",
@@ -288,8 +224,6 @@
     "linkedinUrl": "https://www.linkedin.com/in/vincent-audette-618ba9140",
     "githubUrl": "https://github.com/VincentAudette",
     "alias": "VincentAudette",
-    "roles": [
-      "Développeur"
-    ]
+    "roles": ["Développeur"]
   }
 ]
