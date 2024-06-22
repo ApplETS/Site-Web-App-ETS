@@ -5,18 +5,15 @@ $('.project-slide').hide()
 //Show the first content without animations (reduce lag)
 showTitleNoFade()
 
-
 function showTitleNoFade(){
     $('#titleDiv').toggle()
     $('.scroll-down-zone').css("opacity","1")
 }
 
-
 function showTitle(){
     $('#titleDiv').fadeToggle(1000, "swing")
     $('.scroll-down-zone').css("opacity","1")
 }
-
 
 
 //Initialize fullpage with event functions
@@ -33,9 +30,6 @@ $('#fullpage').fullpage({
             $('#projectHeart').css("width", "400vh")
             $('#projectHeart').css("margin-top", "100vh")
             $('.fp-controlArrow').hide()
-
-
-
         }
         if (index.index == 1 && nextIndex.index == 0 && direction === "up") {
             $('#section1').css("background-color", "")
@@ -45,12 +39,10 @@ $('#fullpage').fullpage({
             $('#projectHeart').css("margin-top", "3.5vh")
             $('.project-slide').fadeToggle(500, "linear")
 
-            $('#header').css('background-color', '')
 
             $('.go-back-arrow').removeClass('show-flex')
             $('#titleDiv').show()
             $('.scroll-down-zone').css("opacity","1")
-
         }
     },
     //Just landed on the current section 
@@ -71,8 +63,6 @@ $('#fullpage').fullpage({
             $('#iosETSMOBILE').css('height', '35vh')
             $('#app-store-link').css('width', '100px')
 
-            $('#header').css('background-color', 'rgba(60, 2, 2, 0.44)')
-
             $('#app-layer-1').css('transform', '')
             $('#app-layer-3').css('transform', '')
 
@@ -91,25 +81,20 @@ $('#fullpage').fullpage({
     onSlideLeave: function (section, origin, destination, direction) {
         switch (destination.index) {
             case 0:
-                document.getElementById("slideTitle").innerHTML = "ÉTSMobile "
+                document.getElementById("slideTitle").innerText = "ÉTSMobile "
                 break;
             case 1:
-                document.getElementById("slideTitle").innerHTML = "AMC "
+                document.getElementById("slideTitle").innerText = "AMC "
                 break;
             case 2:
-                document.getElementById("slideTitle").innerHTML = "ÉTSMap"
+                document.getElementById("slideTitle").innerText = "ÉTSMap"
                 break;
             case 3:
-                    document.getElementById("slideTitle").innerHTML = "API"
-                    break;
+                document.getElementById("slideTitle").innerText = "API"
+                break;
         }
     }
-}
-
-
-
-
-)
+})
 
 //In case the device is a touchscreen
 document.addEventListener('touchstart', function () {
@@ -156,7 +141,6 @@ $('#mobileGithubLink').on('click', function () {
     $('.modal-background').css("background-color", "#0000004d")
     $('.modal-platform').css("visibility", "visible")
     $('.modal-platform').css("opacity", "1")
-
 })
 
 /**
@@ -165,30 +149,7 @@ $('#mobileGithubLink').on('click', function () {
 $('#projectHeart').on('click', function () {
     $.fn.fullpage.moveSectionDown()
     $('#projectHeart').css("width", "600vh")
-
 })
-
-/**
- * Open up the menu bar when selected
- */
-document.querySelector("#floatingToggle").addEventListener("click", function () {
-    if ($('.go-back-arrow').css("top") != "") {
-        $('.go-back-arrow').css("top", document.getElementsByClassName("go-back-arrow")[0].getBoundingClientRect().y)
-    } else {
-        $('.go-back-arrow').css("top", "")
-    }
-
-    document.querySelector("#nav-toggler").classList.toggle("active");
-    $('#navToggleContent').slideToggle()
-    if ($('.fp-section.active')[0].id == "section0") {
-        $('#header').toggleClass("back-color")
-    } else {
-        $('#header').toggleClass("back-color-red")
-        $('#header').removeClass("back-color")
-    }
-
-
-});
 
 /**
  * When hovering over a phone, make it become bigger and the other smaller (and when clicking when using a mobile device)
@@ -228,6 +189,3 @@ function separateAppLayers() {
     $('#app-layer-1').css('transform', 'translate(3vh,2vh)')
     $('#app-layer-3').css('transform', 'translate(-3vh,-2vh)')
 }
-
-
-

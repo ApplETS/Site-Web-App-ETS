@@ -8,29 +8,29 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .main-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 2vh;
+    font-size: 1.4rem;
     flex-grow: 0;
 }
 
-.nav-buttons li {
-    cursor: pointer;
-    margin-left: 8vh;
-    display: inline-block;
+.nav-buttons  {
+    column-gap: 3rem;
 }
-
-
 
 .back-color {
     background-color: #000000b7 !important;
 }
 
 .back-color-black {
-    background-color: black;
+    background-color: #000000ba;
 }
 
 .nav-buttons li:after {
@@ -50,20 +50,23 @@ body {
     width: 100%;
 }
 
-
 .nav-item a {
     text-decoration: none;
     color: inherit
 }
 
-#nav-toggler {
-    margin-right: 11vw;
+#nav-toggle-container {
+    margin-right: 3vw;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 #nav-toggler span,
 #nav-toggler span:before,
 #nav-toggler span:after {
-    cursor: pointer;
     border-radius: 1px;
     height: 3px;
     width: 35px;
@@ -74,11 +77,11 @@ body {
 }
 
 #nav-toggler span:before {
-    top: -10px;
+    margin-top: -10px;
 }
 
 #nav-toggler span:after {
-    bottom: -10px;
+    margin-top: 10px;
 }
 
 #nav-toggler span,
@@ -93,7 +96,7 @@ body {
 
 #nav-toggler.active span:before,
 #nav-toggler.active span:after {
-    top: 0;
+    margin-top: 0;
 }
 
 #nav-toggler.active span:before {
@@ -107,37 +110,15 @@ body {
 
 
 .brandImage {
-    height: 7vh;
-}
-
-.brandImageTop {
-    transition: all 1s;
-}
-
-#floatingToggle {
-    position: absolute;
-    right: 7vw;
-    width: 50px;
-    height: 50px;
-    top: 3vh;
-    cursor: pointer;
-    z-index: 1000;
+    height: 5rem;
 }
 
 @keyframes blink {
-    0% {
+    0%, 49% {
         opacity: 0;
     }
 
-    49% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
+    50%, 100% {
         opacity: 1;
     }
 }
@@ -167,6 +148,7 @@ body {
 
 .navbar {
     transition: background-color 1s;
+    backdrop-filter: blur(5px);
 }
 
 .x-spacer {
@@ -253,7 +235,6 @@ a:hover {
     transition: all 500ms;
     border-radius: 10px;
     opacity: 0;
-
 }
 
 
@@ -280,16 +261,27 @@ a:hover {
 }
 
 @media (min-width:992px) {
-    .navbar {
-        justify-content: center;
+    @keyframes blink {
+        0%, 49% {
+            opacity: 0;
+        }
+    
+        50%, 100% {
+            opacity: 1;
+        }
     }
 
-    #nav-toggler {
+    .navbar {
+        justify-content: center;
+        column-gap: 5rem;
+    }
+
+    #nav-toggle-container {
         display: none;
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:991px) {
     .main-container {
         margin-top: 15vh;
     }

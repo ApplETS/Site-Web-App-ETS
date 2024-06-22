@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <!-- Required meta tags -->
@@ -18,13 +18,16 @@
 <body style="background-image:url('images/backgrounds/background3.webp');background-repeat:round;background-size: cover;height:100vh;width:100vw;overflow-x:hidden;">
   <!--Navigation bar-->
   <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-    <span id="navTitle" class="navbar-brand" style="font-size:5vh;cursor:default;color:white;">
+    <span id="navTitle" class="navbar-brand">
       <img id="brandImage" class="brandImage" src="images/Logo_blanc_ApplETS.webp" alt="">
     </span>
-    <div id="floatingToggle"></div>
-    <a id="nav-toggler">
-      <span></span>
-    </a>
+
+    <div id="nav-toggle-container">
+      <span class="sr-only">Ouvir le menu</span>
+      <div id="nav-toggler">
+        <span></span>
+      </div>
+    </div>
 
     <div class="collapse navbar-collapse main-nav" id="navToggleContent">
       <ul id="navButtons" class="nav-buttons navbar-nav mr-auto mt-2 mt-lg-0">
@@ -37,7 +40,6 @@
         <li class="nav-item">
           <a href="projets.html">Projets</a>
         </li>
-
         <li class="nav-item">
           <a href="partenaires.html">Partenaires</a>
         </li>
@@ -85,7 +87,7 @@
     function generateMemberProfile(member, section) {
       document.getElementById(section).innerHTML += `
         <div class="profile">
-          <div class="rounded-circle profile-thumbnail" style="background-image:url('${member.imageUrl}'); loading="lazy" alt="">
+          <div class="rounded-circle profile-thumbnail" style="background-image:url('${member.imageUrl}');" loading="lazy" alt="">
             <div class="thumbnail-content rounded-circle">
               ${displayLinkedinOfMember(member)}
               ${displayGithubOfMember(member)}
@@ -102,13 +104,13 @@
 
     function displayLinkedinOfMember(member) {
       if (member.linkedinUrl)
-        return `<a href="${member.linkedinUrl}"><img class="thumbnail-link" src="images/linkedin-logo.webp" alt=""></a>`;
+        return `<a href="${member.linkedinUrl}"><img class="thumbnail-link" src="images/linkedin-logo.webp" alt="LinkedIn"></a>`;
       return '';
     }
 
     function displayGithubOfMember(member) {
       if (member.githubUrl)
-        return `<a href="${member.githubUrl}"><img class="thumbnail-link" src="images/github-mark-light-64px.webp" alt=""></a>`;
+        return `<a href="${member.githubUrl}"><img class="thumbnail-link" src="images/github-mark-light-64px.webp" alt="GitHub"></a>`;
       return '';
     }
 
@@ -130,8 +132,9 @@
     }
     generateMemberContainer("sectionTitle");
 
-    $("#footer").load("footer.html"); 
+    $("#footer").load("footer.html");
   </script>
+  <script src="js/navbar.js"></script>
 </body>
 
 </html>
