@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <!-- Required meta tags -->
@@ -22,35 +22,36 @@
 <body>
   <!--Navigation bar-->
   <nav class="navbar fixed-top navbar-expand-lg">
-    <span id="navTitle" class="navbar-brand" style="font-size:5vh;cursor:default;color:white;display: none;">
+    <span id="navTitle" class="navbar-brand" style="display: none;">
       <img id="brandImage" class="brandImage" src="images/Logo_blanc_ApplETS.webp" alt="">
     </span>
-    <div id="floatingToggle"></div>
-    <a id="nav-toggler" style="opacity:0;">
-      <span></span>
-    </a>
+    
+    <div id="nav-toggle-container">
+      <span class="sr-only">Ouvir le menu</span>
+      <div id="nav-toggler">
+        <span></span>
+      </div>
+    </div>
 
     <div class="collapse navbar-collapse main-nav" id="navToggleContent">
       <ul id="navButtons" class="nav-buttons navbar-nav mr-auto mt-2 mt-lg-0" style="display:none;">
         <li class="nav-item currentTab">
-          <a href="index.html" aria-label="Accueil">Accueil</a>
+          <a href="index.html">Accueil</a>
         </li>
         <li class="nav-item">
-          <a href="equipe.html" aria-label="Équipe">Équipe</a>
+          <a href="equipe.html">Équipe</a>
         </li>
         <li class="nav-item">
-          <a href="projets.html" aria-label="Projets">Projets</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="partenaires.html" aria-label="Partenaires">Partenaires</a>
+          <a href="projets.html">Projets</a>
         </li>
         <li class="nav-item">
-          <a href="contact.html" aria-label="Contact">Contact</a>
+          <a href="partenaires.html">Partenaires</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
-
   </nav>
 
   <!--Welcome section content-->
@@ -59,35 +60,31 @@
     <div id="typewriter-container"></div>
 
     <div id="link-buttons-container" style="opacity:0;">
-      <span class="link-button" id="go-to-description-button">
+      <a class="link-button text-light" href="#about">
         À propos du club
-      </span>
-      <span class="link-button" id="go-to-blog-button">
+      </a>
+      <a class="link-button text-light" href="#blog">
         Blog
-      </span>
+      </a>
     </div>
   </div>
 
   <!--Club intro section content-->
-  <div id="parallax-content" class="description-content">
+  <div id="about" class="description-content">
     <div class="container info-bubble" id="club-description">
       <div>
         <span class="bubble-title">LE CLUB</span>
         <div class="gradient-border"></div>
         <span>ApplETS est avant tout un regroupement d’étudiants qui partagent un intérêt commun pour le domaine
-          des télécommunications
-          et des applications mobiles.
+          des télécommunications et des applications mobiles.
           <br>
           Ce club étudiant a pour objectif principal de former, au sein de l’ÉTS, une main
-          d’œuvre
-          spécialisée en ingénierie d’applications mobiles et de promouvoir le développement de ces applications au
-          sein
-          de la communauté étudiante.
-
+          d’œuvre spécialisée en ingénierie d’applications mobiles et de promouvoir le développement de ces applications au
+          sein de la communauté étudiante.
         </span>
       </div>
-
     </div>
+
     <div class="container info-bubble" id="club-mission">
       <div>
         <span class="bubble-title">MISSION DU CLUB</span>
@@ -357,8 +354,9 @@
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
   <script src="js/typewriter.js"></script>
   <script src="js/home.js"></script>
+  <script src="js/navbar.js"></script>
   <script>
-    $("#footer").load("footer.html"); 
+    $("#footer").load("footer.html");
   </script>
 </body>
 </html>

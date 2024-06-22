@@ -1,7 +1,7 @@
 /**
  * Initialise parallax (for the android picture)
  */
-$('#parallax-content').parallax({
+$('#about').parallax({
     imageSrc: 'images/droidcon.webp',
     speed:0.1,
     positionY:"top"
@@ -11,7 +11,6 @@ $('#parallax-content').parallax({
  * Fade-in the title and buttons
  */
 $('#navTitle').fadeToggle(1000, "swing", function () {
-    document.getElementById("brandImage").classList.add("brandImageTop")
     showNavButtons()
 })
 
@@ -23,19 +22,9 @@ var showNavButtons = function () {
     $('#navButtons').show("slow", "swing", function () {
         $('#link-buttons-container').css('opacity','1')
         $("#typewriter-container").toggleClass("typewriter")
-        $('.navbar').css("background-color", "#00000080")
         new Typewriter(70, document.getElementById("typewriter-container"), "Pour ceux qui partagent la passion du développement mobile.", false, null)
     })
 }
-
-/**
- * Open up the menu bar when selected
- */
-document.querySelector("#floatingToggle").addEventListener("click", function () {
-    document.querySelector("#nav-toggler").classList.toggle("active");
-    $('#navToggleContent').slideToggle()
-    $('#navbar').toggleClass("back-color")
-});
 
 /**
  * For the android section, fade in objects when they are in the right position
@@ -73,19 +62,3 @@ window.onscroll = function () {
         $('#club-objectives').css("opacity","0")
     }
 }
-
-/**
- * Shortcuts links
- */
-$('#go-to-description-button').on('click',function(){
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#parallax-content").offset().top
-    }, 1000);
-})
-
-$('#go-to-blog-button').on('click',function(){
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#blog").offset().top
-    }, 1000);
-})
-

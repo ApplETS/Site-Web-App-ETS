@@ -1,6 +1,5 @@
 #titleContainer{
     font-size:4vh;
-
 }
 
 
@@ -35,7 +34,6 @@
 .heartbeat:hover{
     cursor:pointer;
     width:5vh;
-
 }
 
 
@@ -60,12 +58,6 @@
 
 .store-link-a{
     transition: all 400ms;
-}
-
-
-
-#header{
-    transition: background-color 700ms;
 }
 
 .fp-controlArrow{
@@ -171,9 +163,6 @@
 }
 
 @media (max-width: 992px){
-
-    
-
     .project-slide div{
         align-items:start!important;
     }
@@ -233,6 +222,11 @@
 .show-flex{
     visibility: visible!important;
     opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: fit-content;
+    top:1.5rem;
 }
 
 
@@ -275,8 +269,6 @@
         font-size: 2vh;
     }
 }
-
-
 
 
 .github-container-desktop{
