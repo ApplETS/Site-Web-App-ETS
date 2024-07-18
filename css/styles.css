@@ -206,7 +206,7 @@ html {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 20vh;
+    margin-top: 12rem;
 }
 
 a {
@@ -283,7 +283,7 @@ a:hover {
 
 @media (max-width:991px) {
     .main-container {
-        margin-top: 15vh;
+        margin-top: 8rem;
     }
 
     .intro-title {
