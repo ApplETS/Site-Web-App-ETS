@@ -142,11 +142,6 @@ h2 {
   color: rgb(206, 206, 206);
 }
 
-.alias {
-  margin-bottom: 10px;
-  margin-top: -5px;
-}
-
 @media (max-width: 1400px) {
   .profile {
     width: 33%;
