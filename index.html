@@ -23,15 +23,14 @@
   <!--Navigation bar-->
   <nav class="navbar fixed-top navbar-expand-lg">
     <span id="navTitle" class="navbar-brand" style="display: none;">
-      <img id="brandImage" class="brandImage" src="images/Logo_blanc_ApplETS.webp" alt="">
+      <img id="brandImage" class="brandImage" src="images/menu-logo.svg" alt="">
     </span>
     
-    <div id="nav-toggle-container">
-      <span class="sr-only">Ouvir le menu</span>
+    <button id="nav-toggle-container" class="btn btn-transparent" aria-label="Menu">
       <div id="nav-toggler">
         <span></span>
       </div>
-    </div>
+    </button>
 
     <div class="collapse navbar-collapse main-nav" id="navToggleContent">
       <ul id="navButtons" class="nav-buttons navbar-nav mr-auto mt-2 mt-lg-0" style="display:none;">
@@ -55,297 +54,58 @@
   </nav>
 
   <!--Welcome section content-->
-  <div class="container-fluid" id="motto" style="background-image:url('images/backgrounds/background2.webp');">
-
-    <div id="typewriter-container"></div>
-
-    <div id="link-buttons-container" style="opacity:0;">
-      <a class="link-button text-light" href="#about">
-        À propos du club
-      </a>
-      <a class="link-button text-light" href="#blog">
-        Blog
-      </a>
-    </div>
+  <div class="container-fluid" id="hero">
+    <span class="sr-only">ApplETS</span>
+    <h1 id="typewriter-container" aria-hidden="true">&#8203;</h1>
+    <p id="sub-title">Pour ceux qui partagent la passion du développement mobile.</p>
   </div>
 
   <!--Club intro section content-->
   <div id="about" class="description-content">
-    <div class="container info-bubble" id="club-description">
+    <h2>Qui sommes nous?</h2>
+    <div class="container id="club-description">
       <div>
-        <span class="bubble-title">LE CLUB</span>
+        <h3>Le club</h3>
         <div class="gradient-border"></div>
-        <span>ApplETS est avant tout un regroupement d’étudiants qui partagent un intérêt commun pour le domaine
-          des télécommunications et des applications mobiles.
+        <p>ApplETS est avant tout un regroupement d’étudiants qui partagent un intérêt commun pour le domaine des télécommunications et des applications mobiles.
           <br>
-          Ce club étudiant a pour objectif principal de former, au sein de l’ÉTS, une main
-          d’œuvre spécialisée en ingénierie d’applications mobiles et de promouvoir le développement de ces applications au
-          sein de la communauté étudiante.
-        </span>
+          Ce club étudiant a pour objectif principal de former, au sein de l’ÉTS, une main d’œuvre spécialisée en ingénierie d’applications mobiles et de
+          promouvoir le développement de ces applications au sein de la communauté étudiante.
+        </p>
       </div>
     </div>
 
-    <div class="container info-bubble" id="club-mission">
+    <div class="container id="club-mission">
       <div>
-        <span class="bubble-title">MISSION DU CLUB</span>
+        <h3>Mission du club</h3>
         <div class="gradient-border"></div>
-        <span>Le club ApplETS a été fondé par des étudiants de
-          l’École de
-          Technologie Supérieure (ÉTS) souhaitant répondre aux besoins technologiques grandissants des étudiants.
-          Constatant
-          la forte demande pour un accès mobile à l’information diffusée par l’ÉTS, le club a d’abord développé
-          ÉTSMobile,
-          une application centralisant des informations provenant de multiples plateformes. L’impact fut instantané;
-          une
-          complicité incroyable entre le club et l’ÉTS est née! Encore aujourd’hui, l’École et les étudiants utilisent
-          cette
-          application mobile qui ne cesse d’être améliorée. Depuis, ApplETS reçoit régulièrement des propositions de
-          nouveaux
-          projets, tant de la part des étudiants que des services et départements de l’ÉTS.
-        </span>
+        <p>Le club ApplETS a été fondé par des étudiants de l’École de Technologie Supérieure (ÉTS) souhaitant répondre aux besoins technologiques grandissants des étudiants.
+          Constatant la forte demande pour un accès mobile à l’information diffusée par l’ÉTS, le club a d’abord développé ÉTSMobile, une application centralisant des informations provenant de multiples plateformes.
+          L’impact fut instantané; une complicité incroyable entre le club et l’ÉTS est née!
+          Encore aujourd’hui, l’École et les étudiants utilisent cette application mobile qui ne cesse d’être améliorée.
+          Depuis, ApplETS reçoit régulièrement des propositions de nouveaux projets, tant de la part des étudiants que des services et départements de l’ÉTS.
+        </p>
       </div>
 
     </div>
 
     <div class="container info-bubble" id="club-objectives">
       <div>
-        <span class="bubble-title">OBJECTIFS DU CLUB</span>
+        <h3>Objectifs du club</h3>
         <div class="gradient-border"></div>
-        <span>Nos objectifs sont divers :
-          <br>
-          <br> - Appliquer les normes du génie logiciel
-          <br> - Améliorer les processus de développement
-          <br> - Se former rapidement aux nouvelles technologies
-          <br> - Améliorer le quotidien de la communauté ÉTS avec des solutions mobiles
-          <br> - Promouvoir le développement d’applications mobiles
-        </span>
+        <ul>
+          <li>Appliquer les normes du génie logiciel;</li>
+          <li>Améliorer les processus de développement;</li>
+          <li>Se former rapidement aux nouvelles technologies;</li>
+          <li>Améliorer le quotidien de la communauté ÉTS avec des solutions mobiles;</li>
+          <li>Promouvoir le développement d’applications mobiles.</li>
+        </ul>
       </div>
     </div>
-  </div>
-
-  <!--Blog section content-->
-  <div id="blog" style="background-image:url('images/backgrounds/background2.webp');background-repeat:round;background-size:cover;">
-    <div class="container" style="width: 100%;display: flex;justify-content: center;">
-      <span class="blog-title">Blog</span>
-    </div>
-
-    <div class="container news-container">
-      <span class="title main-title">Compétition AMC</span>
-      <span class="title sub-title">Compétition de développement mobile de 24 heures</span>
-      <span class="title sub-sub-title">29 janvier 2024</span>
-      <div class="row news-content">
-        <iframe style="background: #FFFFFF;" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClubApplETS%2Fposts%2Fpfbid0C4gtAYrdE6YbELxGSQXUUT6TDjV1pVoSkJmQXMcTEtfKUTtgTP1Qfoyj9rqvXnKSl&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-      
-      <div class="news-link-container">
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.facebook.com/ClubApplETS/posts/897887901771496?ref=embed_post">
-          <img class="logo-image" src="images/facebook-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur Facebook</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.linkedin.com/posts/club-applets-305a0281_intactlab-activity-7157855104203657216-X9Fu?utm_source=share&utm_medium=member_desktop">
-          <img class="logo-image" src="images/linkedin-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur linkedin</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.instagram.com/p/C2szwjBOPww/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-          <img class="logo-image" src="images/instagram.png" alt="">
-          <span style="text-decoration-line:none">Voir sur Instagram</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="container news-container">
-      <span class="title main-title">Début des inscriptions de la compétition AMC</span>
-      <span class="title sub-title">Inscriptions</span>
-      <span class="title sub-sub-title">11 novembre 2023</span>
-      <div class="row news-content">
-        <iframe style="background: #FFFFFF;" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClubApplETS%2Fposts%2Fpfbid02jCm9SmSH4286MW81rFSFn4hKrYn83nD5ndJXoyyNdPt5Qzc3WVNXWw8C53f9Et5tl&show_text=true&width=500" width="500" height="699" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-      
-      <div class="news-link-container">
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.facebook.com/ClubApplETS/posts/897887901771496?ref=embed_post">
-          <img class="logo-image" src="images/facebook-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur Facebook</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.linkedin.com/posts/club-applets-305a0281_applets-pr%C3%A9sente-amc-2024-27-janvier-2024-activity-7129150792690769920-_o0q?utm_source=share&utm_medium=member_desktop">
-          <img class="logo-image" src="images/linkedin-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur linkedin</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.instagram.com/p/Czg2vKFpSsc/?utm_source=ig_web_button_share_sheet&igshid=ODhhZWM5NmIwOQ==">
-          <img class="logo-image" src="images/instagram.png" alt="">
-          <span style="text-decoration-line:none">Voir sur Instagram</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="container news-container">
-      <span class="title main-title">Lancement de la compétition AMC</span>
-      <span class="title sub-title">4ème édition</span>
-      <span class="title sub-sub-title">19 octobre 2023</span>
-      <div class="row news-content">
-        <iframe style="background: #FFFFFF;"  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClubApplETS%2Fposts%2Fpfbid02Kx171piD9MgUzu8bFeLK8LsMjMMu6ZmEj46XczvveAX1G2MafCLniT1FcXTB1PrRl&show_text=true&width=500" width="500" height="718" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-      
-      <div class="news-link-container">
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.facebook.com/ClubApplETS/posts/879032030323750?ref=embed_post">
-          <img class="logo-image" src="images/facebook-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur Facebook</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.linkedin.com/posts/club-applets-305a0281_amc2024-hackathon-daezveloppementmobile-activity-7120906468773486592-fGHo?utm_source=share&utm_medium=member_desktop">
-          <img class="logo-image" src="images/linkedin-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur linkedin</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.instagram.com/p/CymRncOhVyY/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
-          <img class="logo-image" src="images/instagram.png" alt="">
-          <span style="text-decoration-line:none">Voir sur Instagram</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="container news-container">
-      <span class="title main-title">5 @ 7 avec Intact Lab</span>
-      <span class="title sub-title">Conférence et réseautage avec Intact Lab</span>
-      <span class="title sub-sub-title">12 octobre 2023</span>
-      <div class="row news-content">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClubApplETS%2Fposts%2Fpfbid02eX2aSwsUVLgMcx1ygy43H2mhKaSPMf8ZqakYFZ2ejTZLinxxZuaDa8wnMPry5YVil&show_text=true&width=500" width="500" height="787" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-      
-      <div class="news-link-container">
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.facebook.com/ClubApplETS/posts/879032030323750?ref=embed_post">
-          <img class="logo-image" src="images/facebook-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur Facebook</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.linkedin.com/feed/update/urn:li:activity:7118242932695945216/">
-          <img class="logo-image" src="images/linkedin-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur linkedin</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.instagram.com/p/CyT_0OtOoRL/?img_index=1">
-          <img class="logo-image" src="images/instagram.png" alt="">
-          <span style="text-decoration-line:none">Voir sur Instagram</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="container news-container">
-      <span class="title main-title">Intact Lab</span>
-      <span class="title sub-title">Soirée réseautage avec Intact Lab</span>
-      <span class="title sub-sub-title">8 février 2023</span>
-      <div class="row news-content">
-        <iframe title="facebook-recent-post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClubApplETS%2Fposts%2Fpfbid02oPhzKBeDv6VM3h9iH4rXvSHhj62z39CnjJL9ShJvudETvrcnttvmpKHPzxwz3hPvl&show_text=true&width=500" width="500" height="534" style="border:none;overflow:hidden;background-color: white;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-      <div class="news-link-container">
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.facebook.com/ClubApplETS/posts/pfbid02oPhzKBeDv6VM3h9iH4rXvSHhj62z39CnjJL9ShJvudETvrcnttvmpKHPzxwz3hPvl">
-          <img class="logo-image" src="images/facebook-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur Facebook</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://www.linkedin.com/posts/club-applets-305a0281_intactlab-applicationmobile-activity-7029987383794184192-c9PB?utm_source=share&utm_medium=member_desktop">
-          <img class="logo-image" src="images/linkedin-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur linkedin</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="container news-container">
-      <span class="title main-title">Lancement d'ÉTSMobile</span>
-      <span class="title sub-title">Nouvelle version d'ÉTSMobile</span>
-      <span class="title sub-sub-title">22 octobre 2021</span>
-      <div class="row news-content">
-        <iframe title="facebook-mobile-app" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClubApplETS%2Fposts%2F363710471855911&show_text=true&width=500" width="500" height="520" style="border:none;overflow:hidden;background-color: white;" scrolling="no" frameborder="0" allowTransparency="false" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-      <div class="news-link-container">
-        <a class="news-button-container" href="https://www.facebook.com/ClubApplETS/posts/pfbid034gvKmN3MSFTnjzVg1sLU1FHkWyhs5seUCwux8ABH4pfQ6zDLrmKMk8e4rbyjnjPjl">
-          <img class="logo-image" src="images/facebook-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur Facebook</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://twitter.com/ClubApplETS/status/1447566383915675652">
-          <img class="logo-image" src="images/Twitter_Logo_WhiteOnBlue.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur Twitter</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="container news-container">
-      <span class="title main-title">Bêta Android d'ÉTSMobile</span>
-      <span class="title sub-title">Sortie préliminaire de la nouvelle version</span>
-      <span class="title sub-sub-title">23 mars 2019</span>
-      <div class="row news-content">
-        <iframe title="facebook-annoucement" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClubApplETS%2Fposts%2F2111775112205619&width=500" width="500" height="481" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-      </div>
-      <div class="news-link-container">
-        <a class="news-button-container" href="https://www.facebook.com/ClubApplETS/posts/1872106766172456">
-          <img class="logo-image" src="images/facebook-logo.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur Facebook</span>
-        </a>
-        <div class="x-spacer"></div>
-        <a class="news-button-container" href="https://twitter.com/ClubApplETS/status/1044691798420008965">
-          <img class="logo-image" src="images/Twitter_Logo_WhiteOnBlue.webp" alt="">
-          <span style="text-decoration-line:none">Voir sur Twitter</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="container news-container">
-      <span class="title main-title">Droidcon NYC</span>
-      <span class="title sub-title">Une conférence enrichissante pour l'équipe Android</span>
-      <span class="title sub-sub-title">28 août 2018</span>
-      <span class="title sub-sub-title">New-York City, USA</span>
-      <div class="row news-content">
-        <iframe title="facebook-page" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClubApplETS%2Fposts%2F1872106766172456&width=500"
-          width="500" height="747" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-          allow="encrypted-media"></iframe>
-      </div>
-      <div class="news-link-container">
-        <a class="news-button-container" href="https://play.google.com/store/apps/details?id=ca.etsmtl.applets.etsmobile.beta&fbclid=IwAR326vaMSWMG1oYmvBkPJyFgPmhtEEz6iVzHZNYHH8xpWZKMBRJjSKCgS7k">
-          <img class="logo-image" src="images/facebook-logo.webp" alt="">
-          <span style="text-decoration-line:none">Lien de téléchargement</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="container news-container">
-      <span class="title main-title">StarterHacks 2018</span>
-      <span class="title sub-title">24 heures de conception et une nouvelle application pour l'équipe App|ETS</span>
-      <span class="title sub-sub-title">3 mars 2018</span>
-      <span class="title sub-sub-title">Université de Waterloo, Ontario, Canada</span>
-      <div class="row news-content">
-        <div class="col-lg news-text-container">
-          <span class="text-content">Durant la semaine du 3 mars 2018, des membres du club App|ETS se sont déplacés à
-            l'Université de Waterloo en Ontario afin de participer au hackathon "StarterHacks". Durant cette
-            compétition de 24 heures, ils ont eu la chance de développer une application qui met en contact les
-            touristes avec des guides locaux, tout en faisant l'apprentissage de l'outil multiplateforme Flutter.</span>
-        </div>
-
-        <div class="col-lg">
-          <img class="img-fluid news-image" src="images/starterhacks.webp" alt="">
-        </div>
-      </div>
-
-      <div class="news-link-container">
-        <a class="news-button-container" href="https://guidefinder.github.io">
-          <span style="text-decoration-line:none">Voir le projet</span>
-        </a>
-      </div>
-
-    </div>
-    <div style="height:1px;width:1px;"></div>
   </div>
 
   <!--Footer content-->
-  <div id="footer"></div>
+  <footer id="footer"></footer>
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
