@@ -14,26 +14,7 @@
 </head>
 
 <body>
-  <header data-current-page="home">
-    <div class="top-row">
-      <img src="images/applets.svg" alt="">
-  
-      <button id="nav-toggle-container" class="btn-transparent" aria-label="Menu">
-        <div id="nav-toggler">
-          <span></span>
-        </div>
-      </button>
-    </div>
-
-    <nav id="nav-toggle-content" style="display: none;">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="equipe.html">Équipe</a></li>
-        <li><a href="partenaires.html">Partenaires</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header id="header" data-current-page="home"></header>
 
   <main>
     <div id="hero">
@@ -82,7 +63,9 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
   <script src="js/home.js"></script>
-  <script src="js/navbar.js"></script>
-  <script>$("#footer").load("footer.html");</script>
+  <script>
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  </script>
 </body>
 </html>

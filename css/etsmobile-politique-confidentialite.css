@@ -2,17 +2,12 @@ body {
     counter-reset: h3 h4 h5;
 }
 
+main {
+    padding: 5rem 0;
+}
+
 h1 {
-    align-self: center;
-}
-
-#main-content{
-    display: flex;
-    align-items: start;
-}
-
-p {
-    line-height: 2;
+    text-align: center;
 }
 
 p, ul {
@@ -46,8 +41,4 @@ h5 {
 h5:before {
     counter-increment: h5;
     content: counter(h3)"." counter(h4)"." counter(h5)". ";
-}
-
-#main-content br {
-    margin-bottom: 1rem;
 }
