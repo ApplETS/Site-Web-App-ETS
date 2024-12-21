@@ -3,6 +3,5 @@
  */
 document.querySelector("#nav-toggle-container").addEventListener("click", function () {
     $("#nav-toggler").toggleClass("active");
-    $('#navToggleContent').slideToggle();
-	$('#navbar').toggleClass("back-color-black");
+    $('#nav-toggle-content').slideToggle();
 });
