@@ -9,31 +9,31 @@ $('#member-contact').on('click', function () {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#form-container").offset().top-100
     }, 1000);
-    setTimeout("showMemberForm()",500)
+    setTimeout("showMemberForm()",500);
 })
 
 $('#partner-contact').on('click', function () {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#form-container").offset().top-100
+        scrollTop: $("#form-container").offset().top - 100
     }, 1000);
-    setTimeout("showPartnerForm()",500)
+    setTimeout("showPartnerForm()", 500);
 })
 
 function showMemberForm(){
     window.open("https://formulaires.etsmtl.ca/ClubEtudiantAdhesion");
 }
 function showPartnerForm(){
-    $('.member-form-content').hide()
-    $('.partner-form-content').show("blind")
+    $('.member-form-content').hide();
+    $('.partner-form-content').show("blind");
 }
 
 /**
  * Change menu bar color when scrolling
  */
 window.onscroll = function(){
-    if(this.document.getElementById("main-content").getBoundingClientRect().y < 0){
+    if (this.document.getElementById("main-content").getBoundingClientRect().y < 0) {
         $('#navbar').addClass("back-color")
-    }else{
+    } else {
         $('#navbar').removeClass("back-color")
     }
 }

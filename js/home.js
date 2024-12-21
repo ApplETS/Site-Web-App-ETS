@@ -18,12 +18,7 @@ const Typewriter = function (iterationSpeed, destinationElement, inputText) {
         }
     }(iterationSpeed, destinationElement)
 
-    removeCursor = function () {
-        destinationElement.classList.remove("typewriter");
-    }
-
     setTimeout("iterateTypewriter(\"" + inputText.replace("\"", "") + "\"," + 0 + ")", 1000);
 }
 
-$("#typewriter-container").toggleClass("typewriter");
-new Typewriter(70, document.getElementById("typewriter-container"), "App|ETS");
+new Typewriter(70, document.getElementById("typewriter"), "App|ETS");

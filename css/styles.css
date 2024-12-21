@@ -1,6 +1,15 @@
 .single-page {
     height: 100vh;
 }
+
+a:hover::after,
+[data-current-page="home"] a[href="index.html"]:after,
+[data-current-page="team"] a[href="equipe.html"]:after,
+[data-current-page="partners"] a[href="partenaires.html"]:after,
+[data-current-page="contact"] a[href="contact.html"]:after {
+    width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: .5rem;
@@ -9,10 +18,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: #323649;
+    color: #f1f7fd;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
+}
+
+a {
+    color: #b9d3fa;
 }
 
 p {
@@ -200,22 +213,18 @@ header {
             list-style: none;
             padding: 0;
 
-            li:after {
+            a {
+                text-decoration: none;
+                color: inherit
+            }
+
+            a:after {
                 content: '';
                 display: block;
                 width: 0;
                 height: 2px;
                 background: #fff;
                 transition: width .3s;
-            }
-    
-            li:hover::after, li.current-tab:after {
-                width: 100%;
-            }
-            
-            a {
-                text-decoration: none;
-                color: inherit
             }
         }
     }
@@ -240,10 +249,6 @@ footer {
 
     p {
         margin: 0;
-    }
-
-    a {
-        color: #b9d3fa;
     }
 
     ul {

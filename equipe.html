@@ -8,13 +8,12 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/team.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <title>Équipe App|ETS</title>
 </head>
 
-<body style="background-image:url('images/backgrounds/background3.webp');background-repeat:round;background-size: cover;height:100vh;width:100vw;overflow-x:hidden;">
-  <header>
+<body>
+  <header data-current-page="team">
     <div class="top-row">
       <img src="images/applets.svg" alt="">
   
@@ -28,27 +27,24 @@
     <nav id="nav-toggle-content" style="display: none;">
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li class="current-tab"><a href="equipe.html">Équipe</a></li>
+        <li><a href="equipe.html">Équipe</a></li>
         <li><a href="partenaires.html">Partenaires</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!--Main content: team pictures-->
-  <div class="container-fluid main-container" id="main-content">
+  <main>
     <h1 class="intro-title">Rencontrez notre équipe.</h1>
-    <div class="members-container" id="active-members"></div>
+    <div class="members container" id="active-members"></div>
     <h2>Membres légendaires</h2>
-    <div class="members-container" id="legendary-members"></div>
+    <div class="members container" id="legendary-members"></div>
     <h2>Anciens membres</h2>
-    <div class="members-container" id="previous-members"></div>
-  </div>
+    <div class="members container" id="previous-members"></div>
+  </main>
 
-  <!--Footer content-->
   <footer id="footer"></footer>
 
-  <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script>
@@ -71,8 +67,8 @@
     function generateMemberProfile(member, section) {
       document.getElementById(section).innerHTML += `
         <div class="profile">
-          <div class="rounded-circle profile-thumbnail" style="background-image:url('${member.imageUrl}');" loading="lazy" alt="">
-            <div class="thumbnail-content rounded-circle">
+          <div class="profile-picture" style="background-image:url('${member.imageUrl}');" alt="">
+            <div class="thumbnail-content">
               ${displayLinkedinOfMember(member)}
               ${displayGithubOfMember(member)}
             </div>

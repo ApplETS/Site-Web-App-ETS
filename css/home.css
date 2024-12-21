@@ -1,51 +1,55 @@
-h1 {
-    font-size: 3em;
+main {
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        font-variant: small-caps;
+    }
+
+    #hero {
+        align-items: center;
+        flex-direction: column;
+        padding: 5rem 0;
+        transition: 1s opacity;
+        justify-content: center;
+        display: flex;
+    
+        p {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+    }
+
+    #about {
+        padding: 3rem 1rem;
+        background-color: #252733;
+    }
+    
+    #typewriter {
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    #typewriter:before {
+        content: "~$ "
+    }
+
+    #typewriter:after{
+        opacity: 0.5;
+        content: "_";
+        animation: blink 300ms linear infinite alternate;
+    }
 }
 
-h2 {
-    font-size: 2rem;
-}
 
-h3 {
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    font-variant: small-caps;
-}
 
-#sub-title {
-    font-size: 1.3rem;
-    text-align: center;
-}
 
-.description-content h2 {
-    text-align: center;
-}
 
-#hero {
-    align-items: center;
-    flex-direction: column;
-    padding: 5rem 0;
-    background-color: #323649;
-    transition: 1s opacity;
-    justify-content: center;
-    display: flex;
-}
 
-#about {
-    padding: 3rem 1rem;
-    background-color: #252733;
-}
-
-#typewriter-container {
-    font-family: 'Source Code Pro', monospace;
-}
-
-.typewriter:before{
-    content: "~$ "
-}
-
-.typewriter:after{
-    opacity: 0.5;
-    content: "_";
-    animation: blink 300ms linear infinite alternate;
-}
