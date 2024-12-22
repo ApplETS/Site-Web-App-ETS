@@ -1,7 +1,3 @@
-.single-page {
-    height: 100vh;
-}
-
 a:hover::after,
 [data-current-page="home"] a[href="index.html"]:after,
 [data-current-page="team"] a[href="equipe.html"]:after,
@@ -51,17 +47,6 @@ p {
     width: 90%;
     max-width: 1140px;
     margin: auto;
-}
-
-.gradient-border {
-    width: 100%;
-    display: block;
-    border: none;
-    height: 1px;
-    background: black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(255, 255, 255, 0.1)));
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 @media (min-width: 992px) {
