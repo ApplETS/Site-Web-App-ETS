@@ -1,6 +1,6 @@
 main {
     counter-reset: h3 h4 h5;
-    padding: 5rem 0;
+    padding: 2rem 0;
 
     p, ul {
         margin-left: 4rem;

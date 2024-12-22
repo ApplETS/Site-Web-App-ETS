@@ -1,19 +1,22 @@
 main {
-    padding: 5rem 0;
+    padding: 3rem 0;
 
     h2 {
         text-align: center;
     }
 
     ul {
-        padding: 0 0 5rem 0;
-        align-items: center;
-        display: flex;
+        padding: 0 0 4rem 0;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        display: grid;
         gap: 3rem;
-        flex-direction: column;
         list-style: none;
         
         li {
+            display: flex;
+            transition: background-color 200ms;
+            flex-direction: column;
             max-width: 30rem;
             position: relative;
             padding: 1rem;
@@ -22,10 +25,10 @@ main {
             text-align: center;
 
             img {
+                margin: auto;
                 width: 100%;
                 max-width: 40rem;
                 border-radius: 0.5rem;
-                margin-bottom: 0.5rem;
             }
 
             a {
@@ -48,14 +51,18 @@ main {
                 border-radius: 0.5rem;
                 transition: border-color 200ms;
             }
-      
-            a:hover::before,
-            a:focus-visible::before {
-                border-color: #65a7d3;
-            }
             
             a:focus {
                 outline: none;
+            }
+        }
+
+        li:hover,
+        li:focus-within {
+            background-color: #e2f4ff;
+
+            a::before {
+                border-color: #65a7d3;
             }
         }
     }

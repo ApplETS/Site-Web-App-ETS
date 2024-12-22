@@ -130,36 +130,40 @@ p {
                 display: block;
                 content: '';
             }
-            
-            #nav-toggler span:before {
-                margin-top: -10px;
+
+            #nav-toggler {
+                span:before {
+                    margin-top: -10px;
+                }
+                
+                span:after {
+                    margin-top: 10px;
+                }
+                
+                span,
+                span:before,
+                span:after {
+                    transition: all 500ms ease-in-out;
+                }
             }
-            
-            #nav-toggler span:after {
-                margin-top: 10px;
-            }
-            
-            #nav-toggler span,
-            #nav-toggler span:before,
-            #nav-toggler span:after {
-                transition: all 500ms ease-in-out;
-            }
-            
-            #nav-toggler.active span {
-                background-color: transparent;
-            }
-            
-            #nav-toggler.active span:before,
-            #nav-toggler.active span:after {
-                margin-top: 0;
-            }
-            
-            #nav-toggler.active span:before {
-                transform: rotate(45deg);
-            }
-            
-            #nav-toggler.active span:after {
-                transform: rotate(-45deg);
+
+            #nav-toggler.active {
+                span {
+                    background-color: transparent;
+                }
+                
+                span:before,
+                span:after {
+                    margin-top: 0;
+                }
+                
+                span:before {
+                    transform: rotate(45deg);
+                }
+                
+                span:after {
+                    transform: rotate(-45deg);
+                }
             }
         }
     }
