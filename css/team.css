@@ -82,13 +82,9 @@ main {
     align-items: center;
     text-align: center;
     
-    .name {
-      font-size: 1.2rem;
-      max-width: 15rem;
-    }
-    
-    .role {
+    p {
       font-size: 0.9rem;
+      margin-bottom: 0;
       color: rgb(206, 206, 206);
     }
   }
