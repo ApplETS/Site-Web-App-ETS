@@ -2,70 +2,30 @@
 <html lang="fr">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/webp" href="images/favicon.webp">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/team.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <title>Équipe App|ETS</title>
 </head>
 
-<body style="background-image:url('images/backgrounds/background3.webp');background-repeat:round;background-size: cover;height:100vh;width:100vw;overflow-x:hidden;">
-  <!--Navigation bar-->
-  <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-    <span id="navTitle" class="navbar-brand">
-      <img id="brandImage" class="brandImage" src="images/menu-logo.svg" alt="">
-    </span>
+<body>
+  <header id="header" data-current-page="team"></header>
 
-    <button id="nav-toggle-container" class="btn btn-transparent" aria-label="Menu">
-      <div id="nav-toggler">
-        <span></span>
-      </div>
-    </button>
-
-    <div class="collapse navbar-collapse main-nav" id="navToggleContent">
-      <ul id="navButtons" class="nav-buttons navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a href="index.html">Accueil</a>
-        </li>
-        <li class="nav-item currentTab">
-          <a href="equipe.html">Équipe</a>
-        </li>
-        <li class="nav-item">
-          <a href="projets.html">Projets</a>
-        </li>
-        <li class="nav-item">
-          <a href="partenaires.html">Partenaires</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!--Main content: team pictures-->
-  <div class="container-fluid main-container" id="main-content">
+  <main>
     <h1 class="intro-title">Rencontrez notre équipe.</h1>
-    <div class="members-container" id="active-members"></div>
+    <div class="members container" id="active-members"></div>
     <h2>Membres légendaires</h2>
-    <div class="members-container" id="legendary-members"></div>
+    <div class="members container" id="legendary-members"></div>
     <h2>Anciens membres</h2>
-    <div class="members-container" id="previous-members"></div>
-  </div>
+    <div class="members container" id="previous-members"></div>
+  </main>
 
-  <!--Footer content-->
   <footer id="footer"></footer>
 
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-  <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script>
     loadScript();
 
@@ -86,15 +46,15 @@
     function generateMemberProfile(member, section) {
       document.getElementById(section).innerHTML += `
         <div class="profile">
-          <div class="rounded-circle profile-thumbnail" style="background-image:url('${member.imageUrl}');" loading="lazy" alt="">
-            <div class="thumbnail-content rounded-circle">
+          <div class="profile-picture" style="background-image:url('${member.imageUrl}');" alt="">
+            <div class="thumbnail-content">
               ${displayLinkedinOfMember(member)}
               ${displayGithubOfMember(member)}
             </div>
           </div>
           <div class="bottom-content">
-            <span class="name">${member.name}</span>
-            ${generateRoleSpans(member.roles)}
+            <h3 class="name">${member.name}</span>
+            ${generateRoles(member.roles)}
           </div>
         </div>
       `
@@ -102,18 +62,18 @@
 
     function displayLinkedinOfMember(member) {
       if (member.linkedinUrl)
-        return `<a href="${member.linkedinUrl}"><img class="thumbnail-link" src="images/linkedin-logo.webp" alt="LinkedIn"></a>`;
+        return `<a href="${member.linkedinUrl}"><img class="thumbnail-link" src="images/socials/linkedin.webp" alt="LinkedIn"></a>`;
       return '';
     }
 
     function displayGithubOfMember(member) {
       if (member.githubUrl)
-        return `<a href="${member.githubUrl}"><img class="thumbnail-link" src="images/github-mark-light-64px.webp" alt="GitHub"></a>`;
+        return `<a href="${member.githubUrl}"><img class="thumbnail-link" src="images/socials/github.webp" alt="GitHub"></a>`;
       return '';
     }
 
-    function generateRoleSpans(roles) {
-      return roles.map(role => `<span class="role">${role}</span>`).join('');
+    function generateRoles(roles) {
+      return roles.map(role => `<p>${role}</p>`).join('');
     }
 
     function loadScript() {
@@ -129,10 +89,9 @@
       return await data.json();
     }
     generateMemberContainer("sectionTitle");
-
-    $("#footer").load("footer.html");
   </script>
-  <script src="js/navbar.js"></script>
-</body>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="js/load-header-footer.js"></script>
+</body>
 </html>

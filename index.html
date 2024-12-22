@@ -2,69 +2,29 @@
 <html lang="fr">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/webp" href="images/favicon.webp">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/typewriter.css">
   <link rel="stylesheet" href="css/home.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 
   <title>Club App|ETS</title>
 </head>
 
 <body>
-  <!--Navigation bar-->
-  <nav class="navbar fixed-top navbar-expand-lg">
-    <span id="navTitle" class="navbar-brand" style="display: none;">
-      <img id="brandImage" class="brandImage" src="images/menu-logo.svg" alt="">
-    </span>
-    
-    <button id="nav-toggle-container" class="btn btn-transparent" aria-label="Menu">
-      <div id="nav-toggler">
-        <span></span>
-      </div>
-    </button>
+  <header id="header" data-current-page="home"></header>
 
-    <div class="collapse navbar-collapse main-nav" id="navToggleContent">
-      <ul id="navButtons" class="nav-buttons navbar-nav mr-auto mt-2 mt-lg-0" style="display:none;">
-        <li class="nav-item currentTab">
-          <a href="index.html">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a href="equipe.html">Équipe</a>
-        </li>
-        <li class="nav-item">
-          <a href="projets.html">Projets</a>
-        </li>
-        <li class="nav-item">
-          <a href="partenaires.html">Partenaires</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
+  <main>
+    <div id="hero">
+      <h1 id="typewriter" aria-label="ApplETS">&#8203;</h1>
+      <p>Pour ceux qui partagent la passion du développement mobile.</p>
     </div>
-  </nav>
-
-  <!--Welcome section content-->
-  <div class="container-fluid" id="hero">
-    <span class="sr-only">ApplETS</span>
-    <h1 id="typewriter-container" aria-hidden="true">&#8203;</h1>
-    <p id="sub-title">Pour ceux qui partagent la passion du développement mobile.</p>
-  </div>
-
-  <!--Club intro section content-->
-  <div id="about" class="description-content">
-    <h2>Qui sommes nous?</h2>
-    <div class="container id="club-description">
-      <div>
+  
+    <div id="about" class="description-content">
+      <h2>Qui sommes nous?</h2>
+      <div class="container">
         <h3>Le club</h3>
         <div class="gradient-border"></div>
         <p>ApplETS est avant tout un regroupement d’étudiants qui partagent un intérêt commun pour le domaine des télécommunications et des applications mobiles.
@@ -73,10 +33,8 @@
           promouvoir le développement de ces applications au sein de la communauté étudiante.
         </p>
       </div>
-    </div>
-
-    <div class="container id="club-mission">
-      <div>
+  
+      <div class="container">
         <h3>Mission du club</h3>
         <div class="gradient-border"></div>
         <p>Le club ApplETS a été fondé par des étudiants de l’École de Technologie Supérieure (ÉTS) souhaitant répondre aux besoins technologiques grandissants des étudiants.
@@ -86,11 +44,8 @@
           Depuis, ApplETS reçoit régulièrement des propositions de nouveaux projets, tant de la part des étudiants que des services et départements de l’ÉTS.
         </p>
       </div>
-
-    </div>
-
-    <div class="container info-bubble" id="club-objectives">
-      <div>
+  
+      <div class="container">
         <h3>Objectifs du club</h3>
         <div class="gradient-border"></div>
         <ul>
@@ -102,21 +57,12 @@
         </ul>
       </div>
     </div>
-  </div>
+  </main>
 
-  <!--Footer content-->
   <footer id="footer"></footer>
 
-  <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-  <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-  <script src="js/typewriter.js"></script>
   <script src="js/home.js"></script>
-  <script src="js/navbar.js"></script>
-  <script>
-    $("#footer").load("footer.html");
-  </script>
+  <script src="js/load-header-footer.js"></script>
 </body>
 </html>

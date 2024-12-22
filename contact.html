@@ -2,12 +2,9 @@
 <html lang="fr">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/webp" href="images/favicon.webp">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/contact.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -18,41 +15,9 @@
   <title>Contact</title>
 </head>
 
-<body style="background-image:url('images/backgrounds/background6.webp');background-size:cover;">
-  <!--Navigation bar-->
-  <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-    <span id="navTitle" class="navbar-brand">
-      <img id="brandImage" class="brandImage" src="images/menu-logo.svg" alt="">
-    </span>
+<body>
+  <header id="header" data-current-page="contact"></header>
 
-    <button id="nav-toggle-container" class="btn btn-transparent" aria-label="Menu">
-      <div id="nav-toggler">
-        <span></span>
-      </div>
-    </button>
-
-    <div class="collapse navbar-collapse main-nav" id="navToggleContent">
-      <ul id="navButtons" class="nav-buttons navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a href="index.html">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a href="equipe.html">Équipe</a>
-        </li>
-        <li class="nav-item">
-          <a href="projets.html">Projets</a>
-        </li>
-        <li class="nav-item">
-          <a href="partenaires.html">Partenaires</a>
-        </li>
-        <li class="nav-item currentTab">
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!--Main page content-->
   <div id="main-content" style="display: flex;justify-content: center;align-items: center;height:100vh">
     <div class="options-container">
       <div id="member-contact" class="option member-option">
@@ -103,19 +68,12 @@
     </div>
   </div>
 
-  <!--Footer content-->
   <footer id="footer"></footer>
 
-  <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-  <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
     crossorigin="anonymous"></script>
   <script src="js/contact.js"></script>
-  <script>
-    $("#footer").load("footer.html"); 
-  </script>
-  <script src="js/navbar.js"></script>
+  <script src="js/load-header-footer.js"></script>
 </body>
 </html>

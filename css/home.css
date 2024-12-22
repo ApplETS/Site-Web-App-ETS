@@ -1,48 +1,49 @@
-.navbar {
-    animation: fadeIn 1s;
-    animation-delay: 1000ms;
-    animation-fill-mode: forwards;
-}
+main {
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        font-variant: small-caps;
+    }
 
-@keyframes fadeIn {
-    0% { background-color: transparent; }
-    100% { background-color: #3d518a80; }
-}
+    #hero {
+        align-items: center;
+        flex-direction: column;
+        padding: 5rem 0;
+        transition: 1s opacity;
+        justify-content: center;
+        display: flex;
+    
+        p {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+    }
 
-h1 {
-    font-size: 3em;
-}
+    #about {
+        padding: 3rem 1rem;
+        background-color: #252733;
+    }
+    
+    #typewriter {
+        font-family: 'Source Code Pro', monospace;
+    }
 
-#sub-title {
-    font-size: 1.3rem;
-    text-align: center;
-}
+    #typewriter:before {
+        content: "~$ "
+    }
 
-.description-content h2 {
-    text-align: center;
-}
-
-h3 {
-    padding-top: 1rem;
-    font-variant: small-caps;
-}
-
-#about {
-    padding: 3rem 1rem;
-    background-color: #252733;
-}
-
-#hero {
-    align-items: center;
-    flex-direction: column;
-    padding-top: 12rem;
-    padding-bottom: 5rem;
-    background-color: #323649;
-    transition:1s opacity;
-    justify-content: center;
-    display:flex;
-}
-
-#typewriter-container {
-    font-family:'Source Code Pro', monospace;
+    #typewriter:after{
+        opacity: 0.5;
+        content: "_";
+        animation: blink 300ms linear infinite alternate;
+    }
 }
