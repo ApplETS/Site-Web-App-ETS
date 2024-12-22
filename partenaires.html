@@ -2,78 +2,54 @@
 <html lang="fr">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/webp" href="images/favicon.webp">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/partners.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
 
   <title>Partenaires</title>
 </head>
 
-<body style="background-image:url('images/backgrounds/background4.webp'); background-size:cover;background-repeat: round;">
+<body>
   <header id="header" data-current-page="partners"></header>
 
-  <!--Main content-->
-  <div id="main-content" class="container main-container" style="display:none;">
-    <span class="intro-title">Merci à tous nos partenaires.</span>
-      <span class="partner-container">
-        <img class="img-fluid partner-logo-image" src="images/ets.png" alt="">
-        <span class="gradient-border-dark"></span>
-        <span class="main-title">École de Technologie Supérieure</span>
-        <a href="https://www.etsmtl.ca" class="site-link"><img style="margin:5px;" src="images/link.svg" alt="">Site web</a>
-      </span>
-      
-      <span class="partner-container">
-        <img class="img-fluid partner-logo-image" src="images/partenaires/intact.png" alt="">
-        <span class="gradient-border-dark"></span>
-        <span class="main-title">Intact #IntactLab team</span>
-        <a href="https://www.intact.ca/qc/fr/assurance-particuliers.html" class="site-link"><img style="margin:5px;" src="images/link.svg" alt="">Site web</a>
-      </span>
+  <main class="container">
+    <h1>Merci à tous nos partenaires.</h1>
 
-      <span class="partner-container">
-        <img class="img-fluid partner-logo-image" src="images/partenaires/bnc.webp" alt="">
-        <span class="gradient-border-dark"></span>
-        <span class="main-title">Banque Nationale du Canada</span>
-        <a href="https://www.bnc.ca" class="site-link"><img style="margin:5px;" src="images/link.svg" alt="">Site web</a>
-      </span>
+    <ul>
+      <li>
+        <img src="images/partenaires/ets.png" alt=""/>
+        <a href="https://www.etsmtl.ca">École de Technologie Supérieure</a>
+      </li>
+  
+      <li>
+        <img src="images/partenaires/intact.png" alt=""/>
+        <a href="https://www.intact.ca">Intact #IntactLab team</a>
+      </li>
+  
+      <li>
+        <img src="images/partenaires/bnc.webp" alt=""/>
+        <a href="https://www.bnc.ca">Banque Nationale du Canada</a>
+      </li>
+    </ul>
 
-      <span class="partner-container">
-        <span class="partner-title">Vous souhaitez nous soutenir ? Investir dans
-          la nouvelle économie du savoir ?
-        </span>
+    <h2>Vous souhaitez nous soutenir ? Investir dans la nouvelle économie du savoir ? </h2>
+    <p class="partner-content">
+      Remplissez notre <a href="https://www.jedonneenligne.org/fdets/frm_detail.php?FrmUID=75">formulaire de don en
+        ligne</a> et bénéficiez de nombreux avantages corporatifs. 
+      Contactez-nous à l’adresse <a href="mailto:ApplETS@etsmtl.ca">ApplETS@etsmtl.ca</a> afin d’avoir plus
+      d’information concernant les bénéfices que votre entreprise recevra. Vous pouvez aussi remplir notre
+      formulaire de partenariat industriel afin de nous aider à créer des applications exceptionnelles pour la
+      communauté étudiante. 
+      </p>
+  </main>
 
-        <span class="gradient-border-dark"></span>
-
-        <span class="partner-content">
-          Remplissez notre <a href="https://www.jedonneenligne.org/fdets/frm_detail.php?FrmUID=75">formulaire de don en
-            ligne</a> et bénéficiez de nombreux avantages corporatifs. 
-          Contactez-nous à l’adresse <a href="mailto:ApplETS@etsmtl.ca">ApplETS@etsmtl.ca</a> afin d’avoir plus
-          d’information concernant les bénéfices que votre entreprise recevra. Vous pouvez aussi remplir notre
-          formulaire de partenariat industriel afin de nous aider à créer des applications exceptionnelles pour la
-          communauté étudiante. 
-        </span>
-
-        <span style="display:flex;flex-direction: row;">
-          <a href="https://www.jedonneenligne.org/fdets/frm_detail.php?FrmUID=75" class="site-link"><img style="margin:5px;"
-              src="images/link.svg" alt="">Formulaire de don </a>
-          <a href="contact.html" class="site-link"><img style="margin:5px;" src="images/link.svg" alt="">Formulaire de
-            partenariat </a>
-        </span>
-      </span>
-    </span>
-  </div>
-
-  <!--Footer content-->
   <footer id="footer"></footer>
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-  <script src="js/partners.js"></script>
   <script>
     $("#header").load("header.html");
     $("#footer").load("footer.html"); 

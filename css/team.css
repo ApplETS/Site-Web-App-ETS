@@ -20,33 +20,11 @@
 
 main {
   padding: 3rem 0;
-  h1, h2 {
-    text-align: center;
-  }
-  
+
   h2 {
     margin: 5rem 0 2rem 0;
+    text-align: center;
   }
-}
-
-#active-members {
-  .profile:nth-child(8n+1),
-  .profile:nth-child(8n+2),
-  .profile:nth-child(8n+3),
-  .profile:nth-child(8n+4) {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-  }
-
-  .profile:nth-child(8n+5),
-  .profile:nth-child(8n+6),
-  .profile:nth-child(8n+7),
-  .profile:nth-child(8n+8) {
-    animation: 1s ease-out 0s 1 slideInFromRight;
-  }
-}
-
-#active-members.resize-animation-stopper * {
-  animation: none !important;
 }
 
 .members {
@@ -116,21 +94,43 @@ main {
   }
 }
 
+#active-members {
+  .profile:nth-child(8n+1),
+  .profile:nth-child(8n+2),
+  .profile:nth-child(8n+3),
+  .profile:nth-child(8n+4) {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .profile:nth-child(8n+5),
+  .profile:nth-child(8n+6),
+  .profile:nth-child(8n+7),
+  .profile:nth-child(8n+8) {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+}
+
+#active-members.resize-animation-stopper * {
+  animation: none !important;
+}
+
 @media (max-width: 1400px) {
   .profile {
     width: 33%;
   }
 
-  #active-members>.profile:nth-child(6n+1),
-  #active-members>.profile:nth-child(6n+2),
-  #active-members>.profile:nth-child(6n+3) {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-  }
+  #active-members {
+    .profile:nth-child(6n+1),
+    .profile:nth-child(6n+2),
+    .profile:nth-child(6n+3) {
+      animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
 
-  #active-members>.profile:nth-child(6n+4),
-  #active-members>.profile:nth-child(6n+5),
-  #active-members>.profile:nth-child(6n+6) {
-    animation: 1s ease-out 0s 1 slideInFromRight;
+    .profile:nth-child(6n+4),
+    .profile:nth-child(6n+5),
+    .profile:nth-child(6n+6) {
+      animation: 1s ease-out 0s 1 slideInFromRight;
+    }
   }
 }
 
@@ -139,18 +139,16 @@ main {
     width: 50%;
   }
 
-  .members-container {
-    row-gap: 2em;
-  }
+  #active-members {
+    .profile:nth-child(4n+1),
+    .profile:nth-child(4n+2) {
+      animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
 
-  #active-members>.profile:nth-child(4n+1),
-  #active-members>.profile:nth-child(4n+2) {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-  }
-
-  #active-members>.profile:nth-child(4n+3),
-  #active-members>.profile:nth-child(4n+4) {
-    animation: 1s ease-out 0s 1 slideInFromRight;
+    .profile:nth-child(4n+3),
+    .profile:nth-child(4n+4) {
+      animation: 1s ease-out 0s 1 slideInFromRight;
+    }
   }
 }
 
@@ -174,11 +172,13 @@ main {
     width: 100%;
   }
 
-  #active-members>.profile:nth-child(2n+1) {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-  }
-
-  #active-members>.profile:nth-child(2n+2) {
-    animation: 1s ease-out 0s 1 slideInFromRight;
+  #active-members {
+    .profile:nth-child(2n+1) {
+      animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+    
+    .profile:nth-child(2n+2) {
+      animation: 1s ease-out 0s 1 slideInFromRight;
+    }
   }
 }

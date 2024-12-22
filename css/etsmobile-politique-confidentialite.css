@@ -1,44 +1,37 @@
-body {
-    counter-reset: h3 h4 h5;
-}
-
 main {
+    counter-reset: h3 h4 h5;
     padding: 5rem 0;
-}
 
-h1 {
-    text-align: center;
-}
-
-p, ul {
-    margin-left: 4rem;
-}
-
-h3 {
-    margin-left: 1rem;
-    counter-reset: h4 h5;
-}
-
-div h3:not(:first-of-type):before {
-    counter-increment: h3;
-    content: counter(h3)". ";
-}
-
-h4 {
-    margin-left: 2rem;
-    counter-reset: h5;
-}
-
-h4:before {
-    counter-increment: h4;
-    content: counter(h3)"." counter(h4)". ";
-}
-
-h5 {
-    margin-left: 3rem;
-}
-
-h5:before {
-    counter-increment: h5;
-    content: counter(h3)"." counter(h4)"." counter(h5)". ";
+    p, ul {
+        margin-left: 4rem;
+    }
+    
+    h3 {
+        margin-left: 1rem;
+        counter-reset: h4 h5;
+    }
+    
+    h3:not(:first-of-type):before {
+        counter-increment: h3;
+        content: counter(h3)". ";
+    }
+    
+    h4 {
+        margin-left: 2rem;
+        counter-reset: h5;
+    }
+    
+    h4:before {
+        counter-increment: h4;
+        content: counter(h3)"." counter(h4)". ";
+    }
+    
+    h5 {
+        margin-left: 3rem;
+    }
+    
+    h5:before {
+        counter-increment: h5;
+        content: counter(h3)"." counter(h4)"." counter(h5)". ";
+    }
 }

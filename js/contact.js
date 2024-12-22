@@ -9,7 +9,7 @@ $('#member-contact').on('click', function () {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#form-container").offset().top-100
     }, 1000);
-    setTimeout("showMemberForm()",500);
+    setTimeout("showMemberForm()", 500);
 })
 
 $('#partner-contact').on('click', function () {

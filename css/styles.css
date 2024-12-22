@@ -10,6 +10,10 @@ a:hover::after,
     width: 100%;
 }
 
+h1 {
+    text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: .5rem;
@@ -24,8 +28,8 @@ body {
     margin: 0;
 }
 
-a {
-    color: #b9d3fa;
+main a {
+    color: #a7e6ff;
 }
 
 p {
@@ -58,10 +62,6 @@ p {
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(255, 255, 255, 0.1)));
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-a {
-    text-decoration: none;
 }
 
 @media (min-width: 992px) {
@@ -256,6 +256,11 @@ footer {
         display: flex;
         padding: 0;
         margin-bottom: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #b9d3fa;
     }
 
     a:hover {
