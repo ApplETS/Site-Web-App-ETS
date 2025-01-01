@@ -28,10 +28,36 @@
     "roles": ["Communications", "Expérience utilisateur"]
   },
   {
+    "name": "Alexis Fecteau",
+    "imageUrl": "images/membres/AlexisFecteau.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/alexis-fecteau-b28501344/",
+    "githubUrl": "https://github.com/Spoodern0t",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Alexis Martin",
+    "imageUrl": "images/membres/AlexisMartin.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/alexis-martin42/",
+    "roles": ["Événementiel"]
+  },
+  {
     "name": "Benjamin Bélanger",
     "imageUrl": "images/membres/BenjaminBelanger.webp",
     "linkedinUrl": "https://www.linkedin.com/in/benjamin-belanger-60a302251/",
     "githubUrl": "https://github.com/BenjaminBelanger",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Eric El-Chabab",
+    "imageUrl": "images/membres/EricElChabab.webp",
+    "githubUrl": "https://github.com/chababeric",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Luca Nakanishi Nadeau",
+    "imageUrl": "images/membres/LucaNakanishiNadeau.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/luca-nakanishi-nadeau-816184151/",
+    "githubUrl": "https://github.com/NakanLuca",
     "roles": ["Développeur"]
   },
   {
