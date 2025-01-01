@@ -21,6 +21,13 @@
     "roles": ["Trésorier", "Développeur"]
   },
   {
+    "name": "Mohamed Idrissi",
+    "imageUrl": "images/membres/MohamedIdrissi.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/mohamed-h-idrissi/",
+    "githubUrl": "https://github.com/mhd-hi",
+    "roles": ["Chef de projet de PlanifÉTS", "Développeur"]
+  },
+  {
     "name": "Ariane Hussaini",
     "imageUrl": "images/membres/ArianeHussaini.webp",
     "linkedinUrl": "https://www.linkedin.com/in/ariane-hussaini-323727330",
@@ -48,26 +55,6 @@
     "roles": ["Développeur"]
   },
   {
-    "name": "Eric El-Chabab",
-    "imageUrl": "images/membres/EricElChabab.webp",
-    "githubUrl": "https://github.com/chababeric",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Luca Nakanishi Nadeau",
-    "imageUrl": "images/membres/LucaNakanishiNadeau.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/luca-nakanishi-nadeau-816184151/",
-    "githubUrl": "https://github.com/NakanLuca",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Mohamed Idrissi",
-    "imageUrl": "images/membres/MohamedIdrissi.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/mohamed-h-idrissi/",
-    "githubUrl": "https://github.com/mhd-hi",
-    "roles": ["Chef de projet de PlanifÉTS", "Développeur"]
-  },
-  {
     "name": "David Martel",
     "imageUrl": "images/membres/DavidMartel.webp",
     "linkedinUrl": "https://www.linkedin.com/in/david-martel12/",
@@ -78,6 +65,19 @@
     "name": "Dylan Apardian",
     "imageUrl": "images/membres/DylanApardian.webp",
     "githubUrl": "https://github.com/DylanApardian",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Eric El-Chabab",
+    "imageUrl": "images/membres/EricElChabab.webp",
+    "githubUrl": "https://github.com/chababeric",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Luca Nakanishi Nadeau",
+    "imageUrl": "images/membres/LucaNakanishiNadeau.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/luca-nakanishi-nadeau-816184151/",
+    "githubUrl": "https://github.com/NakanLuca",
     "roles": ["Développeur"]
   },
   {
