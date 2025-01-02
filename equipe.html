@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Découvrez l'équipe ApplETS ! Apprenez à connaître nos membres actifs, nos membres légendaires et nos anciens membres qui ont contribué à faire rayonner le développement mobile à l'École de Technologie Supérieure (ÉTS). Chaque membre apporte sa passion et son expertise pour faire avancer la communauté.">
+
   <link rel="icon" type="image/webp" href="images/favicon.webp">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/team.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
   <title>Équipe App|ETS</title>
 </head>
@@ -25,73 +27,9 @@
   </main>
 
   <footer id="footer"></footer>
-
-  <script>
-    loadScript();
-
-    async function generateMemberContainer(members, sectionId, sectionTitle) {
-      (await fetchMembers("js/data/members.json")).forEach(member => {
-        generateMemberProfile(member, "active-members")
-      });
-
-      (await fetchMembers("js/data/legendary-members.json")).forEach(member => {
-        generateMemberProfile(member, "legendary-members")
-      });
-
-      (await fetchMembers("js/data/old-members.json")).forEach(member => {
-        generateMemberProfile(member, "previous-members")
-      });
-    }
-
-    function generateMemberProfile(member, section) {
-      document.getElementById(section).innerHTML += `
-        <div class="profile">
-          <div class="profile-picture" style="background-image:url('${member.imageUrl}');" alt="">
-            <div class="thumbnail-content">
-              ${displayLinkedinOfMember(member)}
-              ${displayGithubOfMember(member)}
-            </div>
-          </div>
-          <div class="bottom-content">
-            <h3 class="name">${member.name}</span>
-            ${generateRoles(member.roles)}
-          </div>
-        </div>
-      `
-    }
-
-    function displayLinkedinOfMember(member) {
-      if (member.linkedinUrl)
-        return `<a href="${member.linkedinUrl}"><img class="thumbnail-link" src="images/socials/linkedin.webp" alt="LinkedIn"></a>`;
-      return '';
-    }
-
-    function displayGithubOfMember(member) {
-      if (member.githubUrl)
-        return `<a href="${member.githubUrl}"><img class="thumbnail-link" src="images/socials/github.webp" alt="GitHub"></a>`;
-      return '';
-    }
-
-    function generateRoles(roles) {
-      return roles.map(role => `<p>${role}</p>`).join('');
-    }
-
-    function loadScript() {
-      let scriptElement = document.createElement('script');
-      scriptElement.src = 'js/team.js';
-
-      // Append the new script element to the document's head
-      document.head.appendChild(scriptElement);
-    }
-
-    async function fetchMembers(jsonPath) {
-      let data = await fetch(jsonPath)
-      return await data.json();
-    }
-    generateMemberContainer("sectionTitle");
-  </script>
-
+  
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-  <script src="js/load-header-footer.js"></script>
+  <script src="js/load-header-footer.js" defer></script>
+  <script src="js/team.js"></script>
 </body>
 </html>

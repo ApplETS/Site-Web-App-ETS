@@ -4,4 +4,4 @@ $("#header").load("components/header.html", function() {
 		$('#nav-toggle-content').slideToggle();
 	});
 });
-$("#footer").load("components/footer.html"); 
+$("#footer").load("components/footer.html");

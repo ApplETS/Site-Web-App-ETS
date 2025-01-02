@@ -1,23 +1,23 @@
 [
   {
     "name": "Isaac Pateau",
-    "imageUrl": "images/membres/IsaacPateau.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/isaac-pateau/",
-    "githubUrl": "https://github.com/zaclimon",
+    "image": "IsaacPateau.webp",
+    "linkedin": "isaac-pateau",
+    "github": "zaclimon",
     "roles": ["Ancien Capitaine", "Développeur"]
   },
   {
     "name": "Thanh-Son-Philippe Lam",
-    "imageUrl": "images/membres/TranhSonPhilippeLam.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/thanh-son-philippe-lam",
-    "githubUrl": "https://github.com/Sonphil",
+    "image": "TranhSonPhilippeLam.webp",
+    "linkedin": "thanh-son-philippe-lam",
+    "github": "Sonphil",
     "roles": ["Développeur"]
   },
   {
     "name": "Xavier Chrétien",
-    "imageUrl": "images/membres/XavierChretien.webp",
-    "linkedinUrl": "https://www.linkedin.com/in/xavierchretien/",
-    "githubUrl": "https://github.com/apomalyn",
+    "image": "XavierChretien.webp",
+    "linkedin": "xavierchretien",
+    "github": "apomalyn",
     "roles": ["Ancien Capitaine", "Développeur", "DevOps"]
   }
 ]
