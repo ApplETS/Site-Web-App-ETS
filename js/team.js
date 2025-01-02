@@ -28,8 +28,8 @@ function generateMemberProfile(member) {
     <div class="profile">
       <div class="profile-picture" style="background-image:url('images/membres/${member.image}');">
         <div class="thumbnail-content">
-          ${member.linkedin ? generateSocialLink(member.linkedin, "LinkedIn", "linkedin.svg") : ''}
-          ${member.github ? generateSocialLink(member.github, "GitHub", "github.svg") : ''}
+          ${member.linkedin ? generateLinkedInLink(member.linkedin) : ''}
+          ${member.github ? generateGithubLink(member.github) : ''}
         </div>
       </div>
       <div class="bottom-content">
@@ -40,10 +40,18 @@ function generateMemberProfile(member) {
   `;
 }
 
-function generateSocialLink(url, altText, iconFile) {
+function generateLinkedInLink(username) {
   return `
-    <a href="${url}" target="_blank">
-      <img class="thumbnail-link" src="images/socials/${iconFile}" alt="${altText}">
+    <a href="https://www.linkedin.com/in/${username}" target="_blank">
+      <img class="thumbnail-link" src="images/socials/linkedin.svg" alt="LinkedIn">
+    </a>
+  `;
+}
+
+function generateGithubLink(username) {
+  return `
+    <a href="https://github.com/${username}" target="_blank">
+      <img class="thumbnail-link" src="images/socials/github.svg" alt="GitHub">
     </a>
   `;
 }

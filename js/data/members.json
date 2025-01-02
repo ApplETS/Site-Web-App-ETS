@@ -2,89 +2,89 @@
   {
     "name": "Xavier Paquet-Rapold",
     "image": "XavierPaquetRapold.webp",
-    "linkedin": "https://www.linkedin.com/in/xavier-paquet-rapold/",
-    "github": "https://github.com/XavierPaquet-Rapold",
+    "linkedin": "xavier-paquet-rapold",
+    "github": "XavierPaquet-Rapold",
     "roles": ["Capitaine", "Développeur"]
   },
   {
     "name": "Louis-Philippe Héon",
     "image": "LouisPhilippeHeon.webp",
-    "linkedin": "https://www.linkedin.com/in/louis-philippe-h%C3%A9on-023568250/",
-    "github": "https://github.com/LouisPhilippeHeon",
+    "linkedin": "louis-philippe-héon",
+    "github": "LouisPhilippeHeon",
     "roles": ["Co-capitaine", "Développeur"]
   },
   {
     "name": "Francis Bureau",
     "image": "FrancisBureau.webp",
-    "linkedin": "https://www.linkedin.com/in/francis-bureau-b9abb4162/",
-    "github": "https://github.com/Effbureau",
+    "linkedin": "francis-bureau-b9abb4162",
+    "github": "Effbureau",
     "roles": ["Trésorier", "Développeur"]
   },
   {
     "name": "Mohamed Idrissi",
     "image": "MohamedIdrissi.webp",
-    "linkedin": "https://www.linkedin.com/in/mohamed-h-idrissi/",
-    "github": "https://github.com/mhd-hi",
+    "linkedin": "mohamed-h-idrissi",
+    "github": "mhd-hi",
     "roles": ["Chef de projet de PlanifÉTS", "Développeur"]
   },
   {
     "name": "Ariane Hussaini",
     "image": "ArianeHussaini.webp",
-    "linkedin": "https://www.linkedin.com/in/ariane-hussaini-323727330",
-    "github": "https://github.com/arihuss",
+    "linkedin": "ariane-hussaini-323727330",
+    "github": "arihuss",
     "roles": ["Communications", "Expérience utilisateur"]
   },
   {
     "name": "Alexis Fecteau",
     "image": "AlexisFecteau.webp",
-    "linkedin": "https://www.linkedin.com/in/alexis-fecteau-b28501344/",
-    "github": "https://github.com/Spoodern0t",
+    "linkedin": "alexis-fecteau-b28501344",
+    "github": "Spoodern0t",
     "roles": ["Développeur"]
   },
   {
     "name": "Alexis Martin",
     "image": "AlexisMartin.webp",
-    "linkedin": "https://www.linkedin.com/in/alexis-martin42/",
+    "linkedin": "alexis-martin42",
     "roles": ["Événementiel"]
   },
   {
     "name": "Benjamin Bélanger",
     "image": "BenjaminBelanger.webp",
-    "linkedin": "https://www.linkedin.com/in/benjamin-belanger-60a302251/",
-    "github": "https://github.com/BenjaminBelanger",
+    "linkedin": "benjamin-belanger-60a302251",
+    "github": "BenjaminBelanger",
     "roles": ["Développeur"]
   },
   {
     "name": "David Martel",
     "image": "DavidMartel.webp",
-    "linkedin": "https://www.linkedin.com/in/david-martel12/",
-    "github": "https://github.com/DavidMartel12",
+    "linkedin": "david-martel12",
+    "github": "DavidMartel12",
     "roles": ["Développeur"]
   },
   {
     "name": "Dylan Apardian",
     "image": "DylanApardian.webp",
-    "github": "https://github.com/DylanApardian",
+    "github": "DylanApardian",
     "roles": ["Développeur"]
   },
   {
     "name": "Eric El-Chabab",
     "image": "EricElChabab.webp",
-    "github": "https://github.com/chababeric",
+    "github": "chababeric",
     "roles": ["Développeur"]
   },
   {
     "name": "Luca Nakanishi Nadeau",
     "image": "LucaNakanishiNadeau.webp",
-    "linkedin": "https://www.linkedin.com/in/luca-nakanishi-nadeau-816184151/",
-    "github": "https://github.com/NakanLuca",
+    "linkedin": "luca-nakanishi-nadeau-816184151",
+    "github": "NakanLuca",
     "roles": ["Développeur"]
   },
   {
     "name": "Matei Martin",
     "image": "MateiMartin.webp",
-    "linkedin": "https://www.linkedin.com/in/matei-martin/",
-    "github": "https://github.com/mataai",
+    "linkedin": "matei-martin",
+    "github": "mataai",
     "roles": ["Développeur"]
   }
 ]

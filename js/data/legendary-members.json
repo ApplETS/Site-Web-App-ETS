@@ -2,22 +2,22 @@
   {
     "name": "Isaac Pateau",
     "image": "IsaacPateau.webp",
-    "linkedin": "https://www.linkedin.com/in/isaac-pateau/",
-    "github": "https://github.com/zaclimon",
+    "linkedin": "isaac-pateau",
+    "github": "zaclimon",
     "roles": ["Ancien Capitaine", "Développeur"]
   },
   {
     "name": "Thanh-Son-Philippe Lam",
     "image": "TranhSonPhilippeLam.webp",
-    "linkedin": "https://www.linkedin.com/in/thanh-son-philippe-lam",
-    "github": "https://github.com/Sonphil",
+    "linkedin": "thanh-son-philippe-lam",
+    "github": "Sonphil",
     "roles": ["Développeur"]
   },
   {
     "name": "Xavier Chrétien",
     "image": "XavierChretien.webp",
-    "linkedin": "https://www.linkedin.com/in/xavierchretien/",
-    "github": "https://github.com/apomalyn",
+    "linkedin": "xavierchretien",
+    "github": "apomalyn",
     "roles": ["Ancien Capitaine", "Développeur", "DevOps"]
   }
 ]
