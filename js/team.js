@@ -28,8 +28,8 @@ function generateMemberProfile(member) {
     <div class="profile">
       <div class="profile-picture" style="background-image:url('images/membres/${member.image}');">
         <div class="thumbnail-content">
-          ${member.linkedin ? generateSocialLink(member.linkedin, "LinkedIn", "linkedin.webp") : ''}
-          ${member.github ? generateSocialLink(member.github, "GitHub", "github.webp") : ''}
+          ${member.linkedin ? generateSocialLink(member.linkedin, "LinkedIn", "linkedin.svg") : ''}
+          ${member.github ? generateSocialLink(member.github, "GitHub", "github.svg") : ''}
         </div>
       </div>
       <div class="bottom-content">
