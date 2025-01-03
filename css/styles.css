@@ -202,8 +202,12 @@ header {
                 display: block;
                 width: 0;
                 height: 2px;
-                background: #fff;
+                background-color: #fff;
                 transition: width .3s;
+            }
+
+            a:focus-visible:after {
+                display: none;
             }
         }
     }
