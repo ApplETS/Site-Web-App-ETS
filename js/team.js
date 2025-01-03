@@ -25,8 +25,8 @@ function populateSection(sectionId, members) {
 
 function generateMemberProfile(member) {
   return `
-    <div class="profile">
-      <div class="profile-picture" style="background-image:url('images/membres/${member.image}');">
+    <div class="profile" role="region" aria-label="Profile of ${member.name}, Roles: ${member.roles.join(', ')}">
+      <div class="profile-picture" style="background-image:url('images/membres/${member.image}');" aria-hidden="true">
         <div class="thumbnail-content">
           ${member.linkedin ? generateLinkedInLink(member.linkedin) : ''}
           ${member.github ? generateGithubLink(member.github) : ''}
@@ -43,7 +43,7 @@ function generateMemberProfile(member) {
 function generateLinkedInLink(username) {
   return `
     <a href="https://www.linkedin.com/in/${username}" target="_blank">
-      <img class="thumbnail-link" src="images/socials/linkedin.svg" alt="LinkedIn">
+      <img src="images/socials/linkedin.svg" alt="LinkedIn">
     </a>
   `;
 }
@@ -51,13 +51,13 @@ function generateLinkedInLink(username) {
 function generateGithubLink(username) {
   return `
     <a href="https://github.com/${username}" target="_blank">
-      <img class="thumbnail-link" src="images/socials/github.svg" alt="GitHub">
+      <img src="images/socials/github.svg" alt="GitHub">
     </a>
   `;
 }
 
 function generateRoles(roles) {
-  return roles.map(role => `<p>${role}</p>`).join('');
+  return roles.map(role => `<p aria-hidden="true">${role}</p>`).join('');
 }
 
 window.addEventListener("resize", () => {

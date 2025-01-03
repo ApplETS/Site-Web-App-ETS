@@ -1,4 +1,20 @@
 main {
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+    }
+    
+    h5 {
+        font-size: 1.1rem;
+    }
+    
     counter-reset: h3 h4 h5;
     padding: 2rem 0;
 
