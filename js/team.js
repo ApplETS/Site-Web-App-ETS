@@ -25,8 +25,8 @@ function populateSection(sectionId, members) {
 
 function generateMemberProfile(member) {
   return `
-    <div class="profile" role="region" aria-label="Profile of ${member.name}, Roles: ${member.roles.join(', ')}">
-      <div class="profile-picture" style="background-image:url('images/membres/${member.image}');" aria-hidden="true">
+    <div class="profile" role="region" aria-label="Profil de ${member.name}, Rôles: ${member.roles.join(', ')}">
+      <div class="profile-picture" style="background-image:url('images/membres/${member.image}');">
         <div class="thumbnail-content">
           ${member.linkedin ? generateLinkedInLink(member.linkedin) : ''}
           ${member.github ? generateGithubLink(member.github) : ''}
