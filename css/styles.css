@@ -269,11 +269,17 @@ footer {
         flex-direction: column;
         gap: 2rem;
         
-        .social {
-            margin-right: 8px;
+        li a {
+            display: block;
             height: 1.6rem;
             width: 1.6rem;
+            margin-right: 8px;
             border-radius: 3px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 }
