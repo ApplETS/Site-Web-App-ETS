@@ -53,8 +53,9 @@ p {
         display: none;
     }
 
-    header nav {
+    header ul {
         display: flex !important;
+        height: fit-content !important;
     }
 }
 
@@ -67,6 +68,7 @@ p {
             padding-left: 0 !important;
 
             ul {
+                overflow-y: hidden;
                 flex-direction: column;
                 
                 li {
@@ -161,7 +163,6 @@ p {
 }
 
 header {
-    min-height: 5rem;
     align-items: center;
     z-index: 1;
     top: 0;
@@ -171,9 +172,15 @@ header {
     justify-content: center;
     background-color: #1b2431;
 
-    img {
-        height: 4rem;
-        width: 4rem;
+    .top-row {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+
+        img {
+            height: 4rem;
+            width: 4rem;
+        }
     }
 
     button {
@@ -191,6 +198,8 @@ header {
             column-gap: 3rem;
             list-style: none;
             padding: 0;
+            margin: 0;
+            transition: height 0.3s ease;
 
             a {
                 text-decoration: none;
@@ -202,8 +211,8 @@ header {
                 display: block;
                 width: 0;
                 height: 2px;
-                background-color: #fff;
-                transition: width .3s;
+                background-color: white;
+                transition: width 0.3s;
             }
 
             a:focus-visible:after {
