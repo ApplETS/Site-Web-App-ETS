@@ -3,50 +3,35 @@ fetch("components/header.html")
   .then(html => {
     document.querySelector("#header").innerHTML = html;
 
-	const navToggleContainer = document.querySelector("#nav-toggle-container");
-	const navToggler = document.querySelector("#nav-toggler");
-	const navList = document.querySelector("#nav-list");
-
-    let isTransitioning = false;
-
-	navToggleContainer.addEventListener("click", function () {
-        // Do not change state while animation is not finished
-		if (isTransitioning) return;
-	  
-		navToggler.classList.toggle("active");
-	  
-		if (navList.style.height === "0px") {
-		  // Open menu
-		  navList.style.display = "flex";
-		  const targetHeight = `${navList.scrollHeight}px`;
-	  
-		  requestAnimationFrame(() => {
-			navList.style.height = targetHeight;
-		  });
-	  
-		  navList.addEventListener("transitionend", function handleTransitionEnd() {
-			navList.style.height = "auto";
-			navList.removeEventListener("transitionend", handleTransitionEnd);
-			isTransitioning = false;
-		  });
-	  
-		  isTransitioning = true;
-		} else {
-		  // Close menu
-		  navList.style.height = `${navList.scrollHeight}px`;
-		  requestAnimationFrame(() => {
-			navList.style.height = "0";
-		  });
-	  
-		  navList.addEventListener("transitionend", function handleTransitionEnd() {
-			navList.style.display = "none";
-			navList.removeEventListener("transitionend", handleTransitionEnd);
-			isTransitioning = false;
-		  });
-	  
-		  isTransitioning = true;
-		}
-	  });
+    document.querySelector("#nav-toggle-container").addEventListener("click", function () {
+        const navToggler = document.querySelector("#nav-toggler");
+        const navList = document.querySelector("#nav-list");
+      
+        // Toggle active class on the button
+        navToggler.classList.toggle("active");
+    
+        if (navToggler.classList.length != 0) {
+          // Open the menu
+          navList.style.display = "flex"; // Ensure it becomes visible
+          const targetHeight = navList.scrollHeight; // Get the content height
+          navList.style.height = "0";
+          requestAnimationFrame(() => {
+            navList.style.height = `${targetHeight}px`;
+          });
+        } else {
+          // Close the menu
+          const onTransitionEnd = function () {
+            // Fix problem occuring when spamming the button
+            if (!navToggler.classList.contains("active"))
+                navList.style.display = "none";
+            
+            navList.removeEventListener("transitionend", onTransitionEnd);
+          };
+      
+          navList.style.height = "0";
+          navList.addEventListener("transitionend", onTransitionEnd);
+        }
+      });
   })
 
 fetch("components/footer.html")
