@@ -2,23 +2,50 @@ fetch("components/header.html")
   .then(response => response.text())
   .then(html => {
     document.querySelector("#header").innerHTML = html;
-    document.querySelector("#nav-toggle-container").addEventListener("click", function () {
-      document.querySelector("#nav-toggler").classList.toggle("active");
-      const navList = document.querySelector("#nav-list");
 
-      if (!navList.style.height || navList.style.height === "0px") {
-		// Open menu
-		navList.style.display = "flex";
-        navList.style.height = `${navList.scrollHeight}px`;
-      } else {
-		// Close menu
-        navList.style.height = "0";
-		navList.addEventListener('transitionend', function applyEvent() {
+	const navToggleContainer = document.querySelector("#nav-toggle-container");
+	const navToggler = document.querySelector("#nav-toggler");
+	const navList = document.querySelector("#nav-list");
+
+    let isTransitioning = false;
+
+	navToggleContainer.addEventListener("click", function () {
+		if (isTransitioning) return;
+	  
+		navToggler.classList.toggle("active");
+	  
+		if (!navList.style.height || navList.style.height === "0px") {
+		  // Open menu
+		  navList.style.display = "flex";
+		  const targetHeight = `${navList.scrollHeight}px`;
+	  
+		  requestAnimationFrame(() => {
+			navList.style.height = targetHeight;
+		  });
+	  
+		  navList.addEventListener("transitionend", function handleTransitionEnd() {
+			navList.style.height = "auto";
+			navList.removeEventListener("transitionend", handleTransitionEnd);
+			isTransitioning = false;
+		  });
+	  
+		  isTransitioning = true;
+		} else {
+		  // Close menu
+		  navList.style.height = `${navList.scrollHeight}px`;
+		  requestAnimationFrame(() => {
+			navList.style.height = "0";
+		  });
+	  
+		  navList.addEventListener("transitionend", function handleTransitionEnd() {
 			navList.style.display = "none";
-			navList.removeEventListener('transitionend', applyEvent);
-		});
-      }
-    });
+			navList.removeEventListener("transitionend", handleTransitionEnd);
+			isTransitioning = false;
+		  });
+	  
+		  isTransitioning = true;
+		}
+	  });
   })
 
 fetch("components/footer.html")

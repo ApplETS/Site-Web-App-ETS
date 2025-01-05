@@ -163,6 +163,7 @@ p {
 }
 
 header {
+    min-height: 5rem;
     align-items: center;
     z-index: 1;
     top: 0;
