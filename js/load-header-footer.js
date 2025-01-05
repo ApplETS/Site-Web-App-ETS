@@ -10,11 +10,12 @@ fetch("components/header.html")
     let isTransitioning = false;
 
 	navToggleContainer.addEventListener("click", function () {
+        // Do not change state while animation is not finished
 		if (isTransitioning) return;
 	  
 		navToggler.classList.toggle("active");
 	  
-		if (!navList.style.height || navList.style.height === "0px") {
+		if (navList.style.height === "0px") {
 		  // Open menu
 		  navList.style.display = "flex";
 		  const targetHeight = `${navList.scrollHeight}px`;
