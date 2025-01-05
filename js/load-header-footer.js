@@ -18,6 +18,7 @@ fetch("components/header.html")
           requestAnimationFrame(() => {
             navList.style.height = `${targetHeight}px`;
           });
+          document.getElementById("nav-toggle-container").setAttribute("aria-expanded", "true");
         } else {
           // Close the menu
           const onTransitionEnd = function () {
@@ -30,6 +31,7 @@ fetch("components/header.html")
       
           navList.style.height = "0";
           navList.addEventListener("transitionend", onTransitionEnd);
+          document.getElementById("nav-toggle-container").setAttribute("aria-expanded", "false");
         }
       });
   })
