@@ -54,7 +54,15 @@ p {
     }
 
     header nav {
-        display: flex !important;
+        display: flex;
+        flex-direction: row;
+        
+        ul {
+            padding-left: 5rem;
+            align-self: center;
+            display: flex !important;
+            height: fit-content !important;
+        }
     }
 }
 
@@ -63,17 +71,16 @@ p {
         align-items: normal !important;
         flex-direction: column;
 
-        nav {
-            padding-left: 0 !important;
-
-            ul {
-                flex-direction: column;
-                
-                li {
-                    width: fit-content;
-                    margin-left: 0;
-                    font-size: 30px;
-                }
+        ul {
+            padding: 0;
+            margin: 0;
+            overflow-y: hidden;
+            flex-direction: column;
+            
+            li {
+                width: fit-content;
+                margin-left: 0;
+                font-size: 1.8rem;
             }
         }
         
@@ -171,26 +178,31 @@ header {
     justify-content: center;
     background-color: #1b2431;
 
-    img {
-        height: 4rem;
-        width: 4rem;
-    }
-
-    button {
-        background-color: #00000000;
-        border: none;
-    }
-
     nav {
-        padding-left: 5rem;
         color: white;
         font-size: 1.4rem;
+
+        .top-row {
+            display: flex;
+            align-items: center;
+            height: 5rem;
+    
+            img {
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+    
+        button {
+            background-color: #00000000;
+            border: none;
+        }
 
         ul {
             display: flex;
             column-gap: 3rem;
             list-style: none;
-            padding: 0;
+            transition: height 0.3s ease;
 
             a {
                 text-decoration: none;
@@ -202,8 +214,8 @@ header {
                 display: block;
                 width: 0;
                 height: 2px;
-                background-color: #fff;
-                transition: width .3s;
+                background-color: white;
+                transition: width 0.3s;
             }
 
             a:focus-visible:after {
