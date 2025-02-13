@@ -21,7 +21,6 @@ main {
         transition: 1s opacity;
         justify-content: center;
         display: flex;
-        
     
         p {
             font-size: 1.3rem;
