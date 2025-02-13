@@ -15,26 +15,44 @@ main {
     }
 
     #hero {
+        display: flex;
         align-items: center;
-        flex-direction: column;
         padding: 5rem 0;
         transition: 1s opacity;
         justify-content: center;
-        display: flex;
+        height: 450px;
+        gap:100px;
+        
     
         p {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             text-align: center;
         }
     }
 
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap:20px;
+    }
+
+    #logo-home{
+        width: 300px;
+        border: 10px solid white;
+        border-radius: 100%;
+    }
+
     #about {
         padding: 3rem 1rem;
-        background-color: #252733;
+        background-color: #242e3b;
+       
     }
     
     #typewriter {
         font-family: 'Source Code Pro', monospace;
+
     }
 
     #typewriter:before {
