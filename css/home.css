@@ -23,6 +23,7 @@ main {
         height: 450px;
         gap:100px;
         
+        
     
         p {
             font-size: 1.5rem;
@@ -44,11 +45,31 @@ main {
         border-radius: 100%;
     }
 
-    #about {
+    /* ajouts*/
+    #about{
         padding: 3rem 1rem;
         background-color: #242e3b;
        
     }
+
+    .project {
+        background-color:#313F51;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    #AMCbutton {
+        background-color: #6571A7;
+        color: white;
+        border-radius: 10px;
+        border: 2px solid white;
+        padding: 0.3rem;
+        text-decoration: none;
+        font-weight: bold;
+        float: center;
+
+    }
+
     
     #typewriter {
         font-family: 'Source Code Pro', monospace;
