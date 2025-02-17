@@ -1,92 +1,151 @@
 main {
-    h1 {
-        font-size: 3em;
-    }
-    
-    h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-    
-    h3 {
-        font-size: 1.5rem;
-        padding-top: 1rem;
-        font-variant: small-caps;
-    }
+  h1 {
+    font-size: 3em;
+  }
 
-    #hero {
-        display: flex;
-        align-items: center;
-        padding: 5rem 0;
-        transition: 1s opacity;
-        justify-content: center;
-        height: 450px;
-        gap:100px;
-        
-        
-    
-        p {
-            font-size: 1.5rem;
-            text-align: center;
-        }
-    }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-    .hero-text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap:20px;
-    }
+  h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-variant: small-caps;
+  }
 
-    #logo-home{
-        width: 300px;
-        border: 10px solid white;
-        border-radius: 100%;
-    }
+  #hero {
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+    transition: 1s opacity;
+    justify-content: center;
+    height: 450px;
+    gap: 100px;
 
-    /* ajouts*/
-    #about{
-        padding: 3rem 1rem;
-        background-color: #242e3b;
-       
-    }
 
-    #projects{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .project {
-        background-color:#313F51;
-        padding: 1rem;
-        border-radius: 5px;
+    p {
+      font-size: 1.5rem;
+      text-align: center;
     }
-    
-    #typewriter {
-        font-family: 'Source Code Pro', monospace;
+  }
 
-    }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
 
-    #typewriter:before {
-        content: "~$ "
-    }
+  #logo-home {
+    width: 300px;
+    border: 10px solid white;
+    border-radius: 100%;
+  }
 
-    #typewriter:after{
-        opacity: 0.5;
-        content: "_";
-        animation: blink 300ms linear infinite alternate;
-    }
+  #logo-home:hover {
+    rotate: 360deg;
+    transition-duration: 2.5s;
+  }
 
-    .gradient-border{
-        width: 100%;
-        display: block;
-        border: none;
-        height: 1px;
-        background: black;
-        background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(255, 255, 255, 0.1)));
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  /* ajouts*/
+  #about {
+    padding: 3rem 1rem;
+    background-color: #242e3b;
+
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    background-color: #313F51;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  #typewriter {
+    font-family: 'Source Code Pro', monospace;
+
+  }
+
+  #typewriter:before {
+    content: "~$ "
+  }
+
+  #typewriter:after {
+    opacity: 0.5;
+    content: "_";
+    animation: blink 300ms linear infinite alternate;
+  }
+
+  .gradient-border {
+    width: 100%;
+    display: block;
+    border: none;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(255, 255, 255, 0.1)));
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.collapsible {
+  background-color: #313f51;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 17px;
+  border-top: 1px solid rgb(209, 214, 248);
+}
+
+.collapsible:nth-child(3) {
+  border: none;
+}
+
+.collapsible:after {
+  content: '\25B6';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.active:after {
+  transform: rotate(90deg);
+}
+
+.content {
+  color: white;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #313f51;
+
+}
+
+
+#btn-futurs-projets {
+  background-color: #242e3b;
+  width: 100%;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0px;
+  padding-top: 1.5rem;
+  font-variant: small-caps;
+}
+
+#btn-futurs-projets~.content {
+  background-color: #242e3b;
 }

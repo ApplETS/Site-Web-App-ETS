@@ -22,3 +22,30 @@ const Typewriter = function (iterationSpeed, destinationElement, inputText) {
 }
 
 new Typewriter(70, document.getElementById("typewriter"), "App|ETS");
+
+
+/**
+ * Collapsible sections to hide/show content
+ * @param coll The button element that toggles hide/show of the content
+ */
+const CollapsibleAccordion = function(coll){
+var i;
+for (i=0; i<coll.length;i++){
+  coll[i].addEventListener("click",
+    function(){
+      this.classList.toggle("active");
+      var content= this.nextElementSibling;
+      while (content && !content.classList.contains("content")){
+        content = content.nextElementSibling;
+      }
+      if (content){
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;}
+        else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }}
+      });
+    }}
+
+    new CollapsibleAccordion(document.getElementsByClassName("collapsible"));
+
