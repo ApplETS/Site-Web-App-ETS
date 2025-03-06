@@ -149,3 +149,9 @@ main {
 #btn-futurs-projets~.content {
   background-color: #242e3b;
 }
+
+/* footer */
+.image-footer {
+  width: 4rem;
+  height: 4rem;
+}
