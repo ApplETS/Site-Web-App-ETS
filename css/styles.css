@@ -1,6 +1,7 @@
 a:not(#btn-membre):hover::after,
 [data-current-page="home"] a[href="index.html"]:after,
 [data-current-page="team"] a[href="equipe.html"]:after,
+[data-current-page="evenements"] a[href="evenements.html"]:after,
 [data-current-page="partners"] a[href="partenaires.html"]:after,
 [data-current-page="contact"] a[href="contact.html"]:after {
     width: 100%;
