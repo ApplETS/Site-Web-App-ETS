@@ -1,0 +1,22 @@
+
+.titre-amc {
+    background-color: #697093;
+
+    h1 {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10rem;
+        font-weight: bold;
+    }
+}
+
+#participation {
+    background-color: #A1325F;
+    color: white;
+    margin: 3rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: 2px solid white;
+    display: inline-block;
+}
