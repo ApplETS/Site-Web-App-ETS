@@ -24,28 +24,28 @@ const Typewriter = function (iterationSpeed, destinationElement, inputText) {
 new Typewriter(70, document.getElementById("typewriter"), "App|ETS");
 
 
-/**
- * Collapsible sections to hide/show content
- * @param coll The button element that toggles hide/show of the content
- */
-const CollapsibleAccordion = function(coll){
-var i;
-for (i=0; i<coll.length;i++){
-  coll[i].addEventListener("click",
-    function(){
-      this.classList.toggle("active");
-      var content= this.nextElementSibling;
-      while (content && !content.classList.contains("content")){
-        content = content.nextElementSibling;
-      }
-      if (content){
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;}
-        else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }}
-      });
-    }}
+/*FAQ */
+document.querySelectorAll(".section").forEach((section) => {
+  const title = section.querySelector(".title");
+  const content = section.querySelector(".content");
 
-    new CollapsibleAccordion(document.getElementsByClassName("collapsible"));
+  section.onbeforematch = () => {
+    section.classList.remove("collapsible");
+  };
+
+  title.addEventListener("click", () => {
+    if (content.hasAttribute("hidden")) {
+      content.removeAttribute("hidden");
+      requestAnimationFrame(() => {
+        section.classList.add("open");
+      });
+    } else {
+      section.classList.remove("open");
+      setTimeout(() => {
+        content.setAttribute("hidden", "until-found");
+      }, 300); 
+    }
+  });
+});
+
 

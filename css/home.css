@@ -29,15 +29,17 @@ main {
       font-size: 1.5rem;
       text-align: center;
     }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+
   }
 
-  .hero-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-  }
 
   #logo-home {
     width: 300px;
@@ -96,58 +98,65 @@ main {
   }
 }
 
+/* FAQ*/
 .collapsible {
   background-color: #313f51;
   color: white;
   cursor: pointer;
-  padding: 18px;
+  padding: 18px ;
   width: 100%;
   border: none;
   text-align: left;
   font-size: 17px;
   border-top: 1px solid rgb(209, 214, 248);
+  
+  .content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-out, max-height 0.3s ease-out;
+
+    p {
+      color: white;
+      background-color: #313f51;
+      font-size: medium;
+    }
+  }
 }
+
+.section.open .content {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.title::before {
+  content: '\25BC';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+
+}
+
+.section:not(.open)>.title::before {
+  transform: rotate(-90deg);
+}
+
 
 .collapsible:nth-child(3) {
   border: none;
 }
 
-.collapsible:after {
-  content: '\25B6';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.active:after {
-  transform: rotate(90deg);
-}
-
-.content {
-  color: white;
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #313f51;
-
-}
-
-
-#btn-futurs-projets {
+#futurs-projets {
   background-color: #242e3b;
-  width: 100%;
   border: none;
-  font-size: 1.4rem;
-  padding: 0px;
-  padding-top: 1.5rem;
-  font-variant: small-caps;
-}
+  padding: 0px !important;
 
-#btn-futurs-projets~.content {
-  background-color: #242e3b;
+  .content p {
+    background-color: #242e3b;
+  }
+
 }
 
 /* footer */
