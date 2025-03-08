@@ -357,19 +357,6 @@ footer {
     z-index: 1000;
 }
 
-.btn-emphasis {
-    background-color: #6571A7;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid white;
-    padding: 0.4rem 1.7rem;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn-emphasis:hover, #btn-membre:hover{
-    background-color: #535e91;
-}
 
 #btn-membre{
     display: inline-block;
@@ -378,4 +365,8 @@ footer {
     border-radius: 10px;
     padding: 0rem 0.4rem;
    
+}
+
+#btn-membre:hover{
+    background-color: #535e91;
 }
