@@ -11,12 +11,7 @@ h1 {
     text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-weight: 500;
@@ -27,7 +22,6 @@ body {
     color: #f1f7fd;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-
 }
 
 main a {
@@ -40,24 +34,19 @@ p {
 }
 
 @keyframes blink {
-
-    0%,
-    49% {
+    0%, 49% {
         opacity: 0;
     }
 
-    50%,
-    100% {
+    50%, 100% {
         opacity: 1;
     }
 }
 
 .container {
     width: 90%;
-    max-width: 2140px;
+    max-width: 72rem;
     margin: auto;
-
-
 }
 
 @media (min-width: 992px) {
@@ -67,7 +56,6 @@ p {
 
     header nav {
         width: 95%;
-        ;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -96,9 +84,7 @@ p {
                 width: fit-content;
                 margin-left: 0;
                 font-size: 1.8rem;
-
             }
-
         }
 
         .top-row {
@@ -159,7 +145,6 @@ p {
 
                 span:after {
                     transform: rotate(-45deg);
-
                 }
             }
         }
@@ -228,7 +213,6 @@ header {
             a {
                 text-decoration: none;
                 color: inherit;
-
             }
 
             a:not(#btn-membre):hover {
