@@ -22,6 +22,8 @@ main {
         justify-content: center;
         height: 450px;
         gap: 100px;
+        background-color: #161e28;
+        
 
         p {
             font-size: 1.5rem;
