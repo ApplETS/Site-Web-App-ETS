@@ -1,145 +1,134 @@
 main {
-  h1 {
-    font-size: 3em;
-  }
-
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    font-variant: small-caps;
-  }
-
-  #hero {
-    display: flex;
-    align-items: center;
-    padding: 5rem 0;
-    transition: 1s opacity;
-    justify-content: center;
-    height: 450px;
-    gap: 100px;
-
-
-
-    p {
-      font-size: 1.5rem;
-      text-align: center;
+    h1 {
+        font-size: 3em;
     }
 
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 20px;
+    h2 {
+        font-size: 2rem;
+        text-align: center;
     }
 
-  }
+    h3 {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        font-variant: small-caps;
+    }
+
+    #hero {
+        display: flex;
+        align-items: center;
+        padding: 5rem 0;
+        transition: 1s opacity;
+        justify-content: center;
+        height: 450px;
+        gap: 100px;
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+    }
 
 
-  #logo-home {
-    width: 300px;
-    border: 10px solid white;
-    border-radius: 100%;
-  }
+    #logo-home {
+        width: 300px;
+        border: 10px solid white;
+        border-radius: 100%;
+    }
 
-  #logo-home:hover {
-    rotate: 360deg;
-    transition-duration: 2.5s;
-  }
+    #logo-home:hover {
+        rotate: 360deg;
+        transition-duration: 2.5s;
+    }
 
-  /* ajouts*/
-  #about {
-    padding: 3rem 1rem;
-    background-color: #242e3b;
+    /* ajouts*/
+    #about {
+        padding: 3rem 1rem;
+        background-color: #242e3b;
+    }
 
-  }
 
+    #typewriter {
+        font-family: 'Source Code Pro', monospace;
+    }
 
-  #typewriter {
-    font-family: 'Source Code Pro', monospace;
+    #typewriter:before {
+        content: "~$ "
+    }
 
-  }
+    #typewriter:after {
+        opacity: 0.5;
+        content: "_";
+        animation: blink 300ms linear infinite alternate;
+    }
 
-  #typewriter:before {
-    content: "~$ "
-  }
-
-  #typewriter:after {
-    opacity: 0.5;
-    content: "_";
-    animation: blink 300ms linear infinite alternate;
-  }
-
-  .gradient-border {
-    width: 100%;
-    display: block;
-    border: none;
-    height: 1px;
-    background: black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(255, 255, 255, 0.1)));
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+    .gradient-border {
+        width: 100%;
+        display: block;
+        border: none;
+        height: 1px;
+        background: black;
+        background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(255, 255, 255, 0.1)));
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 /* FAQ*/
 .collapsible {
-  background-color: #313f51;
-  color: white;
-  cursor: pointer;
-  padding: 18px ;
-  width: 100%;
-  border: none;
-  text-align: left;
-  font-size: 17px;
-  border-top: 1px solid rgb(209, 214, 248);
-  
-  .content {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.3s ease-out, max-height 0.3s ease-out;
+    background-color: #313f51;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 17px;
+    border-top: 1px solid rgb(209, 214, 248);
 
-    p {
-      color: white;
-      background-color: #313f51;
-      font-size: medium;
+    .content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease-out, max-height 0.3s ease-out;
+
+        p {
+            color: white;
+            background-color: #313f51;
+            font-size: medium;
+        }
     }
-  }
 }
 
 .section.open .content {
-  opacity: 1;
-  max-height: 500px;
+    opacity: 1;
+    max-height: 500px;
 }
 
 .title::before {
-  content: '\25BC';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  transition: transform 0.3s ease;
-
+    content: '\25BC';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
 }
 
 .section:not(.open)>.title::before {
-  transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 
 .collapsible:nth-child(3) {
-  border: none;
+    border: none;
 }
 
 
-/* footer */
-.image-footer {
-  width: 4rem;
-  height: 4rem;
-}

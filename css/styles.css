@@ -161,6 +161,11 @@ p {
 
         .footer-content {
             justify-content: center;
+
+            div {
+                display:flex;
+
+            }
         }
 
         .applets {
@@ -310,19 +315,20 @@ footer {
                 width: 100%;
             }
         }
-    }
 
-    .footer-image {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        
-
-        img {
-        width: 4rem;
-        height: 4rem;
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
         }
     }
+
+   
 }
 
 .skip-link {
