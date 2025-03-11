@@ -84,7 +84,7 @@ main {
     }
 }
 
-/* FAQ*/
+#faq {
 .collapsible {
     background-color: #313f51;
     color: white;
@@ -110,27 +110,27 @@ main {
     }
 }
 
-.section.open .content {
-    opacity: 1;
-    max-height: 500px;
+    .section.open .content {
+        opacity: 1;
+        max-height: 500px;
+    }
+
+    .title::before {
+        content: '\25BC';
+        color: white;
+        font-weight: bold;
+        float: right;
+         margin-left: 5px;
+         transition: transform 0.3s ease;
+    }
+
+    .section:not(.open)>.title::before {
+         transform: rotate(-90deg);
+    }
+
+
+    .collapsible:nth-child(3) {
+         border: none;
+    }
+
 }
-
-.title::before {
-    content: '\25BC';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-    transition: transform 0.3s ease;
-}
-
-.section:not(.open)>.title::before {
-    transform: rotate(-90deg);
-}
-
-
-.collapsible:nth-child(3) {
-    border: none;
-}
-
-

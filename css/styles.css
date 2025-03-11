@@ -240,6 +240,17 @@ header {
     }
 
 
+    #btn-membre{
+        display: inline-block;
+        background-color: #6571A7;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 0rem 0.4rem;
+    }
+    
+    #btn-membre:hover{
+        background-color: #535e91;
+    }
 
 }
 
@@ -348,15 +359,3 @@ footer {
 }
 
 
-#btn-membre{
-    display: inline-block;
-    background-color: #6571A7;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 0rem 0.4rem;
-   
-}
-
-#btn-membre:hover{
-    background-color: #535e91;
-}
