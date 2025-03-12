@@ -20,7 +20,7 @@ main {
         padding: 5rem 0;
         transition: 1s opacity;
         justify-content: center;
-        height: 450px;
+        min-height: 450px;
         gap: 100px;
         background-color: #161e28;
         
@@ -39,17 +39,36 @@ main {
         }
     }
 
+    @media (max-width: 991px) {
+        #hero{
+               overflow: hidden;
+               flex-direction: column;
+               padding: 3.5rem 0;
+               gap:50px;
+
+               #logo-home{
+                width: 30%;
+                border-width: 5px;
+               } 
+
+               p{
+                width: 75%;
+               }
+        }
+        
+    }
 
     #logo-home {
-        width: 300px;
+        max-width: 300px;
         border: 10px solid white;
         border-radius: 100%;
+        transition: transform 1s ease-in;
     }
 
-    #logo-home:hover {
-        rotate: 360deg;
-        transition-duration: 2.5s;
+    #logo-home:hover{
+        transform: rotate(360deg);
     }
+
 
     /* ajouts*/
     #about {

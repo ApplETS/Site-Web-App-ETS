@@ -1,10 +1,11 @@
-a:not(#btn-membre):hover::after,
+a:hover::after,
 [data-current-page="home"] a[href="index.html"]:after,
 [data-current-page="team"] a[href="equipe.html"]:after,
 [data-current-page="partners"] a[href="partenaires.html"]:after,
 [data-current-page="contact"] a[href="contact.html"]:after {
     width: 100%;
 }
+
 
 
 h1 {
@@ -50,6 +51,7 @@ p {
 }
 
 @media (min-width: 992px) {
+   
     #nav-toggle-container {
         display: none;
     }
@@ -70,6 +72,7 @@ p {
 }
 
 @media (max-width: 991px) {
+    
     header {
         align-items: normal !important;
         flex-direction: column;
@@ -220,11 +223,8 @@ header {
                 color: inherit;
             }
 
-            a:not(#btn-membre):hover {
-                font-weight: bold;
-            }
 
-            a:not(#btn-membre)::after {
+            a:after {
                 content: '';
                 display: block;
                 width: 0;
@@ -235,6 +235,10 @@ header {
 
             a:focus-visible:after {
                 display: none;
+            }
+
+            #btn-membre:after{
+                content: none;
             }
         }
     }
