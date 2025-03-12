@@ -23,7 +23,7 @@ main {
         min-height: 450px;
         gap: 100px;
         background-color: #161e28;
-        
+
 
         p {
             font-size: 1.5rem;
@@ -40,22 +40,21 @@ main {
     }
 
     @media (max-width: 991px) {
-        #hero{
-               overflow: hidden;
-               flex-direction: column;
-               padding: 3.5rem 0;
-               gap:50px;
+        #hero {
+            overflow: hidden;
+            flex-direction: column;
+            padding: 3.5rem 0;
+            gap: 50px;
 
-               #logo-home{
+            #logo-home {
                 width: 30%;
                 border-width: 5px;
-               } 
+            }
 
-               p{
+            p {
                 width: 75%;
-               }
+            }
         }
-        
     }
 
     #logo-home {
@@ -65,17 +64,14 @@ main {
         transition: transform 1s ease-in;
     }
 
-    #logo-home:hover{
+    #logo-home:hover {
         transform: rotate(360deg);
     }
 
-
-    /* ajouts*/
     #about {
         padding: 3rem 1rem;
         background-color: #242e3b;
     }
-
 
     #typewriter {
         font-family: 'Source Code Pro', monospace;
@@ -104,30 +100,30 @@ main {
 }
 
 #faq {
-.collapsible {
-    background-color: #313f51;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    font-size: 17px;
-    border-top: 1px solid rgb(209, 214, 248);
+    .collapsible {
+        background-color: #313f51;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        font-size: 17px;
+        border-top: 1px solid rgb(209, 214, 248);
 
-    .content {
-        opacity: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: opacity 0.3s ease-out, max-height 0.3s ease-out;
+        .content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.3s ease-out, max-height 0.3s ease-out;
 
-        p {
-            color: white;
-            background-color: #313f51;
-            font-size: medium;
+            p {
+                color: white;
+                background-color: #313f51;
+                font-size: medium;
+            }
         }
     }
-}
 
     .section.open .content {
         opacity: 1;
@@ -139,17 +135,16 @@ main {
         color: white;
         font-weight: bold;
         float: right;
-         margin-left: 5px;
-         transition: transform 0.3s ease;
+        margin-left: 5px;
+        transition: transform 0.3s ease;
     }
 
     .section:not(.open)>.title::before {
-         transform: rotate(-90deg);
+        transform: rotate(-90deg);
     }
 
 
     .collapsible:nth-child(3) {
-         border: none;
+        border: none;
     }
-
 }
