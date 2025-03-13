@@ -103,15 +103,23 @@ main {
     .collapsible {
         background-color: #313f51;
         color: white;
-        cursor: pointer;
-        padding: 18px;
         width: 100%;
         border: none;
         text-align: left;
         font-size: 17px;
         border-top: 1px solid rgb(209, 214, 248);
 
+        .title {
+            display: block; 
+            width: 95%; 
+            height: 100%;
+            padding: 17px; 
+            cursor: pointer; 
+            margin:0%;
+        }
+
         .content {
+            padding-left: 17px;
             opacity: 0;
             max-height: 0;
             overflow: hidden;
