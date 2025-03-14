@@ -83,6 +83,12 @@
     "roles": ["Ancien Trésorier", "Développeur"]
   },
   {
+    "name": "Eric El-Chabab",
+    "image": "EricElChabab.webp",
+    "github": "chababeric",
+    "roles": ["Développeur"]
+  },
+  {
     "name": "Fanelle Mekamto",
     "image": "FanelleMekamto.webp",
     "linkedin": "fanelle-mekamto-dassi-b602628a",
@@ -146,6 +152,13 @@
     "image": "JonathanLachance.webp",
     "linkedin": "jonathan-lachance-a8a871219",
     "github": "J01716",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Luca Nakanishi Nadeau",
+    "image": "LucaNakanishiNadeau.webp",
+    "linkedin": "luca-nakanishi-nadeau-816184151",
+    "github": "NakanLuca",
     "roles": ["Développeur"]
   },
   {
