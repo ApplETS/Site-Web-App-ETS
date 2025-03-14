@@ -21,18 +21,25 @@
     "roles": ["Trésorier", "Développeur"]
   },
   {
+    "name": "Ariane Hussaini",
+    "image": "ArianeHussaini.webp",
+    "linkedin": "ariane-hussaini-323727330",
+    "github": "arihuss",
+    "roles": ["Communications", "Expérience utilisateur", "Intégration web"]
+  },
+  {
+    "name": "Sarah Hann",
+    "image": "SarahHann.webp",
+    "linkedin": "sarah-hann-371a2a337",
+    "github": "sarahhannets",
+    "roles": ["Activités", "Expérience utilisateur", "Intégration web"]
+  },
+  {
     "name": "Mohamed Idrissi",
     "image": "MohamedIdrissi.webp",
     "linkedin": "mohamed-h-idrissi",
     "github": "mhd-hi",
     "roles": ["Chef de projet de PlanifÉTS", "Développeur"]
-  },
-  {
-    "name": "Ariane Hussaini",
-    "image": "ArianeHussaini.webp",
-    "linkedin": "ariane-hussaini-323727330",
-    "github": "arihuss",
-    "roles": ["Communications", "Expérience utilisateur"]
   },
   {
     "name": "Alexis Fecteau",
@@ -55,6 +62,13 @@
     "roles": ["Développeur"]
   },
   {
+    "name": "Benjamin Émard",
+    "image": "BenjaminEmard.webp",
+    "linkedin": "benjamin-é-48b833290",
+    "github": "BorealApple0939",
+    "roles": ["Développeur"]
+  },
+  {
     "name": "David Martel",
     "image": "DavidMartel.webp",
     "linkedin": "david-martel12",
@@ -68,17 +82,18 @@
     "roles": ["Développeur"]
   },
   {
-    "name": "Eric El-Chabab",
-    "image": "EricElChabab.webp",
-    "github": "chababeric",
+    "name": "Ethan Estrada",
+    "image": "EthanEstrada.webp",
+    "linkedin":"ethan-estrada-149a771a7",
+    "github": "Ethan-Estrada",
     "roles": ["Développeur"]
   },
   {
-    "name": "Luca Nakanishi Nadeau",
-    "image": "LucaNakanishiNadeau.webp",
-    "linkedin": "luca-nakanishi-nadeau-816184151",
-    "github": "NakanLuca",
-    "roles": ["Développeur"]
+    "name": "Farkunda Wahedi",
+    "image": "FarkundaWahedi.webp",
+    "linkedin":"farkunda-w-211689304",
+    "github": "farkunda",
+    "roles": ["Expérience utilisateur"]
   },
   {
     "name": "Matei Martin",
