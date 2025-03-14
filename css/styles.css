@@ -190,7 +190,6 @@ header {
     justify-content: center;
     background-color: #1b2431;
 
-
     nav {
         color: white;
         font-size: 1.4rem;
@@ -218,12 +217,10 @@ header {
             list-style: none;
             transition: height 0.3s ease;
 
-
             a {
                 text-decoration: none;
                 color: inherit;
             }
-
 
             a:after {
                 content: '';

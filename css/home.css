@@ -23,8 +23,7 @@ main {
         min-height: 450px;
         gap: 100px;
         background-color: #161e28;
-
-
+        
         p {
             font-size: 1.5rem;
             text-align: center;
@@ -150,7 +149,6 @@ main {
     .section:not(.open)>.title::before {
         transform: rotate(-90deg);
     }
-
 
     .collapsible:nth-child(3) {
         border: none;
