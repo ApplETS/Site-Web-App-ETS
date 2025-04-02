@@ -232,13 +232,13 @@ header {
                 display: none;
             }
 
-            #btn-membre:after {
+            #become-member-btn:after {
                 content: none;
             }
         }
     }
 
-    #btn-membre {
+    #become-member-btn {
         display: inline-block;
         background-color: #6571A7;
         border: 2px solid white;
@@ -246,7 +246,7 @@ header {
         padding: 0rem 0.4rem;
     }
 
-    #btn-membre:hover {
+    #become-member-btn:hover {
         background-color: #535e91;
     }
 }
