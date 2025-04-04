@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    background-color: #323649;
+    background-color: #2b313f;
     color: #f1f7fd;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -33,6 +33,7 @@ p {
 }
 
 @keyframes blink {
+
     0%, 49% {
         opacity: 0;
     }
@@ -44,19 +45,22 @@ p {
 
 .container {
     width: 90%;
-    max-width: 1140px;
+    max-width: 72rem;
     margin: auto;
 }
 
 @media (min-width: 992px) {
+
     #nav-toggle-container {
         display: none;
     }
 
     header nav {
+        width: 95%;
         display: flex;
         flex-direction: row;
-        
+        justify-content: space-between;
+
         ul {
             padding-left: 5rem;
             align-self: center;
@@ -67,6 +71,7 @@ p {
 }
 
 @media (max-width: 991px) {
+
     header {
         align-items: normal !important;
         flex-direction: column;
@@ -76,14 +81,14 @@ p {
             margin: 0;
             overflow-y: hidden;
             flex-direction: column;
-            
+
             li {
                 width: fit-content;
                 margin-left: 0;
                 font-size: 1.8rem;
             }
         }
-        
+
         .top-row {
             display: flex;
             justify-content: space-between;
@@ -97,7 +102,7 @@ p {
             padding: 0;
             cursor: pointer;
             align-items: center;
-    
+
             #nav-toggler span,
             #nav-toggler span:before,
             #nav-toggler span:after {
@@ -114,11 +119,11 @@ p {
                 span:before {
                     margin-top: -10px;
                 }
-                
+
                 span:after {
                     margin-top: 10px;
                 }
-                
+
                 span,
                 span:before,
                 span:after {
@@ -130,16 +135,16 @@ p {
                 span {
                     background-color: transparent;
                 }
-                
+
                 span:before,
                 span:after {
                     margin-top: 0;
                 }
-                
+
                 span:before {
                     transform: rotate(45deg);
                 }
-                
+
                 span:after {
                     transform: rotate(-45deg);
                 }
@@ -155,9 +160,13 @@ p {
             height: 1.5rem;
             width: 1.5rem;
         }
-    
+
         .footer-content {
             justify-content: center;
+
+            div {
+                display: flex;
+            }
         }
 
         .applets {
@@ -182,17 +191,18 @@ header {
         color: white;
         font-size: 1.4rem;
 
+
         .top-row {
             display: flex;
             align-items: center;
             height: 5rem;
-    
+
             img {
                 height: 4rem;
                 width: 4rem;
             }
         }
-    
+
         button {
             background-color: #00000000;
             border: none;
@@ -206,7 +216,7 @@ header {
 
             a {
                 text-decoration: none;
-                color: inherit
+                color: inherit;
             }
 
             a:after {
@@ -221,7 +231,23 @@ header {
             a:focus-visible:after {
                 display: none;
             }
+
+            #become-member-btn:after {
+                content: none;
+            }
         }
+    }
+
+    #become-member-btn {
+        display: inline-block;
+        background-color: #6571A7;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 0rem 0.4rem;
+    }
+
+    #become-member-btn:hover {
+        background-color: #535e91;
     }
 }
 
@@ -261,17 +287,17 @@ footer {
     a:hover {
         color: #95b7eb
     }
-    
+
     .applets {
         display: flex;
         flex-direction: column;
         align-items: end;
-    
+
         img {
             height: 2.5rem;
             width: 2.5rem;
         }
-    
+
         div {
             display: flex;
             gap: 0.8rem;
@@ -284,7 +310,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        
+
         li a {
             display: block;
             height: 1.6rem;
@@ -297,6 +323,17 @@ footer {
                 width: 100%;
             }
         }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
     }
 }
 
@@ -305,7 +342,7 @@ footer {
     left: -9999px;
     top: -9999px;
 }
-  
+
 .skip-link:focus {
     position: static;
     left: 0;
