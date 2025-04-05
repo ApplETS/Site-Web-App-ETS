@@ -1,14 +1,14 @@
 generateMemberContainers();
 
 async function generateMemberContainers() {
-  const [activeMembers, legendaryMembers, oldMembers] = await Promise.all([
+  const [adminMembers, activeMembers, oldMembers] = await Promise.all([
+    fetchMembers("js/data/admins.json"),
     fetchMembers("js/data/members.json"),
-    fetchMembers("js/data/legendary-members.json"),
     fetchMembers("js/data/old-members.json"),
   ]);
 
+  populateSection("admin-members", adminMembers);
   populateSection("active-members", activeMembers);
-  populateSection("legendary-members", legendaryMembers);
   populateSection("previous-members", oldMembers);
 }
 

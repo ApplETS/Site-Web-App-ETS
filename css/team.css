@@ -25,11 +25,13 @@ main {
     h2 {
         margin: 5rem 0 2rem 0;
         text-align: center;
+        font-weight: bold;
     }
 }
 
 .members {
-    row-gap: 3rem;
+    column-gap: 4rem;
+    row-gap: 4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

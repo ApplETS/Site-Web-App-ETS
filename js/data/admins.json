@@ -1,0 +1,36 @@
+[
+    {
+      "name": "Xavier Paquet-Rapold",
+      "image": "XavierPaquetRapold.webp",
+      "linkedin": "xavier-paquet-rapold",
+      "github": "XavierPaquet-Rapold",
+      "roles": ["Capitaine", "Développeur"]
+    },
+    {
+      "name": "Louis-Philippe Héon",
+      "image": "LouisPhilippeHeon.webp",
+      "linkedin": "louis-philippe-héon",
+      "github": "LouisPhilippeHeon",
+      "roles": ["Co-capitaine", "Développeur"]
+    },
+    {
+      "name": "Francis Bureau",
+      "image": "FrancisBureau.webp",
+      "linkedin": "francis-bureau-b9abb4162",
+      "github": "Effbureau",
+      "roles": ["Trésorier", "Développeur"]
+    },
+    {
+      "name": "Ariane Hussaini",
+      "image": "ArianeHussaini.webp",
+      "linkedin": "ariane-hussaini-323727330",
+      "github": "arihuss",
+      "roles": ["Communications", "Expérience utilisateur", "Intégration web"]
+    },
+    {
+      "name": "Sarah Hann",
+      "image": "SarahHann.webp",
+      "linkedin": "sarah-hann-371a2a337",
+      "github": "sarahhannets",
+      "roles": ["Activités", "Expérience utilisateur", "Intégration web"]
+    }]
