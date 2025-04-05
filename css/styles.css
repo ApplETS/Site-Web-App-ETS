@@ -200,6 +200,7 @@ header {
             img {
                 height: 4rem;
                 width: 4rem;
+                
             }
         }
 
@@ -290,12 +291,13 @@ footer {
 
     .applets {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: end;
 
         img {
             height: 2.5rem;
             width: 2.5rem;
+            padding-left: 1rem;
         }
 
         div {
@@ -309,7 +311,7 @@ footer {
         align-items: start;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
 
         li a {
             display: block;
@@ -330,8 +332,9 @@ footer {
             align-items: center;
 
             img {
-                width: 4rem;
-                height: 4rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                padding-right: 0.5rem;
             }
         }
     }
