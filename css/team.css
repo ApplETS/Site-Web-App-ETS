@@ -226,5 +226,27 @@ main {
     background-color: #535e91;
   }
 
+/*ancien membres section */
 
- 
+.arrow-toggle {
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease;
+    margin-top: 0.2rem;      
+    margin-bottom: 1rem; 
+
+    i {
+        font-size: 5rem;
+    }
+}
+
+  .arrow-toggle.rotate i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
