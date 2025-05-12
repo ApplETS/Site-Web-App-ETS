@@ -19,8 +19,8 @@
 }
 
 main {
-    padding: 3rem 0;
     overflow-x: hidden;
+
     
     h2 {
         margin: 5rem 0 2rem 0;
@@ -194,3 +194,36 @@ main {
         animation: none !important;
     }
 }
+
+/* Section introduction */
+.intro-section {
+    background-color: #101426; 
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 100%;
+    min-height: 20rem;
+    padding-top: 12rem;
+  }
+  
+  .intro-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .join-button {
+    background-color: #6571A7;
+    color: white;
+    padding: 0.8rem 4rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-button:hover {
+    background-color: #535e91;
+  }
+  
