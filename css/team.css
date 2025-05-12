@@ -20,10 +20,9 @@
 
 main {
     overflow-x: hidden;
-
     
     h2 {
-        margin: 5rem 0 2rem 0;
+        margin: 5rem 0 0.5rem 0;
         text-align: center;
         font-weight: bold;
     }
@@ -203,13 +202,13 @@ main {
     max-width: 100%;
     min-height: 20rem;
     padding-top: 12rem;
-  }
-  
-  .intro-section h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    color: white;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: white;
+      }
   }
   
   .join-button {
@@ -226,4 +225,6 @@ main {
   .join-button:hover {
     background-color: #535e91;
   }
-  
+
+
+ 
