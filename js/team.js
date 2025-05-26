@@ -63,3 +63,19 @@ function generateRoles(roles) {
 window.addEventListener("resize", () => {
   document.getElementById('active-members').classList.add('resize-animation-stopper');
 });
+
+
+//ancien membres
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("toggle-old-members");
+  const oldMembersSection = document.getElementById("previous-members");
+  const arrowIcon = toggleButton.querySelector("i");
+
+  toggleButton.addEventListener("click", () => {
+    const isHidden = oldMembersSection.style.display === "none";
+
+    oldMembersSection.style.display = isHidden ? "flex" : "none";
+    arrowIcon.classList.toggle("fa-caret-down", !isHidden);
+    arrowIcon.classList.toggle("fa-caret-up", isHidden);
+  });
+});

@@ -239,12 +239,12 @@ main {
     text-align: center;
     cursor: pointer;
     color: white;
-    transition: transform 0.3s ease;
-    margin-top: 0.2rem;      
-    margin-bottom: 1rem; 
-
+    transition: transform 0.3s ease;  
+    margin-bottom: 2rem; 
+    
     i {
-        font-size: 5rem;
+        font-size: 5.2rem; 
+        margin-top: -1.3rem;
     }
 }
 
@@ -252,8 +252,6 @@ main {
     transform: rotate(180deg);
     transition: transform 0.3s ease;
   }
-  /*
-  .hidden {
-    display: none;
-  }
-  */
+
+
+
