@@ -1,255 +1,342 @@
 [
   {
-    "name": "Isaac Pateau",
-    "image": "IsaacPateau.webp",
-    "linkedin": "isaac-pateau",
-    "github": "zaclimon",
-    "roles": ["Ancien Capitaine", "Développeur"]
-  },
-  {
-    "name": "Thanh-Son-Philippe Lam",
-    "image": "TranhSonPhilippeLam.webp",
-    "linkedin": "thanh-son-philippe-lam",
-    "github": "Sonphil",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Xavier Chrétien",
-    "image": "XavierChretien.webp",
-    "linkedin": "xavierchretien",
-    "github": "apomalyn",
-    "roles": ["Ancien Capitaine", "Développeur", "DevOps"]
-  },
-  {
     "name": "Alexandre Markus",
     "image": "AlexandreMarkus.webp",
     "linkedin": "alexandre-markus",
     "github": "AlexandreMarkus",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Antoine Lemelin",
     "image": "AntoineLemelin.webp",
     "linkedin": "antoine-lemelin-6b9929238",
     "github": "AntoineLemelin",
-    "roles": ["Ancien Capitaine", "Développeur"]
+    "roles": [
+      "Ancien Capitaine",
+      "Développeur"
+    ]
   },
   {
     "name": "Antoine Martineau",
     "image": "AntoineMartineau.webp",
     "linkedin": "antoine-martineau-5874a520a",
     "github": "Udito3",
-    "roles": ["Ancien Trésorier", "Développeur"]
+    "roles": [
+      "Ancien Trésorier",
+      "Développeur"
+    ]
   },
   {
     "name": "Camille Brulotte",
     "image": "CamilleBrulotte.webp",
     "linkedin": "camillebrulotte",
     "github": "camillebrulotte",
-    "roles": ["Ancienne Capitaine", "Développeuse"]
+    "roles": [
+      "Ancienne Capitaine",
+      "Développeuse"
+    ]
   },
   {
     "name": "Charles Perreault",
     "image": "CharlesPerreault.webp",
     "linkedin": "charles-perreault-28978a144",
     "github": "SnakeBash",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Christelle Delalleau",
     "image": "ChristelleDelalleau.webp",
     "linkedin": "chdelalleau/",
     "github": "Hamtara",
-    "roles": ["Expérience utilisateur"]
+    "roles": [
+      "Expérience utilisateur"
+    ]
   },
   {
     "name": "Constant",
     "image": "AlexandreConstant.webp",
     "github": "ConstantCONTENT",
-    "roles": ["Ancien Capitaine", "Ancien chef de projet pour ÉTSMap"]
+    "roles": [
+      "Ancien Capitaine",
+      "Ancien chef de projet pour ÉTSMap"
+    ]
   },
   {
     "name": "Davy Castanet",
     "image": "DavyCastanet.webp",
     "linkedin": "davy-castanet-qa-dev",
     "github": "Zangdart",
-    "roles": ["Développeur mobile"]
+    "roles": [
+      "Développeur mobile"
+    ]
   },
   {
     "name": "Émeric Loriot",
     "image": "EmericLoriot.webp",
     "linkedin": "emeric-loriot-155427229",
     "github": "EmericLoriot",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Emma Neiss",
     "image": "EmmaNeiss.webp",
     "linkedin": "emma-neiss",
     "github": "eneiss",
-    "roles": ["Ancienne chef de projet pour ÉTSMobile", "Développeuse"]
+    "roles": [
+      "Ancienne chef de projet pour ÉTSMobile",
+      "Développeuse"
+    ]
   },
   {
     "name": "Emmanuel Proulx",
     "image": "EmmanuelProulx.webp",
     "linkedin": "emmanuel-proulx-546853155",
     "github": "kovy42",
-    "roles": ["Ancien Trésorier", "Développeur"]
+    "roles": [
+      "Ancien Trésorier",
+      "Développeur"
+    ]
   },
   {
     "name": "Emon Dhar",
     "image": "EmonDhar.webp",
     "linkedin": "emon-dhar",
     "github": "emondhar",
-    "roles": ["Ancien Trésorier", "Développeur"]
+    "roles": [
+      "Ancien Trésorier",
+      "Développeur"
+    ]
   },
   {
     "name": "Eric El-Chabab",
     "image": "EricElChabab.webp",
     "github": "chababeric",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Fanelle Mekamto",
     "image": "FanelleMekamto.webp",
     "linkedin": "fanelle-mekamto-dassi-b602628a",
     "github": "FanelleMekamto",
-    "roles": ["Événementiel", "Développeuse"]
+    "roles": [
+      "Événementiel",
+      "Développeuse"
+    ]
+  },
+  {
+    "name": "Filipe Arker",
+    "image": "FilipeArker.webp",
+    "linkedin": "filipe-arker-398a13126",
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Félix Léveillé",
     "image": "FelixLeveille.webp",
     "linkedin": "f%C3%A9lix-l%C3%A9veill%C3%A9-9b6711170",
     "github": "flix477",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Filipe Arker",
-    "image": "FilipeArker.webp",
-    "linkedin": "filipe-arker-398a13126",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Gracia Dufort Jeanty",
     "image": "GraciaDufortJeanty.webp",
     "github": "GraciaDufort",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Howard Phi",
     "image": "HowardPhi.webp",
     "linkedin": "howardphi",
     "github": "howardphi",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Hugo Migner",
     "image": "HugoMigner.webp",
     "linkedin": "hugo-migner-3b8540230",
     "github": "HugoMigner",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
+  },
+  {
+    "name": "Isaac Pateau",
+    "image": "IsaacPateau.webp",
+    "linkedin": "isaac-pateau",
+    "github": "zaclimon",
+    "roles": [
+      "Ancien Capitaine",
+      "Développeur"
+    ]
   },
   {
     "name": "Jason Narraien",
     "image": "JasonNarraien.webp",
     "github": "JasonNarrainen",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Jean-Félix St-hilaire",
     "image": "JeanFelixStHilaire.webp",
     "github": "jfl3x",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Jonathan Duval-Venne",
     "image": "JonathanDuvalVenne.webp",
     "linkedin": "jonathan-duval-venne-5581371a2",
     "github": "JonathanDuvalV",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Jonathan Lachance",
     "image": "JonathanLachance.webp",
     "linkedin": "jonathan-lachance-a8a871219",
     "github": "J01716",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Luca Nakanishi Nadeau",
-    "image": "LucaNakanishiNadeau.webp",
-    "linkedin": "luca-nakanishi-nadeau-816184151",
-    "github": "NakanLuca",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Kevin Doremy Laferrière",
     "image": "KevinDoremyLaferriere.webp",
     "linkedin": "kevin-doremy-laferriere",
     "github": "KevinDoremy",
-    "roles": ["Ancien Co-capitaine"]
+    "roles": [
+      "Ancien Co-capitaine"
+    ]
+  },
+  {
+    "name": "Luca Nakanishi Nadeau",
+    "image": "LucaNakanishiNadeau.webp",
+    "linkedin": "luca-nakanishi-nadeau-816184151",
+    "github": "NakanLuca",
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "May Madany",
     "image": "MayMadany.webp",
     "linkedin": "may-madany-83699248",
     "github": "mayMadany",
-    "roles": ["Développeuse"]
+    "roles": [
+      "Développeuse"
+    ]
   },
   {
     "name": "Mourad Rhanem",
     "image": "MouradRhanem.webp",
     "linkedin": "mrhanem",
     "github": "MouradRUQAM",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Mykaël Lemieux-Lafontaine",
     "image": "MykaelLemieuxLafontaine.webp",
     "linkedin": "myka%C3%ABl-lemieux-lafontaine-909093169",
     "github": "mykaelll87",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Pascal Anhe",
     "image": "Applets.webp",
     "linkedin": "pascalanhe",
     "github": "vaudranpascal",
-    "roles": ["Responsable des nouveaux membres"]
+    "roles": [
+      "Responsable des nouveaux membres"
+    ]
   },
   {
     "name": "Pascal Parent",
     "image": "PascalParent.webp",
     "linkedin": "pascal-parent-b790b31a8",
     "github": "Pascal1132",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Ricardo Gomez-Cuadrado",
     "image": "RicardoGomezCuadrado.webp",
     "linkedin": "ricardo-gomez-cuadrado-9b9a24184",
     "github": "MachoBandido08",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Samuel Montambault",
     "image": "SamuelMontambault.webp",
     "linkedin": "samuel-montambault-62b543114",
     "github": "MysticFragilist",
-    "roles": ["Ancien chef de projet d'ÉTSMobile", "Ancien Capitaine", "Développeur"]
+    "roles": [
+      "Ancien chef de projet d'ÉTSMobile",
+      "Ancien Capitaine",
+      "Développeur"
+    ]
+  },
+  {
+    "name": "Thanh-Son-Philippe Lam",
+    "image": "TranhSonPhilippeLam.webp",
+    "linkedin": "thanh-son-philippe-lam",
+    "github": "Sonphil",
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Thomas Lefloch",
     "image": "ThomasLefloch.webp",
     "linkedin": "thomas-lefloch",
     "github": "Bretzoule",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
   },
   {
     "name": "Vincent Audette",
     "image": "VincentAudette.webp",
     "linkedin": "vincent-audette-618ba9140",
     "github": "VincentAudette",
-    "roles": ["Développeur"]
+    "roles": [
+      "Développeur"
+    ]
+  },
+  {
+    "name": "Xavier Chrétien",
+    "image": "XavierChretien.webp",
+    "linkedin": "xavierchretien",
+    "github": "apomalyn",
+    "roles": [
+      "Ancien Capitaine",
+      "Développeur",
+      "DevOps"
+    ]
   }
 ]

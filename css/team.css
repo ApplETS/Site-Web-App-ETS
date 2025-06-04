@@ -202,12 +202,12 @@ main {
 }
 
 /* Section introduction */
-.intro-section {
+.hero {
     background-color: #101426; 
     text-align: center;
     margin-bottom: 3rem;
     max-width: 100%;
-    min-height: 450px;
+    min-height: 340px;
     padding-top: 12rem;
 
     h1 {
