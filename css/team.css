@@ -169,11 +169,11 @@ main {
     
     #admin-members {
         .profile:nth-child(2n+1) {
-            animation: 1s ease-out 0s 1 slideInFromLeft !important;
+            animation: 1s ease-out 0s 1 slideInFromLeft;
         }
         
         .profile:nth-child(2n+2) {
-            animation: 1s ease-out 0s 1 slideInFromRight !important;
+            animation: 1s ease-out 0s 1 slideInFromRight;
         }
     }
 }
