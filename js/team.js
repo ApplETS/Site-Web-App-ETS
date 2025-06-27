@@ -60,8 +60,15 @@ function generateRoles(roles) {
   return roles.map(role => `<p aria-hidden="true">${role}</p>`).join('');
 }
 
+let animationDisabled = false;
+
 window.addEventListener("resize", () => {
-  document.getElementById('active-members').classList.add('resize-animation-stopper');
+  if (animationDisabled) return;
+
+  const section = document.getElementById("admin-members");
+  section.classList.add("animation-disabled");
+
+  animationDisabled = true;
 });
 
 //ancien membres toggle

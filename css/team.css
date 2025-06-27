@@ -115,8 +115,10 @@ main {
     }
 }
 
-#admin-members.resize-animation-stopper * {
-    animation: none !important;
+/* Desactive toutes les animations sur .profile si on resize */
+.animation-disabled .profile {
+  animation: none !important;
+  transition: none !important;
 }
 
 @media (max-width: 1400px) {
