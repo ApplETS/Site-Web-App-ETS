@@ -9,6 +9,7 @@
   <link rel="icon" type="image/webp" href="images/favicon.webp">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
   <title>Équipe App|ETS</title>
@@ -18,20 +19,31 @@
   <header id="header" data-current-page="team"></header>
 
   <main id="main">
-    <h1>Rencontrez notre équipe.</h1>
 
+    <div id="content-member-desc" class="hero">
+      <h1>Rencontrez notre équipe.</h1>
+      <a href="https://formulaires.etsmtl.ca/ClubEtudiantAdhesion?requete=APPlETS&categorie=0" class="join-button" target="_blank">Nous Rejoindre</a>
+    </div>
+    
     <nav aria-label="Navigation rapide">
-      <a href="#active-members" class="skip-link">Aller à Membres actifs</a>
-      <a href="#legendary-members" class="skip-link">Aller à Membres légendaires</a>
+      <a href="#admin-members" class="skip-link">Aller à Membres actifs</a>
+      <a href="#active-members" class="skip-link">Aller à Membres légendaires</a>
       <a href="#previous-members" class="skip-link">Aller à Anciens membres</a>
     </nav>
   
-    <h2>Membres actifs</h2>
-    <div class="members container" id="active-members"></div>
-    <h2>Membres légendaires</h2>
-    <div class="members container" id="legendary-members"></div>
-    <h2>Anciens membres</h2>
-    <div class="members container" id="previous-members"></div>
+    <div class="container">
+      <h2>Comité administratif</h2>
+      <div class="gradient-border"></div><br>
+      <div class="members container" id="admin-members"></div>
+      <h2>Membres actifs</h2>
+      <div class="gradient-border"></div><br>
+      <div class="members container" id="active-members"></div>
+      <h2>Anciens membres</h2>
+      <div class="arrow-toggle" id="toggle-old-members">
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      <div class="members container" id="previous-members" style="display: none;"></div>
+    </div>
   </main>
 
   <footer id="footer"></footer>

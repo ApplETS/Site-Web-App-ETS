@@ -1,14 +1,14 @@
 generateMemberContainers();
 
 async function generateMemberContainers() {
-  const [activeMembers, legendaryMembers, oldMembers] = await Promise.all([
+  const [adminMembers, activeMembers, oldMembers] = await Promise.all([
+    fetchMembers("js/data/admins.json"),
     fetchMembers("js/data/members.json"),
-    fetchMembers("js/data/legendary-members.json"),
     fetchMembers("js/data/old-members.json"),
   ]);
 
+  populateSection("admin-members", adminMembers);
   populateSection("active-members", activeMembers);
-  populateSection("legendary-members", legendaryMembers);
   populateSection("previous-members", oldMembers);
 }
 
@@ -60,6 +60,27 @@ function generateRoles(roles) {
   return roles.map(role => `<p aria-hidden="true">${role}</p>`).join('');
 }
 
+let animationDisabled = false;
+
 window.addEventListener("resize", () => {
-  document.getElementById('active-members').classList.add('resize-animation-stopper');
+  if (animationDisabled) return;
+
+  const section = document.getElementById("admin-members");
+  section.classList.add("animation-disabled");
+
+  animationDisabled = true;
+});
+
+//ancien membres toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("toggle-old-members");
+  const oldMembersSection = document.getElementById("previous-members");
+
+  toggleButton.addEventListener("click", () => {
+    const isHidden = oldMembersSection.style.display === "none";
+
+    oldMembersSection.style.display = isHidden ? "flex" : "none";
+    
+    toggleButton.classList.toggle("rotate", isHidden);
+  });
 });
