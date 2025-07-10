@@ -1,17 +1,11 @@
 main {
-    padding: 3rem 0;
-
-    h2 {
-        text-align: center;
-    }
 
     ul {
-        padding: 0 0 4rem 0;
-        grid-template-rows: repeat(3, 1fr);
         justify-content: center;
         display: grid;
         gap: 3rem;
         list-style: none;
+        margin-bottom: 4rem;
         
         li {
             display: flex;
@@ -20,7 +14,7 @@ main {
             max-width: 30rem;
             position: relative;
             padding: 1rem;
-            background-color: #e6f7ffd5;
+            background-color: #fff;
             border-radius: 0.5rem;
             text-align: center;
 
@@ -59,11 +53,103 @@ main {
 
         li:hover,
         li:focus-within {
-            background-color: #e2f4ff;
+            background-color: #f8f8f8;
 
             a::before {
-                border-color: #65a7d3;
+                border-color: #092f48;
             }
         }
     }
+
+    .hero {
+        background-color: #101426; 
+        text-align: center;
+        margin-bottom: 3rem;
+        max-width: 100%;
+        min-height: 340px;
+        padding-top: 12rem;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+         .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+    }
+
+    .join-button {
+        background-color: #6571A7;
+        color: white;
+        padding: 0.8rem 3rem;
+        border: 2px solid white;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        font-size: 1.3rem;
+   }
+  
+    .join-button:hover {
+        background-color: #535e91;
+    }
+
+    .section-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .partner-grid {
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        justify-items: center;
+        list-style: none;
+
+        li {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+           
+
+            img {
+                width:95%;
+                max-width: 200px;
+                height: 5.2rem;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                font-weight: bold;
+                color: #000 !important;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 3rem auto;
+        padding: 0 1rem;
+    }
+
+    .plan-button {
+        display: block;     
+        margin: 2rem auto 0;  
+        text-align: center;
+        max-width: 26rem;
+    }
 }
+
