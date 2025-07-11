@@ -40,20 +40,25 @@ main {
 
         .partner-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            column-gap: 4rem;
+            row-gap: 1.3rem;
             justify-items: center;
             justify-content: center;
-            gap: 4rem;
             list-style: none;
-            margin-bottom: 4rem;
+            margin: 4rem 2rem;
+            padding: 0;
 
             li {
                 display: flex;
                 transition: background-color 200ms;
                 flex-direction: column;
                 max-width: 30rem;
+                width: 100%;
+                height: 19rem;
                 position: relative;
-                padding: 1rem;
+                /*Needed to expand link hitbox over whole card!!!*/
+                padding: 1rem 1.5rem;
                 background-color: #fff;
                 border-radius: 0.5rem;
                 text-align: center;
@@ -66,10 +71,10 @@ main {
                 }
 
                 a {
-                    color: #000 !important;
+                    color: #95a3a5 !important;
+                    /*Est-ce qu'on enleve le texte?*/
                     text-decoration: none;
-                    border: 2px solid transparent;
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     margin-top: 0.25rem;
                     margin-bottom: 0.5rem;
                     font-weight: 600;
@@ -94,6 +99,7 @@ main {
             li:hover,
             li:focus-within {
                 background-color: #f8f8f8;
+                /*maybe change these colors*/
 
                 a::before {
                     border-color: #092f48;
@@ -123,5 +129,14 @@ main {
 
     .join-button:hover {
         background-color: #535e91;
+    }
+}
+
+@media (max-width: 370px) {
+    .partner-grid {
+        li {
+            max-width: 15rem !important;
+            height: 15rem !important;
+        }
     }
 }
