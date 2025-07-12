@@ -98,11 +98,11 @@ main {
 
             li:hover,
             li:focus-within {
-                background-color: #f8f8f8;
+                background-color: #e0dede;
                 /*maybe change these colors*/
 
                 a::before {
-                    border-color: #092f48;
+                    border-color: #000000;
                 }
             }
         }
