@@ -9,6 +9,19 @@
     ]
   },
   {
+    "name": "Alexis Fecteau",
+    "image": "AlexisFecteau.webp",
+    "linkedin": "alexis-fecteau-b28501344",
+    "github": "Spoodern0t",
+    "roles": ["Développeur"]
+  },
+  {
+    "name": "Alexis Martin",
+    "image": "AlexisMartin.webp",
+    "linkedin": "alexis-martin42",
+    "roles": ["Événementiel"]
+  },
+  {
     "name": "Antoine Lemelin",
     "image": "AntoineLemelin.webp",
     "linkedin": "antoine-lemelin-6b9929238",
@@ -66,6 +79,13 @@
     ]
   },
   {
+    "name": "David Martel",
+    "image": "DavidMartel.webp",
+    "linkedin": "david-martel12",
+    "github": "DavidMartel12",
+    "roles": ["Ancient Co-capitaine", "Développeur"]
+  },
+  {
     "name": "Davy Castanet",
     "image": "DavyCastanet.webp",
     "linkedin": "davy-castanet-qa-dev",
@@ -73,6 +93,12 @@
     "roles": [
       "Développeur mobile"
     ]
+  },
+  {
+    "name": "Dylan Apardian",
+    "image": "DylanApardian.webp",
+    "github": "DylanApardian",
+    "roles": ["Développeur"]
   },
   {
     "name": "Émeric Loriot",
@@ -120,6 +146,13 @@
     "roles": [
       "Développeur"
     ]
+  },
+  {
+    "name": "Ethan Estrada",
+    "image": "EthanEstrada.webp",
+    "linkedin":"ethan-estrada-149a771a7",
+    "github": "Ethan-Estrada",
+    "roles": ["Développeur"]
   },
   {
     "name": "Fanelle Mekamto",

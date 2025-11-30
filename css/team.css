@@ -28,58 +28,54 @@ main {
     }
     
     .members {
-    row-gap: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+        row-gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-#admin-members {
-    column-gap: 4rem;
-}
+    .container {
+        width: 100% !important;
+        margin-bottom: 4rem;
+    }
 
-.container {
-    width: 100% !important;
-    margin-bottom: 4rem;
-}
-
-.profile {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-    .profile-picture {
-        border-radius: 50%;
-        height: 15rem;
-        width: 15rem;
-        background-position: center;
-        background-size: 105%;
-        transition: all 500ms;
+    .profile {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         
-        .thumbnail-content {
+        .profile-picture {
             border-radius: 50%;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            opacity: 0;
-            transition: opacity 500ms;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
+            height: 15rem;
+            width: 15rem;
+            background-position: center;
+            background-size: 105%;
+            transition: all 500ms;
             
-            a {
-                height: 2.5rem;
-                width: 2.5rem;
+            .thumbnail-content {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.6);
+                opacity: 0;
+                transition: opacity 500ms;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
                 
-                img {
-                    height: 100%;
-                    width: 100%;
+                a {
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
                 }
             }
         }
-    }
     
     .profile-picture:hover, .profile-picture:focus-within {
         background-size: 125%;
@@ -106,11 +102,11 @@ main {
 }
 
 #admin-members {
-    .profile:nth-child(n+1):nth-child(-n+3) {
+    .profile:nth-child(n+1):nth-child(-n+4) {
         animation: 1s ease-out 0s 1 slideInFromLeft;
     }
     
-    .profile:nth-child(n+4):nth-child(-n+6){
+    .profile:nth-child(n+5):nth-child(-n+8){
         animation: 1s ease-out 0s 1 slideInFromRight;
     }
 }
@@ -127,12 +123,11 @@ main {
     }
     
     #admin-members {
-        .profile:nth-child(n+1):nth-child(-n+2),
-        .profile:nth-child(n+5):nth-child(-n+6) {
+        .profile:nth-child(n+1):nth-child(-n+3) {
             animation: 1s ease-out 0s 1 slideInFromLeft;
         }
         
-        .profile:nth-child(n+3):nth-child(-n+4) {
+        .profile:nth-child(n+4):nth-child(-n+7) {
             animation: 1s ease-out 0s 1 slideInFromRight;
         }
     }
@@ -142,9 +137,15 @@ main {
     .profile {
         width: 50%;
     }
-    
+
     #admin-members {
-    column-gap: 0%;
+        .profile:nth-child(n+1):nth-child(-n+2) {
+            animation: 1s ease-out 0s 1 slideInFromLeft !important;
+        }
+        
+        .profile:nth-child(n+3):nth-child(-n+4) {
+            animation: 1s ease-out 0s 1 slideInFromRight !important;
+        }
     }
 }
 
@@ -167,16 +168,6 @@ main {
 @media (max-width: 375px) {
     .profile {
         width: 100%;
-    }
-    
-    #admin-members {
-        .profile:nth-child(2n+1) {
-            animation: 1s ease-out 0s 1 slideInFromLeft;
-        }
-        
-        .profile:nth-child(2n+2) {
-            animation: 1s ease-out 0s 1 slideInFromRight;
-        }
     }
 }
 

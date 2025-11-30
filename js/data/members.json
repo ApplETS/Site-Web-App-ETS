@@ -1,24 +1,10 @@
 [
-  
   {
     "name": "Mohamed Idrissi",
     "image": "MohamedIdrissi.webp",
     "linkedin": "mohamed-h-idrissi",
     "github": "mhd-hi",
     "roles": ["Chef de projet de PlanifÉTS", "Développeur"]
-  },
-  {
-    "name": "Alexis Fecteau",
-    "image": "AlexisFecteau.webp",
-    "linkedin": "alexis-fecteau-b28501344",
-    "github": "Spoodern0t",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Alexis Martin",
-    "image": "AlexisMartin.webp",
-    "linkedin": "alexis-martin42",
-    "roles": ["Événementiel"]
   },
   {
     "name": "Benjamin Bélanger",
@@ -35,26 +21,6 @@
     "roles": ["Développeur"]
   },
   {
-    "name": "David Martel",
-    "image": "DavidMartel.webp",
-    "linkedin": "david-martel12",
-    "github": "DavidMartel12",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Dylan Apardian",
-    "image": "DylanApardian.webp",
-    "github": "DylanApardian",
-    "roles": ["Développeur"]
-  },
-  {
-    "name": "Ethan Estrada",
-    "image": "EthanEstrada.webp",
-    "linkedin":"ethan-estrada-149a771a7",
-    "github": "Ethan-Estrada",
-    "roles": ["Développeur"]
-  },
-  {
     "name": "Farkunda Wahedi",
     "image": "FarkundaWahedi.webp",
     "linkedin":"farkunda-w-211689304",
@@ -67,5 +33,19 @@
     "linkedin": "matei-martin",
     "github": "mataai",
     "roles": ["Développeur"]
+  },
+  {
+    "name": "Sarah Hann",
+    "image": "SarahHann.webp",
+    "linkedin": "sarah-hann-371a2a337",
+    "github": "sarahhannets",
+    "roles": ["Événementiel"]
+  },
+  {
+    "name": "Xavier Paquet-Rapold",
+    "image": "XavierPaquetRapold.webp",
+    "linkedin": "xavier-paquet-rapold",
+    "github": "XavierPaquet-Rapold",
+    "roles": ["Ancien Capitaine", "Développeur"]
   }
 ]
