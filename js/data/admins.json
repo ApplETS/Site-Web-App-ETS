@@ -1,17 +1,17 @@
 [
     {
-      "name": "Xavier Paquet-Rapold",
-      "image": "XavierPaquetRapold.webp",
-      "linkedin": "xavier-paquet-rapold",
-      "github": "XavierPaquet-Rapold",
-      "roles": ["Capitaine", "Développeur"]
-    },
-    {
       "name": "Louis-Philippe Héon",
       "image": "LouisPhilippeHeon.webp",
       "linkedin": "louis-philippe-héon",
       "github": "LouisPhilippeHeon",
-      "roles": ["Co-capitaine", "Développeur"]
+      "roles": ["Capitaine", "Développeur"]
+    },
+    {
+      "name": "Ariane Hussaini",
+      "image": "ArianeHussaini.webp",
+      "linkedin": "ariane-hussaini-323727330",
+      "github": "arihuss",
+      "roles": ["Co-capitaine", "Expérience utilisateur", "Intégration web"]
     },
     {
       "name": "Francis Bureau",
@@ -21,16 +21,9 @@
       "roles": ["Trésorier", "Développeur"]
     },
     {
-      "name": "Ariane Hussaini",
-      "image": "ArianeHussaini.webp",
-      "linkedin": "ariane-hussaini-323727330",
-      "github": "arihuss",
-      "roles": ["Communications", "Expérience utilisateur", "Intégration web"]
-    },
-    {
-      "name": "Sarah Hann",
-      "image": "SarahHann.webp",
-      "linkedin": "sarah-hann-371a2a337",
-      "github": "sarahhannets",
-      "roles": ["Activités", "Expérience utilisateur", "Intégration web"]
+      "name": "Souad Goubaa",
+      "image": "SouadGoubaa.webp",
+      "linkedin": "souad-goubaa",
+      "github": "Souadgb",
+      "roles": ["Communications"]
     }]
