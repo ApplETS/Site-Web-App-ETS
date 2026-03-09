@@ -14,18 +14,25 @@
     "roles": ["Développeur"]
   },
   {
-    "name": "Benjamin Émard",
-    "image": "BenjaminEmard.webp",
-    "linkedin": "benjamin-é-48b833290",
-    "github": "BorealApple0939",
-    "roles": ["Développeur"]
-  },
-  {
     "name": "Farkunda Wahedi",
     "image": "FarkundaWahedi.webp",
     "linkedin":"farkunda-w-211689304",
     "github": "farkunda",
     "roles": ["Expérience utilisateur"]
+  },
+  {
+    "name": "Francis Bureau",
+    "image": "FrancisBureau.webp",
+    "linkedin": "francis-bureau-b9abb4162",
+    "github": "Effbureau",
+    "roles": ["Ancien Trésorier", "Développeur"]
+  },
+  {
+    "name": "Jonathan Lafontaine",
+    "image": "JonathanLafontaine.webp",
+    "linkedin": "jonathan-lafontaine",
+    "github": "lafontaineqic-hue",
+    "roles": ["Développeur"]
   },
   {
     "name": "Matei Martin",
@@ -40,6 +47,13 @@
     "linkedin": "sarah-hann-371a2a337",
     "github": "sarahhannets",
     "roles": ["Événementiel"]
+  },
+  {
+    "name": "Shafaatul Islam",
+    "image": "ShafaatulIslam.webp",
+    "linkedin": "shafaatul-islam-317780369",
+    "github": "Shafaatul-Islam",
+    "roles": ["Développeur"]
   },
   {
     "name": "Xavier Paquet-Rapold",
