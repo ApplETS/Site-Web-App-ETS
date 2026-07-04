@@ -1,3 +1,97 @@
+.hero {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    min-height: calc(100vh - 112px);
+    padding: 2rem;
+    background: linear-gradient(to right, rgba(30, 33, 40, 0) 0%, rgba(30, 33, 40, 0.4) 100%), linear-gradient(rgba(30, 33, 40, 0.45) 20%, rgba(30, 33, 40, 0.45) 30%, rgba(30, 33, 40, 1) 100%), url("../images/evenement/background.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-logo {
+    flex-shrink: 0;
+    width: 260px;
+}
+
+.hero-content {
+    max-width: 480px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin: 0 0 0.75rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin: 0 0 1.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero-buttons a {
+    box-sizing: border-box;
+    padding: 0.6rem 2rem;
+    border: 2px solid;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-filled {
+    background-color: #6571a7;
+    border-color: transparent;
+}
+
+.btn-filled:hover {
+    background-color: #535e91;
+}
+
+.btn-outline {
+    border-color: white;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 767px) {
+    .hero {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-logo {
+        width: 180px;
+    }
+
+    .hero-content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
 .coup-d-oeil {
     height: calc(100vh - 112px);
     display: flex;
