@@ -6,7 +6,7 @@
     gap: 3rem;
     min-height: calc(100vh - 112px);
     padding: 2rem;
-    background: linear-gradient(to right, rgba(30, 33, 40, 0) 0%, rgba(30, 33, 40, 0.4) 100%), linear-gradient(rgba(30, 33, 40, 0.45) 20%, rgba(30, 33, 40, 0.45) 30%, rgba(30, 33, 40, 1) 100%), url("../images/evenement/background.png");
+    background: linear-gradient(to right, rgba(30, 33, 40, 0) 0%, rgba(30, 33, 40, 0.4) 100%), linear-gradient(rgba(30, 33, 40, 0.6) 0%, rgba(30, 33, 40, 0.6) 40%, rgba(30, 33, 40, 1) 100%), url("../images/evenement/background.png");
     background-size: cover;
     background-position: center;
     color: white;
@@ -33,6 +33,12 @@
     font-size: 1rem;
     opacity: 0.85;
     margin: 0 0 1.5rem;
+}
+
+.hero-content .hero-date {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #8a93d1;
 }
 
 .hero-buttons {
