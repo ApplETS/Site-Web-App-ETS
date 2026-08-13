@@ -1,0 +1,78 @@
+.reg-hero {
+    padding: 3rem 2rem 2.5rem;
+    background-color: #1f2835;
+}
+
+.reg-hero h1 {
+    margin-bottom: 0.5rem;
+}
+
+.hero-date {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: #8a93d1;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.reg-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+}
+
+.reg-title {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.reg-section p {
+    margin-bottom: 1rem;
+}
+
+.reg-section p:last-child {
+    margin-bottom: 0;
+}
+
+.reg-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.reg-section li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.reg-section li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.65rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #8a93d1;
+}
+
+.section-code-conduite {
+    background-color: #1f2835;
+}
+
+@media (max-width: 700px) {
+    .reg-hero {
+        padding: 1.5rem 1.5rem 1rem;
+    }
+
+    .reg-section {
+        padding: 2rem 1.5rem;
+    }
+}

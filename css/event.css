@@ -73,6 +73,39 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.floating-discord {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1100;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(88, 101, 242, 0.6);
+    border-radius: 999px;
+    background-color: rgba(88, 101, 242, 0.92);
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.floating-discord:hover {
+    background-color: rgb(63, 73, 179);
+}
+
+.floating-discord img {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.floating-discord span {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
 @media (max-width: 767px) {
     .hero {
         flex-direction: column;
