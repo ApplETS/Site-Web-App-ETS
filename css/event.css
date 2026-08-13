@@ -1,0 +1,256 @@
+.hero {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    min-height: calc(100vh - 112px);
+    padding: 2rem;
+    background: linear-gradient(to right, rgba(30, 33, 40, 0) 0%, rgba(30, 33, 40, 0.4) 100%), linear-gradient(rgba(30, 33, 40, 0.6) 0%, rgba(30, 33, 40, 0.6) 40%, rgba(30, 33, 40, 1) 100%), url("../images/evenement/background.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-logo {
+    flex-shrink: 0;
+    width: 260px;
+}
+
+.hero-content {
+    max-width: 480px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin: 0 0 0.75rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin: 0 0 1.5rem;
+}
+
+.hero-content .hero-date {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #8a93d1;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero-buttons a {
+    box-sizing: border-box;
+    padding: 0.6rem 2rem;
+    border: 2px solid;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-filled {
+    background-color: #6571a7;
+    border-color: transparent;
+}
+
+.btn-filled:hover {
+    background-color: #535e91;
+}
+
+.btn-outline {
+    border-color: white;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.floating-discord {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1100;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(88, 101, 242, 0.6);
+    border-radius: 999px;
+    background-color: rgba(88, 101, 242, 0.92);
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.floating-discord:hover {
+    background-color: rgb(63, 73, 179);
+}
+
+.floating-discord img {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.floating-discord span {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-logo {
+        width: 180px;
+    }
+
+    .hero-content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+/********************** Section: Coup d'oeil **********************/
+.coup-d-oeil {
+    min-height: calc(100vh - 112px);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    background-color: #242e3b;
+}
+
+.event-title {
+    margin-top: 2rem;
+}
+
+.title-underline {
+    width: 60px;
+    height: 3px;
+    background-color: #8a93c2;
+    border-radius: 2px;
+    margin: 10px auto 0 auto;
+}
+
+.bloc-info {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    margin: 2rem auto 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    width: 300px;
+    height: auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2835;
+    border: 1px solid #2c3849;
+    border-radius: 10px;
+}
+
+.info-item h3 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: medium;
+    margin: 0;
+}
+
+.info-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 0.75rem;
+    /* text-align: justify; */
+}
+
+.prize-list {
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+.prize-list li {
+    margin-bottom: 4px;
+}
+
+.prize-note {
+    color: #d9d9d9;
+    font-size: 0.85rem;
+}
+
+.info-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 700px) {
+    .info-item {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+/* Fin section: Coup d'oeil */
+
+/********************** Section: Partenaires **********************/
+.bloc-partenaires {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    background-color: #1f2835;
+}
+
+.bloc-partenaires h1 {
+    margin-top: 2rem;
+}
+
+.partenaires-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.partenaires-logos img {
+    height: 100px;
+}
+
+@media (min-width: 700px) {
+    .partenaires-logos {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .partenaires-logos img {
+        height: 150px;
+    }
+}
+/* Fin section: Partenaires */
