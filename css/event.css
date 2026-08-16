@@ -133,7 +133,6 @@
 
 /********************** Section: Coup d'oeil **********************/
 .coup-d-oeil {
-    min-height: calc(100vh - 112px);
     display: flex;
     flex-direction: column;
     padding-bottom: 2rem;
